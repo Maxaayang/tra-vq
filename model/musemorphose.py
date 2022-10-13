@@ -5,7 +5,8 @@ from transformer_encoder import VAETransformerEncoder
 from transformer_helpers import (
   weights_init, PositionalEncoding, TokenEmbedding, generate_causal_mask
 )
-from VectorQuantizer import *
+# from VectorQuantizer import *
+from juke import *
 
 class VAETransformerDecoder(nn.Module):
   def __init__(self, n_layer, n_head, d_model, d_ff, d_seg_emb, dropout=0.1, activation='relu', cond_mode='in-attn'):
@@ -62,7 +63,7 @@ class MuseMorphose(nn.Module):
     cond_mode='in-attn'
   ):
     super(MuseMorphose, self).__init__()
-    self.vq_layer = VectorQuantizer(128, 256, 0.02)
+    self.vq_layer = VectorQuantizer(256, 128, 0.02)
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
@@ -179,7 +180,7 @@ class MuseMorphose(nn.Module):
 
     _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
     # vae_latent = self.reparameterize(mu, logvar)
-    vae_latent, vq_loss = self.vq_layer(mu)
+    index, vae_latent, vq_loss, _ = self.vq_layer(mu)
     vae_latent_reshaped = vae_latent.reshape(enc_bt_size, enc_n_bars, -1)
 
     dec_seg_emb = torch.zeros(dec_inp.size(0), dec_inp.size(1), self.d_vae_latent).to(vae_latent.device)
