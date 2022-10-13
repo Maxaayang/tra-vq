@@ -7,7 +7,7 @@ data:
     max_bars:         16                 
     enc_seqlen:       128
     dec_seqlen:       1280               
-    batch_size:       8
+    batch_size:       1
 
 model:
     enc_n_layer:      12
@@ -27,7 +27,7 @@ model:
     pretrained_optim_path:       null
 
 training:
-    device:           cpu
+    device:           cuda
     ckpt_dir:         ./ckpt/enc_dec_12L-16_bars-seqlen_1280
     trained_steps:    0
     max_epochs:       10

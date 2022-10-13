@@ -166,6 +166,7 @@ class VectorQuantizer(nn.Module):
 
     def forward(self, x, update_k=True):
         # N, width, T = x.shape
+        x = x.to(device)
         N, T = x.shape
 
         # Preprocess

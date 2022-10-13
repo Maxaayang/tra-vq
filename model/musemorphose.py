@@ -8,6 +8,7 @@ from transformer_helpers import (
 # from VectorQuantizer import *
 from juke import *
 
+device = t.device("cuda:0" if t.cuda.is_available() else "cpu")
 class VAETransformerDecoder(nn.Module):
   def __init__(self, n_layer, n_head, d_model, d_ff, d_seg_emb, dropout=0.1, activation='relu', cond_mode='in-attn'):
     super(VAETransformerDecoder, self).__init__()
@@ -21,9 +22,9 @@ class VAETransformerDecoder(nn.Module):
     self.cond_mode = cond_mode
 
     if cond_mode == 'in-attn':
-      self.seg_emb_proj = nn.Linear(d_seg_emb, d_model, bias=False)
+      self.seg_emb_proj = nn.Linear(d_seg_emb, d_model, bias=False).to(device)
     elif cond_mode == 'pre-attn':
-      self.seg_emb_proj = nn.Linear(d_seg_emb + d_model, d_model, bias=False)
+      self.seg_emb_proj = nn.Linear(d_seg_emb + d_model, d_model, bias=False).to(device)
 
     self.decoder_layers = nn.ModuleList()
     for i in range(n_layer):
@@ -191,8 +192,8 @@ class MuseMorphose(nn.Module):
         dec_seg_emb[st:ed, n, :] = vae_latent_reshaped[n, b, :]
 
     if rfreq_cls is not None and polyph_cls is not None and self.use_attr_cls:
-      dec_rfreq_emb = self.rfreq_attr_emb(rfreq_cls)
-      dec_polyph_emb = self.polyph_attr_emb(polyph_cls)
+      dec_rfreq_emb = self.rfreq_attr_emb(rfreq_cls).to(device)
+      dec_polyph_emb = self.polyph_attr_emb(polyph_cls).to(device)
       dec_seg_emb_cat = torch.cat([dec_seg_emb, dec_rfreq_emb, dec_polyph_emb], dim=-1)
     else:
       dec_seg_emb_cat = dec_seg_emb
