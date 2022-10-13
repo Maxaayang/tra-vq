@@ -5,7 +5,6 @@ from transformer_encoder import VAETransformerEncoder
 from transformer_helpers import (
   weights_init, PositionalEncoding, TokenEmbedding, generate_causal_mask
 )
-from VectorQuantizer import *
 
 class VAETransformerDecoder(nn.Module):
   def __init__(self, n_layer, n_head, d_model, d_ff, d_seg_emb, dropout=0.1, activation='relu', cond_mode='in-attn'):
@@ -62,7 +61,6 @@ class MuseMorphose(nn.Module):
     cond_mode='in-attn'
   ):
     super(MuseMorphose, self).__init__()
-    self.vq_layer = VectorQuantizer(128, 256, 0.02)
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
@@ -178,8 +176,7 @@ class MuseMorphose(nn.Module):
       padding_mask = padding_mask.reshape(-1, padding_mask.size(-1))
 
     _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
-    # vae_latent = self.reparameterize(mu, logvar)
-    vae_latent, vq_loss = self.vq_layer(mu)
+    vae_latent = self.reparameterize(mu, logvar)
     vae_latent_reshaped = vae_latent.reshape(enc_bt_size, enc_n_bars, -1)
 
     dec_seg_emb = torch.zeros(dec_inp.size(0), dec_inp.size(1), self.d_vae_latent).to(vae_latent.device)
@@ -199,31 +196,23 @@ class MuseMorphose(nn.Module):
     dec_out = self.decoder(dec_inp, dec_seg_emb_cat)
     dec_logits = self.dec_out_proj(dec_out)
 
-    return mu, logvar, dec_logits, vq_loss
+    return mu, logvar, dec_logits
 
-  def compute_loss(self, mu, logvar, beta, fb_lambda, dec_logits, dec_tgt, vq_loss):
+  def compute_loss(self, mu, logvar, beta, fb_lambda, dec_logits, dec_tgt):
     recons_loss = F.cross_entropy(
       dec_logits.view(-1, dec_logits.size(-1)), dec_tgt.contiguous().view(-1), 
       ignore_index=self.n_token - 1, reduction='mean'
     ).float()
 
-    # kl_raw = -0.5 * (1 + logvar - mu ** 2 - logvar.exp()).mean(dim=0)
-    # kl_before_free_bits = kl_raw.mean()
-    # kl_after_free_bits = kl_raw.clamp(min=fb_lambda)
-    # kldiv_loss = kl_after_free_bits.mean()
-
-    # return {
-    #   'beta': beta,
-    #   'total_loss': recons_loss + beta * kldiv_loss,
-    #   'kldiv_loss': kldiv_loss,
-    #   'kldiv_raw': kl_before_free_bits,
-    #   'recons_loss': recons_loss
-    # }
+    kl_raw = -0.5 * (1 + logvar - mu ** 2 - logvar.exp()).mean(dim=0)
+    kl_before_free_bits = kl_raw.mean()
+    kl_after_free_bits = kl_raw.clamp(min=fb_lambda)
+    kldiv_loss = kl_after_free_bits.mean()
 
     return {
-      # 'beta': beta,
-      'total_loss': recons_loss + vq_loss,
-      # 'kldiv_loss': kldiv_loss,
-      # 'kldiv_raw': kl_before_free_bits,
+      'beta': beta,
+      'total_loss': recons_loss + beta * kldiv_loss,
+      'kldiv_loss': kldiv_loss,
+      'kldiv_raw': kl_before_free_bits,
       'recons_loss': recons_loss
     }
