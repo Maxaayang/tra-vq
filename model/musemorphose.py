@@ -62,7 +62,7 @@ class MuseMorphose(nn.Module):
     cond_mode='in-attn'
   ):
     super(MuseMorphose, self).__init__()
-    self.vq_layer = VectorQuantizer(128, 256, 0.02)
+    self.vq_layer = VectorQuantizer(256, 128, 1)
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
