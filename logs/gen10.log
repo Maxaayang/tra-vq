@@ -1,0 +1,79 @@
+[preparing data] now at #0
+[sampled pieces] [83, 85, 61, 36, 26, 30, 52, 54, 48, 0]
+[info] writing to ... generations/juke10/id83_bar5_orig
+[info] piece: 93, bar: 5
+[info] writing to ... generations/juke10/id83_bar5_sample01_poly+0_rhym-3
+[info] rhythm cls: tensor([4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 73
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 172
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 3 bars, #events = 274
+[info] generated 4 bars, #events = 397
+[info] generated 5 bars, #events = 618
+[info] generated 6 bars, #events = 752
+[info] generated 7 bars, #events = 830
+[info] generated 8 bars, #events = 951
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 9 bars, #events = 1166
+[info] generated 10 bars, #events = 1258
+[info] generated 11 bars, #events = 1359
+[info] generated 12 bars, #events = 1459
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 13 bars, #events = 1536
+[info] generated 14 bars, #events = 1630
+[info] generated 15 bars, #events = 1734
+[info] generated 16 bars, #events = 1850
+-- generated events: 1851
+-- time elapsed: 22.51 secs
+[info] piece entropy: 3.0535 (+/- 0.8436)
+[info] piece: 93, bar: 5
+[info] writing to ... generations/juke10/id83_bar5_sample02_poly+2_rhym+1
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 91
+[info] generated 2 bars, #events = 213
+[info] generated 3 bars, #events = 323
+[info] generated 4 bars, #events = 342
+[info] generated 5 bars, #events = 528
+[info] generated 6 bars, #events = 685
+[info] generated 7 bars, #events = 839
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 1070
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8

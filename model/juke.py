@@ -187,7 +187,10 @@ class VectorQuantizer(nn.Module):
             update_metrics = {}
 
         # Loss
-        commit_loss = t.norm(x_d.detach() - x) ** 2 / np.prod(x.shape)
+        # commit_loss = t.norm(x_d.detach() - x) ** 2 / np.prod(x.shape)
+        q_latent_loss = F.mse_loss(x_d, x.detach())
+        e_latent_loss = F.mse_loss(x, x_d.detach())
+        commit_loss = q_latent_loss + self.mu * e_latent_loss
 
         # Passthrough
         x_d = x + (x_d - x).detach()

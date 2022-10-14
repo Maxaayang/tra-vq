@@ -64,7 +64,7 @@ class MuseMorphose(nn.Module):
     cond_mode='in-attn'
   ):
     super(MuseMorphose, self).__init__()
-    self.vq_layer = VectorQuantizer(256, 128, 0.02)
+    self.vq_layer = VectorQuantizer(256, 128, 0.99)
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
@@ -201,7 +201,7 @@ class MuseMorphose(nn.Module):
     dec_out = self.decoder(dec_inp, dec_seg_emb_cat)
     dec_logits = self.dec_out_proj(dec_out)
 
-    return mu, logvar, dec_logits, vq_loss
+    return mu, logvar, dec_logits, vq_loss, index
 
   def compute_loss(self, mu, logvar, beta, fb_lambda, dec_logits, dec_tgt, vq_loss):
     recons_loss = F.cross_entropy(
