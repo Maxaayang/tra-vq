@@ -9,6 +9,7 @@ from utils import pickle_load
 from torch import nn, optim
 import torch
 import numpy as np
+from tqdm import tqdm
 
 import yaml
 config_path = sys.argv[1]
@@ -81,6 +82,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
   print ('[epoch {:03d}] training ...'.format(epoch))
   print ('[epoch {:03d}] # batches = {}'.format(epoch, len(dloader)))
   st = time.time()
+  s_index = []
 
   for batch_idx, batch_samples in enumerate(dloader):
     model.zero_grad()
@@ -96,11 +98,13 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
     global trained_steps
     trained_steps += 1
 
-    mu, logvar, dec_logits, vq_loss = model(
+    mu, logvar, dec_logits, vq_loss, index = model(
       batch_enc_inp, batch_dec_inp, 
       batch_inp_bar_pos, batch_rfreq_cls, batch_polyph_cls,
       padding_mask=batch_padding_mask
     )
+
+    s_index.append(index)
 
     if not constant_kl:
       kl_beta = beta_cyclical_sched(trained_steps)
@@ -207,6 +211,8 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
     os.path.join(ckpt_dir, 'log.txt'), log_data, is_init=not os.path.exists(os.path.join(ckpt_dir, 'log.txt'))
   )
 
+  return s_index
+
 def validate(model, dloader, n_rounds=8, use_attr_cls=True):
   model.eval()
   loss_rec = []
@@ -301,5 +307,16 @@ if __name__ == "__main__":
   if not os.path.exists(optim_dir):
     os.makedirs(optim_dir)
 
-  for ep in range(config['training']['max_epochs']):
-    train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler)
+  map = {}
+  for ep in tqdm(range(config['training']['max_epochs'])):
+    s_index = train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler)
+    for i in range(len(s_index)):
+      index = s_index[i]
+      index = index.cpu().numpy()
+      for j in range(len(index)):
+        if (map.__contains__(index[j])):
+          map[index[j]] += 1
+        else:
+          map[index[j]] = 1
+
+  print(sorted(map.items(),key=lambda s:s[1]))
