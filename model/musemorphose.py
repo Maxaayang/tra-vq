@@ -5,6 +5,7 @@ from transformer_encoder import VAETransformerEncoder
 from transformer_helpers import (
   weights_init, PositionalEncoding, TokenEmbedding, generate_causal_mask
 )
+# from VectorQuantizer import *
 
 class VAETransformerDecoder(nn.Module):
   def __init__(self, n_layer, n_head, d_model, d_ff, d_seg_emb, dropout=0.1, activation='relu', cond_mode='in-attn'):
@@ -61,7 +62,7 @@ class MuseMorphose(nn.Module):
     cond_mode='in-attn'
   ):
     super(MuseMorphose, self).__init__()
-    self.vq_layer = VectorQuantizer(256, 128, 1)
+    self.init_embedding = False
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
@@ -176,11 +177,8 @@ class MuseMorphose(nn.Module):
     if padding_mask is not None:
       padding_mask = padding_mask.reshape(-1, padding_mask.size(-1))
 
-    _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
+    hidden_out, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
     vae_latent = self.reparameterize(mu, logvar)
-    # vae_latent = self.reparameterize(mu, logvar)
-    index, vae_latent, vq_loss, _ = self.vq_layer(mu)
-
     vae_latent_reshaped = vae_latent.reshape(enc_bt_size, enc_n_bars, -1)
 
     dec_seg_emb = torch.zeros(dec_inp.size(0), dec_inp.size(1), self.d_vae_latent).to(vae_latent.device)
@@ -200,8 +198,7 @@ class MuseMorphose(nn.Module):
     dec_out = self.decoder(dec_inp, dec_seg_emb_cat)
     dec_logits = self.dec_out_proj(dec_out)
 
-    # return mu, logvar, dec_logits
-    return mu, logvar, dec_logits, vq_loss, index
+    return mu, logvar, dec_logits
 
   def compute_loss(self, mu, logvar, beta, fb_lambda, dec_logits, dec_tgt):
     recons_loss = F.cross_entropy(
