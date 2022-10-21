@@ -39,36 +39,27 @@ recons_loss_ema = 0.
 kl_loss_ema = 0.
 kl_raw_ema = 0.
 
-# def log_epoch(log_file, log_data, is_init=False):
-#   if is_init:
-#     with open(log_file, 'w') as f:
-#       f.write('{:4} {:8} {:12} {:12} {:12} {:12}\n'.format('ep', 'steps', 'recons_loss', 'kldiv_loss', 'kldiv_raw', 'ep_time'))
-
-#   with open(log_file, 'a') as f:
-#     f.write('{:<4} {:<8} {:<12} {:<12} {:<12} {:<12}\n'.format(
-#       log_data['ep'], log_data['steps'], round(log_data['recons_loss'], 5), round(log_data['kldiv_loss'], 5), round(log_data['kldiv_raw'], 5), round(log_data['time'], 2)
-#     ))
-
 def log_epoch(log_file, log_data, is_init=False):
   if is_init:
     with open(log_file, 'w') as f:
-      f.write('{:4} {:8} {:12} {:12}\n'.format('ep', 'steps', 'recons_loss', 'ep_time'))
+      f.write('{:4} {:8} {:12} {:12} {:12} {:12}\n'.format('ep', 'steps', 'recons_loss', 'kldiv_loss', 'kldiv_raw', 'ep_time'))
 
   with open(log_file, 'a') as f:
-    f.write('{:<4} {:<8} {:<12} {:<12}\n'.format(
-      log_data['ep'], log_data['steps'], round(log_data['recons_loss'], 5), round(log_data['time'], 2)
+    f.write('{:<4} {:<8} {:<12} {:<12} {:<12} {:<12}\n'.format(
+      log_data['ep'], log_data['steps'], round(log_data['recons_loss'], 5), round(log_data['kldiv_loss'], 5), round(log_data['kldiv_raw'], 5), round(log_data['time'], 2)
     ))
 
 def beta_cyclical_sched(step):
   step_in_cycle = (step - 1) % kl_cycle_steps
   cycle_progress = step_in_cycle / kl_cycle_steps
+  return kl_max_beta
 
-  if step < no_kl_steps:
-    return 0.
-  if cycle_progress < 0.5:
-    return kl_max_beta * cycle_progress * 2.
-  else:
-    return kl_max_beta
+  # if step < no_kl_steps:
+  #   return 0.
+  # if cycle_progress < 0.5:
+  #   return kl_max_beta * cycle_progress * 2.
+  # else:
+  #   return kl_max_beta
 
 def compute_loss_ema(ema, batch_loss, decay=0.95):
   if ema == 0.:
@@ -110,8 +101,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
       kl_beta = beta_cyclical_sched(trained_steps)
     else:
       kl_beta = kl_max_beta
-    # losses = model.compute_loss(mu, logvar, kl_beta, free_bit_lambda, dec_logits, batch_dec_tgt)
-    losses = model.compute_loss(mu, logvar, kl_beta, free_bit_lambda, dec_logits, batch_dec_tgt, vq_loss)
+    losses = model.compute_loss(mu, logvar, kl_beta, free_bit_lambda, dec_logits, batch_dec_tgt)
     
     # anneal learning rate
     if trained_steps < lr_warmup_steps:
@@ -127,48 +117,36 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
 
     global recons_loss_ema, kl_loss_ema, kl_raw_ema
     recons_loss_ema = compute_loss_ema(recons_loss_ema, losses['recons_loss'].item())
-    # kl_loss_ema = compute_loss_ema(kl_loss_ema, losses['kldiv_loss'].item())
-    # kl_raw_ema = compute_loss_ema(kl_raw_ema, losses['kldiv_raw'].item())
-
-    # print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.4f}), step = {}, beta: {:.4f} time_elapsed = {:.2f} secs'.format(
-    #   epoch, batch_idx, batch_inp_lens, recons_loss_ema, kl_loss_ema, kl_raw_ema, trained_steps, kl_beta, time.time() - st
-    # ))
+    kl_loss_ema = compute_loss_ema(kl_loss_ema, losses['kldiv_loss'].item())
+    kl_raw_ema = compute_loss_ema(kl_raw_ema, losses['kldiv_raw'].item())
 
     print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f}, VQ: {:.4f}, step = {} time_elapsed = {:.2f} secs'.format(
-      epoch, batch_idx, batch_inp_lens, recons_loss_ema, vq_loss, trained_steps,  time.time() - st
-    ))
+      epoch, batch_idx, batch_inp_lens, recons_loss_ema, vq_loss, trained_steps,  time.time() - st))
 
     if not trained_steps % log_interval:
       log_data = {
         'ep': epoch,
         'steps': trained_steps,
         'recons_loss': recons_loss_ema,
-        # 'kldiv_loss': kl_loss_ema,
-        # 'kldiv_raw': kl_raw_ema,
+        'kldiv_loss': kl_loss_ema,
+        'kldiv_raw': kl_raw_ema,
         'time': time.time() - st
       }
       log_epoch(
         os.path.join(ckpt_dir, 'log.txt'), log_data, is_init=not os.path.exists(os.path.join(ckpt_dir, 'log.txt'))
       )
 
-    # if not trained_steps % val_interval:
-    #   vallosses = validate(model, dloader_val)
-    #   # with open(os.path.join(ckpt_dir, 'valloss.txt'), 'a') as f:
-    #   #   f.write('[step {}] RC: {:.4f} | KL: {:.4f} | [val] | RC: {:.4f} | KL: {:.4f}\n'.format(
-    #   #     trained_steps, 
-    #   #     recons_loss_ema, 
-    #   #     kl_raw_ema,
-    #   #     np.mean(vallosses[0]),
-    #   #     np.mean(vallosses[1])
-    #   #   ))
-    #   with open(os.path.join(ckpt_dir, 'valloss.txt'), 'a') as f:
-    #     f.write('[step {}] RC: {:.4f} | [val] | RC: {:.4f} | KL: {:.4f}\n'.format(
-    #       trained_steps, 
-    #       recons_loss_ema, 
-    #       np.mean(vallosses[0]),
-    #       np.mean(vallosses[1])
-    #     ))
-    #   model.train()
+    if not trained_steps % val_interval:
+      vallosses = validate(model, dloader_val)
+      with open(os.path.join(ckpt_dir, 'valloss.txt'), 'a') as f:
+        f.write('[step {}] RC: {:.4f} | KL: {:.4f} | [val] | RC: {:.4f} | KL: {:.4f}\n'.format(
+          trained_steps, 
+          recons_loss_ema, 
+          kl_raw_ema,
+          np.mean(vallosses[0]),
+          np.mean(vallosses[1])
+        ))
+      model.train()
 
     if not trained_steps % ckpt_interval:
       torch.save(model.state_dict(),
@@ -186,27 +164,17 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
           ))
       )
 
-  # print ('[epoch {:03d}] training completed\n  -- loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.4f})\n  -- time elapsed = {:.2f} secs.'.format(
-  #   epoch, recons_loss_ema, kl_loss_ema, kl_raw_ema, time.time() - st
-  # ))
-  # log_data = {
-  #   'ep': epoch,
-  #   'steps': trained_steps,
-  #   'recons_loss': recons_loss_ema,
-  #   'kldiv_loss': kl_loss_ema,
-  #   'kldiv_raw': kl_raw_ema,
-  #   'time': time.time() - st
-  # }
-  print ('[epoch {:03d}] training completed\n  -- loss = (RC: {:.4f} \n  -- time elapsed = {:.2f} secs.'.format(
-    epoch, recons_loss_ema, time.time() - st
+  print ('[epoch {:03d}] training completed\n  -- loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.4f})\n  -- time elapsed = {:.2f} secs.'.format(
+    epoch, recons_loss_ema, kl_loss_ema, kl_raw_ema, time.time() - st
   ))
   log_data = {
     'ep': epoch,
     'steps': trained_steps,
     'recons_loss': recons_loss_ema,
+    'kldiv_loss': kl_loss_ema,
+    'kldiv_raw': kl_raw_ema,
     'time': time.time() - st
   }
-
   log_epoch(
     os.path.join(ckpt_dir, 'log.txt'), log_data, is_init=not os.path.exists(os.path.join(ckpt_dir, 'log.txt'))
   )
