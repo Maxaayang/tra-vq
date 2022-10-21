@@ -1,0 +1,1108 @@
+[preparing data] now at #0
+[sampled pieces] [71, 38, 27, 79, 86, 23, 17, 0, 45, 7]
+[info] writing to ... generations/juke50/id71_bar49_orig
+[info] piece: 646, bar: 49
+[info] writing to ... generations/juke50/id71_bar49_sample01_poly-1_rhym+2
+[info] rhythm cls: tensor([5, 5, 5, 7, 5, 5, 5, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([4, 5, 4, 4, 4, 4, 4, 4, 1, 1, 2, 0, 1, 2, 3, 0], device='cuda:0')
+[info] generated 1 bars, #events = 57
+[info] generated 2 bars, #events = 132
+[info] generated 3 bars, #events = 224
+[info] generated 4 bars, #events = 305
+[info] generated 5 bars, #events = 410
+[info] generated 6 bars, #events = 507
+[info] generated 7 bars, #events = 596
+[info] generated 8 bars, #events = 698
+[info] generated 9 bars, #events = 791
+[info] generated 10 bars, #events = 888
+[info] generated 11 bars, #events = 998
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 12 bars, #events = 1113
+[info] generated 13 bars, #events = 1213
+[info] generated 14 bars, #events = 1320
+[info] generated 15 bars, #events = 1460
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1592
+-- generated events: 1593
+-- time elapsed: 18.77 secs
+[info] piece entropy: 1.7323 (+/- 0.6451)
+[info] piece: 646, bar: 49
+[info] writing to ... generations/juke50/id71_bar49_sample02_poly+3_rhym+1
+[info] rhythm cls: tensor([4, 4, 4, 7, 4, 4, 4, 6, 7, 7, 7, 7, 7, 6, 7, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 5, 5, 6, 4, 5, 6, 7, 4], device='cuda:0')
+[info] generated 1 bars, #events = 71
+[info] generated 2 bars, #events = 166
+[info] generated 3 bars, #events = 227
+[info] generated 4 bars, #events = 323
+[info] generated 5 bars, #events = 409
+[info] generated 6 bars, #events = 518
+[info] generated 7 bars, #events = 633
+[info] generated 8 bars, #events = 745
+[info] generated 9 bars, #events = 875
+[info] generated 10 bars, #events = 963
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 11 bars, #events = 1091
+[info] generated 12 bars, #events = 1232
+[info] generated 13 bars, #events = 1383
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 1544
+[info] generated 15 bars, #events = 1745
+[info] generated 16 bars, #events = 1948
+-- generated events: 1949
+-- time elapsed: 21.71 secs
+[info] piece entropy: 1.7823 (+/- 0.6013)
+[info] piece: 646, bar: 49
+[info] writing to ... generations/juke50/id71_bar49_sample03_poly+2_rhym+3
+[info] rhythm cls: tensor([6, 6, 6, 7, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 4, 4, 5, 3, 4, 5, 6, 3], device='cuda:0')
+[info] generated 1 bars, #events = 142
+[info] generated 2 bars, #events = 266
+[info] generated 3 bars, #events = 406
+[info] generated 4 bars, #events = 552
+[info] generated 5 bars, #events = 679
+[info] generated 6 bars, #events = 826
+[info] generated 7 bars, #events = 966
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 8 bars, #events = 1148
+[info] generated 9 bars, #events = 1345
+[info] generated 10 bars, #events = 1515
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 11 bars, #events = 1679
+[info] generated 12 bars, #events = 1797
+[info] generated 13 bars, #events = 1981
+[info] reset context length: cur_len: 1024, accumulated_len: 2048, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 2134
+[info] generated 15 bars, #events = 2338
+[info] generated 16 bars, #events = 2486
+-- generated events: 2487
+-- time elapsed: 34.69 secs
+[info] piece entropy: 1.8850 (+/- 0.7235)
+[info] piece: 646, bar: 49
+[info] writing to ... generations/juke50/id71_bar49_sample04_poly+3_rhym+3
+[info] rhythm cls: tensor([6, 6, 6, 7, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 5, 5, 6, 4, 5, 6, 7, 4], device='cuda:0')
+[info] generated 1 bars, #events = 93
+[info] generated 2 bars, #events = 230
+[info] generated 3 bars, #events = 345
+[info] generated 4 bars, #events = 476
+[info] generated 5 bars, #events = 588
+[info] generated 6 bars, #events = 752
+[info] generated 7 bars, #events = 854
+[info] generated 8 bars, #events = 1017
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 9 bars, #events = 1164
+[info] generated 10 bars, #events = 1313
+[info] generated 11 bars, #events = 1461
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 12 bars, #events = 1611
+[info] generated 13 bars, #events = 1794
+[info] generated 14 bars, #events = 1925
+[info] reset context length: cur_len: 1024, accumulated_len: 2048, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 2119
+[info] generated 16 bars, #events = 2247
+-- generated events: 2248
+-- time elapsed: 31.70 secs
+[info] piece entropy: 1.9557 (+/- 0.6632)
+[info] piece: 646, bar: 49
+[info] writing to ... generations/juke50/id71_bar49_sample05_poly-3_rhym+0
+[info] rhythm cls: tensor([3, 3, 3, 6, 3, 3, 3, 5, 6, 7, 7, 6, 6, 5, 7, 7], device='cuda:0') | polyph_cls: tensor([2, 3, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 1, 0], device='cuda:0')
+[info] generated 1 bars, #events = 37
+[info] generated 2 bars, #events = 85
+[info] generated 3 bars, #events = 128
+[info] generated 4 bars, #events = 187
+[info] generated 5 bars, #events = 244
+[info] generated 6 bars, #events = 303
+[info] generated 7 bars, #events = 354
+[info] generated 8 bars, #events = 411
+[info] generated 9 bars, #events = 485
+[info] generated 10 bars, #events = 578
+[info] generated 11 bars, #events = 681
+[info] generated 12 bars, #events = 768
+[info] generated 13 bars, #events = 858
+[info] generated 14 bars, #events = 937
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1059
+[info] generated 16 bars, #events = 1164
+-- generated events: 1165
+-- time elapsed: 13.58 secs
+[info] piece entropy: 1.9294 (+/- 0.7184)
+[info] writing to ... generations/juke50/id38_bar30_orig
+[info] piece: 1664, bar: 30
+[info] writing to ... generations/juke50/id38_bar30_sample01_poly-2_rhym+3
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([5, 5, 5, 4, 3, 5, 5, 3, 4, 5, 4, 4, 4, 4, 3, 5], device='cuda:0')
+[info] generated 1 bars, #events = 72
+[info] generated 2 bars, #events = 171
+[info] generated 3 bars, #events = 274
+[info] generated 4 bars, #events = 358
+[info] generated 5 bars, #events = 440
+[info] generated 6 bars, #events = 512
+[info] generated 7 bars, #events = 625
+[info] generated 8 bars, #events = 701
+[info] generated 9 bars, #events = 820
+[info] generated 10 bars, #events = 930
+[info] generated 11 bars, #events = 1020
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 12 bars, #events = 1111
+[info] generated 13 bars, #events = 1172
+[info] generated 14 bars, #events = 1226
+[info] generated 15 bars, #events = 1304
+[info] generated 16 bars, #events = 1389
+-- generated events: 1390
+-- time elapsed: 17.60 secs
+[info] piece entropy: 2.0256 (+/- 0.6340)
+[info] piece: 1664, bar: 30
+[info] writing to ... generations/juke50/id38_bar30_sample02_poly-3_rhym-2
+[info] rhythm cls: tensor([5, 5, 5, 4, 4, 4, 4, 3, 4, 5, 5, 4, 4, 4, 5, 5], device='cuda:0') | polyph_cls: tensor([4, 4, 4, 3, 2, 4, 4, 2, 3, 4, 3, 3, 3, 3, 2, 4], device='cuda:0')
+[info] generated 1 bars, #events = 54
+[info] generated 2 bars, #events = 105
+[info] generated 3 bars, #events = 156
+[info] generated 4 bars, #events = 198
+[info] generated 5 bars, #events = 241
+[info] generated 6 bars, #events = 287
+[info] generated 7 bars, #events = 335
+[info] generated 8 bars, #events = 377
+[info] generated 9 bars, #events = 421
+[info] generated 10 bars, #events = 479
+[info] generated 11 bars, #events = 535
+[info] generated 12 bars, #events = 579
+[info] generated 13 bars, #events = 629
+[info] generated 14 bars, #events = 668
+[info] generated 15 bars, #events = 716
+[info] generated 16 bars, #events = 756
+-- generated events: 757
+-- time elapsed: 7.70 secs
+[info] piece entropy: 2.0806 (+/- 0.7019)
+[info] piece: 1664, bar: 30
+[info] writing to ... generations/juke50/id38_bar30_sample03_poly+0_rhym-2
+[info] rhythm cls: tensor([5, 5, 5, 4, 4, 4, 4, 3, 4, 5, 5, 4, 4, 4, 5, 5], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 6, 5, 7, 7, 5, 6, 7, 6, 6, 6, 6, 5, 7], device='cuda:0')
+[info] generated 1 bars, #events = 50
+[info] generated 2 bars, #events = 121
+[info] generated 3 bars, #events = 177
+[info] generated 4 bars, #events = 236
+[info] generated 5 bars, #events = 295
+[info] generated 6 bars, #events = 361
+[info] generated 7 bars, #events = 419
+[info] generated 8 bars, #events = 470
+[info] generated 9 bars, #events = 524
+[info] generated 10 bars, #events = 577
+[info] generated 11 bars, #events = 637
+[info] generated 12 bars, #events = 683
+[info] generated 13 bars, #events = 731
+[info] generated 14 bars, #events = 785
+[info] generated 15 bars, #events = 849
+[info] generated 16 bars, #events = 914
+-- generated events: 915
+-- time elapsed: 9.23 secs
+[info] piece entropy: 2.1231 (+/- 0.6306)
+[info] piece: 1664, bar: 30
+[info] writing to ... generations/juke50/id38_bar30_sample04_poly-1_rhym-1
+[info] rhythm cls: tensor([6, 6, 6, 5, 5, 5, 5, 4, 5, 6, 6, 5, 5, 5, 6, 6], device='cuda:0') | polyph_cls: tensor([6, 6, 6, 5, 4, 6, 6, 4, 5, 6, 5, 5, 5, 5, 4, 6], device='cuda:0')
+[info] generated 1 bars, #events = 81
+[info] generated 2 bars, #events = 166
+[info] generated 3 bars, #events = 240
+[info] generated 4 bars, #events = 310
+[info] generated 5 bars, #events = 361
+[info] generated 6 bars, #events = 425
+[info] generated 7 bars, #events = 494
+[info] generated 8 bars, #events = 556
+[info] generated 9 bars, #events = 612
+[info] generated 10 bars, #events = 714
+[info] generated 11 bars, #events = 811
+[info] generated 12 bars, #events = 860
+[info] generated 13 bars, #events = 914
+[info] generated 14 bars, #events = 966
+[info] generated 15 bars, #events = 1022
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1086
+-- generated events: 1087
+-- time elapsed: 12.68 secs
+[info] piece entropy: 2.0770 (+/- 0.6369)
+[info] piece: 1664, bar: 30
+[info] writing to ... generations/juke50/id38_bar30_sample05_poly+2_rhym-2
+[info] rhythm cls: tensor([5, 5, 5, 4, 4, 4, 4, 3, 4, 5, 5, 4, 4, 4, 5, 5], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 60
+[info] generated 2 bars, #events = 136
+[info] generated 3 bars, #events = 188
+[info] generated 4 bars, #events = 239
+[info] generated 5 bars, #events = 310
+[info] generated 6 bars, #events = 364
+[info] generated 7 bars, #events = 438
+[info] generated 8 bars, #events = 495
+[info] generated 9 bars, #events = 577
+[info] generated 10 bars, #events = 638
+[info] generated 11 bars, #events = 714
+[info] generated 12 bars, #events = 775
+[info] generated 13 bars, #events = 835
+[info] generated 14 bars, #events = 904
+[info] generated 15 bars, #events = 975
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1053
+-- generated events: 1054
+-- time elapsed: 11.88 secs
+[info] piece entropy: 1.8962 (+/- 0.6423)
+[info] writing to ... generations/juke50/id27_bar6_orig
+[info] piece: 1496, bar: 6
+[info] writing to ... generations/juke50/id27_bar6_sample01_poly+1_rhym+0
+[info] rhythm cls: tensor([0, 1, 2, 3, 2, 4, 0, 2, 1, 3, 1, 4, 1, 3, 0, 5], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 96
+[info] generated 3 bars, #events = 145
+[info] generated 4 bars, #events = 208
+[info] generated 5 bars, #events = 252
+[info] generated 6 bars, #events = 314
+[info] generated 7 bars, #events = 355
+[info] generated 8 bars, #events = 411
+[info] generated 9 bars, #events = 453
+[info] generated 10 bars, #events = 517
+[info] generated 11 bars, #events = 562
+[info] generated 12 bars, #events = 626
+[info] generated 13 bars, #events = 678
+[info] generated 14 bars, #events = 734
+[info] generated 15 bars, #events = 786
+[info] generated 16 bars, #events = 860
+-- generated events: 861
+-- time elapsed: 8.37 secs
+[info] piece entropy: 2.0995 (+/- 0.6509)
+[info] piece: 1496, bar: 6
+[info] writing to ... generations/juke50/id27_bar6_sample02_poly+3_rhym-1
+[info] rhythm cls: tensor([0, 0, 1, 2, 1, 3, 0, 1, 0, 2, 0, 3, 0, 2, 0, 4], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 36
+[info] generated 2 bars, #events = 81
+[info] generated 3 bars, #events = 125
+[info] generated 4 bars, #events = 163
+[info] generated 5 bars, #events = 207
+[info] generated 6 bars, #events = 250
+[info] generated 7 bars, #events = 288
+[info] generated 8 bars, #events = 335
+[info] generated 9 bars, #events = 374
+[info] generated 10 bars, #events = 448
+[info] generated 11 bars, #events = 472
+[info] generated 12 bars, #events = 536
+[info] generated 13 bars, #events = 570
+[info] generated 14 bars, #events = 631
+[info] generated 15 bars, #events = 650
+[info] generated 16 bars, #events = 707
+-- generated events: 708
+-- time elapsed: 5.73 secs
+[info] piece entropy: 1.9342 (+/- 0.7157)
+[info] piece: 1496, bar: 6
+[info] writing to ... generations/juke50/id27_bar6_sample03_poly-1_rhym-3
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2], device='cuda:0') | polyph_cls: tensor([5, 5, 6, 5, 6, 5, 6, 6, 5, 5, 6, 5, 5, 6, 5, 5], device='cuda:0')
+[info] generated 1 bars, #events = 32
+[info] generated 2 bars, #events = 73
+[info] generated 3 bars, #events = 119
+[info] generated 4 bars, #events = 165
+[info] generated 5 bars, #events = 203
+[info] generated 6 bars, #events = 272
+[info] generated 7 bars, #events = 309
+[info] generated 8 bars, #events = 368
+[info] generated 9 bars, #events = 402
+[info] generated 10 bars, #events = 451
+[info] generated 11 bars, #events = 487
+[info] generated 12 bars, #events = 535
+[info] generated 13 bars, #events = 568
+[info] generated 14 bars, #events = 603
+[info] generated 15 bars, #events = 631
+[info] generated 16 bars, #events = 673
+-- generated events: 674
+-- time elapsed: 6.06 secs
+[info] piece entropy: 2.0602 (+/- 0.6391)
+[info] piece: 1496, bar: 6
+[info] writing to ... generations/juke50/id27_bar6_sample04_poly-2_rhym+0
+[info] rhythm cls: tensor([0, 1, 2, 3, 2, 4, 0, 2, 1, 3, 1, 4, 1, 3, 0, 5], device='cuda:0') | polyph_cls: tensor([4, 4, 5, 4, 5, 4, 5, 5, 4, 4, 5, 4, 4, 5, 4, 4], device='cuda:0')
+[info] generated 1 bars, #events = 34
+[info] generated 2 bars, #events = 68
+[info] generated 3 bars, #events = 103
+[info] generated 4 bars, #events = 143
+[info] generated 5 bars, #events = 178
+[info] generated 6 bars, #events = 217
+[info] generated 7 bars, #events = 246
+[info] generated 8 bars, #events = 280
+[info] generated 9 bars, #events = 312
+[info] generated 10 bars, #events = 353
+[info] generated 11 bars, #events = 380
+[info] generated 12 bars, #events = 413
+[info] generated 13 bars, #events = 444
+[info] generated 14 bars, #events = 481
+[info] generated 15 bars, #events = 507
+[info] generated 16 bars, #events = 555
+-- generated events: 556
+-- time elapsed: 4.13 secs
+[info] piece entropy: 1.9580 (+/- 0.7145)
+[info] piece: 1496, bar: 6
+[info] writing to ... generations/juke50/id27_bar6_sample05_poly+0_rhym+0
+[info] rhythm cls: tensor([0, 1, 2, 3, 2, 4, 0, 2, 1, 3, 1, 4, 1, 3, 0, 5], device='cuda:0') | polyph_cls: tensor([6, 6, 7, 6, 7, 6, 7, 7, 6, 6, 7, 6, 6, 7, 6, 6], device='cuda:0')
+[info] generated 1 bars, #events = 42
+[info] generated 2 bars, #events = 73
+[info] generated 3 bars, #events = 117
+[info] generated 4 bars, #events = 150
+[info] generated 5 bars, #events = 198
+[info] generated 6 bars, #events = 234
+[info] generated 7 bars, #events = 265
+[info] generated 8 bars, #events = 310
+[info] generated 9 bars, #events = 354
+[info] generated 10 bars, #events = 395
+[info] generated 11 bars, #events = 425
+[info] generated 12 bars, #events = 485
+[info] generated 13 bars, #events = 525
+[info] generated 14 bars, #events = 568
+[info] generated 15 bars, #events = 600
+[info] generated 16 bars, #events = 643
+-- generated events: 644
+-- time elapsed: 5.11 secs
+[info] piece entropy: 1.9909 (+/- 0.7014)
+[info] writing to ... generations/juke50/id79_bar20_orig
+[info] piece: 867, bar: 20
+[info] writing to ... generations/juke50/id79_bar20_sample01_poly+1_rhym+3
+[info] rhythm cls: tensor([3, 5, 3, 3, 4, 6, 3, 5, 3, 6, 3, 3, 3, 4, 5, 3], device='cuda:0') | polyph_cls: tensor([7, 1, 5, 1, 5, 2, 6, 1, 6, 1, 5, 1, 4, 1, 3, 1], device='cuda:0')
+[info] generated 1 bars, #events = 36
+[info] generated 2 bars, #events = 82
+[info] generated 3 bars, #events = 116
+[info] generated 4 bars, #events = 151
+[info] generated 5 bars, #events = 194
+[info] generated 6 bars, #events = 234
+[info] generated 7 bars, #events = 265
+[info] generated 8 bars, #events = 313
+[info] generated 9 bars, #events = 357
+[info] generated 10 bars, #events = 416
+[info] generated 11 bars, #events = 453
+[info] generated 12 bars, #events = 491
+[info] generated 13 bars, #events = 538
+[info] generated 14 bars, #events = 580
+[info] generated 15 bars, #events = 633
+[info] generated 16 bars, #events = 668
+-- generated events: 669
+-- time elapsed: 5.58 secs
+[info] piece entropy: 2.0620 (+/- 0.7893)
+[info] piece: 867, bar: 20
+[info] writing to ... generations/juke50/id79_bar20_sample02_poly-3_rhym+1
+[info] rhythm cls: tensor([1, 3, 1, 1, 2, 4, 1, 3, 1, 4, 1, 1, 1, 2, 3, 1], device='cuda:0') | polyph_cls: tensor([3, 0, 1, 0, 1, 0, 2, 0, 2, 0, 1, 0, 0, 0, 0, 0], device='cuda:0')
+[info] generated 1 bars, #events = 24
+[info] generated 2 bars, #events = 56
+[info] generated 3 bars, #events = 87
+[info] generated 4 bars, #events = 114
+[info] generated 5 bars, #events = 142
+[info] generated 6 bars, #events = 176
+[info] generated 7 bars, #events = 198
+[info] generated 8 bars, #events = 230
+[info] generated 9 bars, #events = 253
+[info] generated 10 bars, #events = 289
+[info] generated 11 bars, #events = 314
+[info] generated 12 bars, #events = 336
+[info] generated 13 bars, #events = 361
+[info] generated 14 bars, #events = 391
+[info] generated 15 bars, #events = 432
+[info] generated 16 bars, #events = 466
+-- generated events: 467
+-- time elapsed: 3.51 secs
+[info] piece entropy: 1.9462 (+/- 0.9164)
+[info] piece: 867, bar: 20
+[info] writing to ... generations/juke50/id79_bar20_sample03_poly-3_rhym-1
+[info] rhythm cls: tensor([0, 1, 0, 0, 0, 2, 0, 1, 0, 2, 0, 0, 0, 0, 1, 0], device='cuda:0') | polyph_cls: tensor([3, 0, 1, 0, 1, 0, 2, 0, 2, 0, 1, 0, 0, 0, 0, 0], device='cuda:0')
+[info] generated 1 bars, #events = 39
+[info] generated 2 bars, #events = 66
+[info] generated 3 bars, #events = 92
+[info] generated 4 bars, #events = 114
+[info] generated 5 bars, #events = 136
+[info] generated 6 bars, #events = 166
+[info] generated 7 bars, #events = 189
+[info] generated 8 bars, #events = 219
+[info] generated 9 bars, #events = 245
+[info] generated 10 bars, #events = 275
+[info] generated 11 bars, #events = 299
+[info] generated 12 bars, #events = 317
+[info] generated 13 bars, #events = 345
+[info] generated 14 bars, #events = 380
+[info] generated 15 bars, #events = 405
+[info] generated 16 bars, #events = 433
+-- generated events: 434
+-- time elapsed: 3.15 secs
+[info] piece entropy: 1.9696 (+/- 0.9057)
+[info] piece: 867, bar: 20
+[info] writing to ... generations/juke50/id79_bar20_sample04_poly+3_rhym+2
+[info] rhythm cls: tensor([2, 4, 2, 2, 3, 5, 2, 4, 2, 5, 2, 2, 2, 3, 4, 2], device='cuda:0') | polyph_cls: tensor([7, 3, 7, 3, 7, 4, 7, 3, 7, 3, 7, 3, 6, 3, 5, 3], device='cuda:0')
+[info] generated 1 bars, #events = 49
+[info] generated 2 bars, #events = 102
+[info] generated 3 bars, #events = 160
+[info] generated 4 bars, #events = 203
+[info] generated 5 bars, #events = 264
+[info] generated 6 bars, #events = 318
+[info] generated 7 bars, #events = 366
+[info] generated 8 bars, #events = 415
+[info] generated 9 bars, #events = 464
+[info] generated 10 bars, #events = 537
+[info] generated 11 bars, #events = 583
+[info] generated 12 bars, #events = 623
+[info] generated 13 bars, #events = 677
+[info] generated 14 bars, #events = 721
+[info] generated 15 bars, #events = 775
+[info] generated 16 bars, #events = 812
+-- generated events: 813
+-- time elapsed: 8.84 secs
+[info] piece entropy: 2.2045 (+/- 0.7187)
+[info] piece: 867, bar: 20
+[info] writing to ... generations/juke50/id79_bar20_sample05_poly+0_rhym+0
+[info] rhythm cls: tensor([0, 2, 0, 0, 1, 3, 0, 2, 0, 3, 0, 0, 0, 1, 2, 0], device='cuda:0') | polyph_cls: tensor([6, 0, 4, 0, 4, 1, 5, 0, 5, 0, 4, 0, 3, 0, 2, 0], device='cuda:0')
+[info] generated 1 bars, #events = 26
+[info] generated 2 bars, #events = 56
+[info] generated 3 bars, #events = 85
+[info] generated 4 bars, #events = 107
+[info] generated 5 bars, #events = 135
+[info] generated 6 bars, #events = 169
+[info] generated 7 bars, #events = 194
+[info] generated 8 bars, #events = 219
+[info] generated 9 bars, #events = 246
+[info] generated 10 bars, #events = 280
+[info] generated 11 bars, #events = 307
+[info] generated 12 bars, #events = 336
+[info] generated 13 bars, #events = 363
+[info] generated 14 bars, #events = 389
+[info] generated 15 bars, #events = 427
+[info] generated 16 bars, #events = 461
+-- generated events: 462
+-- time elapsed: 3.38 secs
+[info] piece entropy: 2.1757 (+/- 0.8465)
+[info] writing to ... generations/juke50/id86_bar16_orig
+[info] piece: 980, bar: 16
+[info] writing to ... generations/juke50/id86_bar16_sample01_poly+0_rhym-1
+[info] rhythm cls: tensor([4, 4, 4, 4, 4, 4, 4, 3, 4, 3, 5, 3, 4, 4, 5, 3], device='cuda:0') | polyph_cls: tensor([0, 2, 2, 2, 2, 1, 2, 3, 2, 0, 2, 2, 4, 3, 3, 2], device='cuda:0')
+[info] generated 1 bars, #events = 35
+[info] generated 2 bars, #events = 79
+[info] generated 3 bars, #events = 121
+[info] generated 4 bars, #events = 163
+[info] generated 5 bars, #events = 206
+[info] generated 6 bars, #events = 248
+[info] generated 7 bars, #events = 288
+[info] generated 8 bars, #events = 322
+[info] generated 9 bars, #events = 359
+[info] generated 10 bars, #events = 387
+[info] generated 11 bars, #events = 433
+[info] generated 12 bars, #events = 467
+[info] generated 13 bars, #events = 514
+[info] generated 14 bars, #events = 551
+[info] generated 15 bars, #events = 588
+[info] generated 16 bars, #events = 619
+-- generated events: 620
+-- time elapsed: 5.26 secs
+[info] piece entropy: 1.9099 (+/- 0.8085)
+[info] piece: 980, bar: 16
+[info] writing to ... generations/juke50/id86_bar16_sample02_poly+3_rhym-2
+[info] rhythm cls: tensor([3, 3, 3, 3, 3, 3, 3, 2, 3, 2, 4, 2, 3, 3, 4, 2], device='cuda:0') | polyph_cls: tensor([3, 5, 5, 5, 5, 4, 5, 6, 5, 3, 5, 5, 7, 6, 6, 5], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 86
+[info] generated 3 bars, #events = 142
+[info] generated 4 bars, #events = 185
+[info] generated 5 bars, #events = 238
+[info] generated 6 bars, #events = 298
+[info] generated 7 bars, #events = 339
+[info] generated 8 bars, #events = 388
+[info] generated 9 bars, #events = 434
+[info] generated 10 bars, #events = 470
+[info] generated 11 bars, #events = 538
+[info] generated 12 bars, #events = 580
+[info] generated 13 bars, #events = 635
+[info] generated 14 bars, #events = 693
+[info] generated 15 bars, #events = 759
+[info] generated 16 bars, #events = 800
+-- generated events: 801
+-- time elapsed: 7.04 secs
+[info] piece entropy: 2.2505 (+/- 0.6348)
+[info] piece: 980, bar: 16
+[info] writing to ... generations/juke50/id86_bar16_sample03_poly-1_rhym-2
+[info] rhythm cls: tensor([3, 3, 3, 3, 3, 3, 3, 2, 3, 2, 4, 2, 3, 3, 4, 2], device='cuda:0') | polyph_cls: tensor([0, 1, 1, 1, 1, 0, 1, 2, 1, 0, 1, 1, 3, 2, 2, 1], device='cuda:0')
+[info] generated 1 bars, #events = 50
+[info] generated 2 bars, #events = 95
+[info] generated 3 bars, #events = 145
+[info] generated 4 bars, #events = 182
+[info] generated 5 bars, #events = 224
+[info] generated 6 bars, #events = 271
+[info] generated 7 bars, #events = 312
+[info] generated 8 bars, #events = 349
+[info] generated 9 bars, #events = 394
+[info] generated 10 bars, #events = 431
+[info] generated 11 bars, #events = 474
+[info] generated 12 bars, #events = 514
+[info] generated 13 bars, #events = 552
+[info] generated 14 bars, #events = 591
+[info] generated 15 bars, #events = 628
+[info] generated 16 bars, #events = 657
+-- generated events: 658
+-- time elapsed: 5.92 secs
+[info] piece entropy: 1.9406 (+/- 0.8134)
+[info] piece: 980, bar: 16
+[info] writing to ... generations/juke50/id86_bar16_sample04_poly-1_rhym+2
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 6, 7, 6, 7, 6, 7, 7, 7, 6], device='cuda:0') | polyph_cls: tensor([0, 1, 1, 1, 1, 0, 1, 2, 1, 0, 1, 1, 3, 2, 2, 1], device='cuda:0')
+[info] generated 1 bars, #events = 77
+[info] generated 2 bars, #events = 179
+[info] generated 3 bars, #events = 276
+[info] generated 4 bars, #events = 368
+[info] generated 5 bars, #events = 475
+[info] generated 6 bars, #events = 594
+[info] generated 7 bars, #events = 685
+[info] generated 8 bars, #events = 778
+[info] generated 9 bars, #events = 888
+[info] generated 10 bars, #events = 969
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 11 bars, #events = 1051
+[info] generated 12 bars, #events = 1114
+[info] generated 13 bars, #events = 1190
+[info] generated 14 bars, #events = 1279
+[info] generated 15 bars, #events = 1373
+[info] generated 16 bars, #events = 1437
+-- generated events: 1438
+-- time elapsed: 17.24 secs
+[info] piece entropy: 1.8007 (+/- 0.7804)
+[info] piece: 980, bar: 16
+[info] writing to ... generations/juke50/id86_bar16_sample05_poly-1_rhym+2
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 6, 7, 6, 7, 6, 7, 7, 7, 6], device='cuda:0') | polyph_cls: tensor([0, 1, 1, 1, 1, 0, 1, 2, 1, 0, 1, 1, 3, 2, 2, 1], device='cuda:0')
+[info] generated 1 bars, #events = 68
+[info] generated 2 bars, #events = 155
+[info] generated 3 bars, #events = 238
+[info] generated 4 bars, #events = 311
+[info] generated 5 bars, #events = 384
+[info] generated 6 bars, #events = 473
+[info] generated 7 bars, #events = 555
+[info] generated 8 bars, #events = 623
+[info] generated 9 bars, #events = 711
+[info] generated 10 bars, #events = 787
+[info] generated 11 bars, #events = 877
+[info] generated 12 bars, #events = 953
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 13 bars, #events = 1029
+[info] generated 14 bars, #events = 1102
+[info] generated 15 bars, #events = 1178
+[info] generated 16 bars, #events = 1257
+-- generated events: 1258
+-- time elapsed: 14.66 secs
+[info] piece entropy: 1.8002 (+/- 0.8349)
+[info] writing to ... generations/juke50/id23_bar44_orig
+[info] piece: 1439, bar: 44
+[info] writing to ... generations/juke50/id23_bar44_sample01_poly+1_rhym+0
+[info] rhythm cls: tensor([3, 1, 3, 2, 1, 4, 3, 4, 3, 4, 3, 2, 2, 3, 3, 3], device='cuda:0') | polyph_cls: tensor([6, 4, 3, 6, 4, 4, 3, 3, 4, 3, 4, 4, 6, 6, 5, 3], device='cuda:0')
+[info] generated 1 bars, #events = 60
+[info] generated 2 bars, #events = 88
+[info] generated 3 bars, #events = 126
+[info] generated 4 bars, #events = 177
+[info] generated 5 bars, #events = 216
+[info] generated 6 bars, #events = 268
+[info] generated 7 bars, #events = 316
+[info] generated 8 bars, #events = 375
+[info] generated 9 bars, #events = 427
+[info] generated 10 bars, #events = 488
+[info] generated 11 bars, #events = 555
+[info] generated 12 bars, #events = 607
+[info] generated 13 bars, #events = 663
+[info] generated 14 bars, #events = 737
+[info] generated 15 bars, #events = 800
+[info] generated 16 bars, #events = 863
+-- generated events: 864
+-- time elapsed: 8.86 secs
+[info] piece entropy: 1.9998 (+/- 0.7097)
+[info] piece: 1439, bar: 44
+[info] writing to ... generations/juke50/id23_bar44_sample02_poly+1_rhym-3
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0], device='cuda:0') | polyph_cls: tensor([6, 4, 3, 6, 4, 4, 3, 3, 4, 3, 4, 4, 6, 6, 5, 3], device='cuda:0')
+[info] generated 1 bars, #events = 53
+[info] generated 2 bars, #events = 100
+[info] generated 3 bars, #events = 135
+[info] generated 4 bars, #events = 197
+[info] generated 5 bars, #events = 238
+[info] generated 6 bars, #events = 285
+[info] generated 7 bars, #events = 328
+[info] generated 8 bars, #events = 368
+[info] generated 9 bars, #events = 412
+[info] generated 10 bars, #events = 470
+[info] generated 11 bars, #events = 542
+[info] generated 12 bars, #events = 611
+[info] generated 13 bars, #events = 675
+[info] generated 14 bars, #events = 743
+[info] generated 15 bars, #events = 800
+[info] generated 16 bars, #events = 846
+-- generated events: 847
+-- time elapsed: 10.14 secs
+[info] piece entropy: 2.0160 (+/- 0.6686)
+[info] piece: 1439, bar: 44
+[info] writing to ... generations/juke50/id23_bar44_sample03_poly+1_rhym-2
+[info] rhythm cls: tensor([1, 0, 1, 0, 0, 2, 1, 2, 1, 2, 1, 0, 0, 1, 1, 1], device='cuda:0') | polyph_cls: tensor([6, 4, 3, 6, 4, 4, 3, 3, 4, 3, 4, 4, 6, 6, 5, 3], device='cuda:0')
+[info] generated 1 bars, #events = 36
+[info] generated 2 bars, #events = 64
+[info] generated 3 bars, #events = 103
+[info] generated 4 bars, #events = 146
+[info] generated 5 bars, #events = 185
+[info] generated 6 bars, #events = 229
+[info] generated 7 bars, #events = 266
+[info] generated 8 bars, #events = 312
+[info] generated 9 bars, #events = 356
+[info] generated 10 bars, #events = 401
+[info] generated 11 bars, #events = 439
+[info] generated 12 bars, #events = 499
+[info] generated 13 bars, #events = 545
+[info] generated 14 bars, #events = 605
+[info] generated 15 bars, #events = 653
+[info] generated 16 bars, #events = 701
+-- generated events: 702
+-- time elapsed: 6.91 secs
+[info] piece entropy: 2.0638 (+/- 0.6971)
+[info] piece: 1439, bar: 44
+[info] writing to ... generations/juke50/id23_bar44_sample04_poly-2_rhym+1
+[info] rhythm cls: tensor([4, 2, 4, 3, 2, 5, 4, 5, 4, 5, 4, 3, 3, 4, 4, 4], device='cuda:0') | polyph_cls: tensor([3, 1, 0, 3, 1, 1, 0, 0, 1, 0, 1, 1, 3, 3, 2, 0], device='cuda:0')
+[info] generated 1 bars, #events = 52
+[info] generated 2 bars, #events = 87
+[info] generated 3 bars, #events = 135
+[info] generated 4 bars, #events = 180
+[info] generated 5 bars, #events = 213
+[info] generated 6 bars, #events = 265
+[info] generated 7 bars, #events = 308
+[info] generated 8 bars, #events = 357
+[info] generated 9 bars, #events = 402
+[info] generated 10 bars, #events = 453
+[info] generated 11 bars, #events = 502
+[info] generated 12 bars, #events = 553
+[info] generated 13 bars, #events = 618
+[info] generated 14 bars, #events = 688
+[info] generated 15 bars, #events = 750
+[info] generated 16 bars, #events = 803
+-- generated events: 804
+-- time elapsed: 8.01 secs
+[info] piece entropy: 2.0738 (+/- 0.7603)
+[info] piece: 1439, bar: 44
+[info] writing to ... generations/juke50/id23_bar44_sample05_poly+0_rhym+0
+[info] rhythm cls: tensor([3, 1, 3, 2, 1, 4, 3, 4, 3, 4, 3, 2, 2, 3, 3, 3], device='cuda:0') | polyph_cls: tensor([5, 3, 2, 5, 3, 3, 2, 2, 3, 2, 3, 3, 5, 5, 4, 2], device='cuda:0')
+[info] generated 1 bars, #events = 45
+[info] generated 2 bars, #events = 75
+[info] generated 3 bars, #events = 108
+[info] generated 4 bars, #events = 160
+[info] generated 5 bars, #events = 213
+[info] generated 6 bars, #events = 261
+[info] generated 7 bars, #events = 305
+[info] generated 8 bars, #events = 355
+[info] generated 9 bars, #events = 393
+[info] generated 10 bars, #events = 446
+[info] generated 11 bars, #events = 501
+[info] generated 12 bars, #events = 564
+[info] generated 13 bars, #events = 621
+[info] generated 14 bars, #events = 706
+[info] generated 15 bars, #events = 771
+[info] generated 16 bars, #events = 833
+-- generated events: 834
+-- time elapsed: 7.87 secs
+[info] piece entropy: 2.1218 (+/- 0.6968)
+[info] writing to ... generations/juke50/id17_bar34_orig
+[info] piece: 1300, bar: 34
+[info] writing to ... generations/juke50/id17_bar34_sample01_poly+2_rhym+1
+[info] rhythm cls: tensor([5, 4, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([4, 5, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 77
+[info] generated 2 bars, #events = 200
+[info] generated 3 bars, #events = 257
+[info] generated 4 bars, #events = 502
+[info] generated 5 bars, #events = 762
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 6 bars, #events = 1062
+[info] generated 7 bars, #events = 1349
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 8 bars, #events = 1915
+[info] reset context length: cur_len: 1024, accumulated_len: 2048, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 2343
+[info] reset context length: cur_len: 1024, accumulated_len: 2560, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 3072, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 3584, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 2
+[info] reset context length: cur_len: 1024, accumulated_len: 4096, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 4608, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 5120, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 5632, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 6144, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 2
+[info] reset context length: cur_len: 1024, accumulated_len: 6656, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 3
+[info] reset context length: cur_len: 1024, accumulated_len: 7168, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 7680, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 8192, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 8704, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 9216, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 9728, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 4
+[info] reset context length: cur_len: 1024, accumulated_len: 10240, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 10752, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 11264, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 11776, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 12288, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 5
+[info] reset context length: cur_len: 1024, accumulated_len: 12800, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 13312, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 6
+[info] reset context length: cur_len: 1024, accumulated_len: 13824, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 14336, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 14848, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 15360, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 15872, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 16384, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 2
+[info] reset context length: cur_len: 1024, accumulated_len: 16896, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 17408, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 17920, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 3
+[info] reset context length: cur_len: 1024, accumulated_len: 18432, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 18944, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 19456, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 19968, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 20480, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 2
+[info] reset context length: cur_len: 1024, accumulated_len: 20992, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 21504, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 22016, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] reset context length: cur_len: 1024, accumulated_len: 22528, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 23040, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 5
+[info] reset context length: cur_len: 1024, accumulated_len: 23552, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 24064, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 24576, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 25088, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 25600, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 26112, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 26624, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 27136, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 6
+[info] reset context length: cur_len: 1024, accumulated_len: 27648, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 28160, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 28672, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] reset context length: cur_len: 1024, accumulated_len: 29184, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 9
+[info] reset context length: cur_len: 1024, accumulated_len: 29696, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 30208, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 30720, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 31232, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 31744, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 10
+[info] reset context length: cur_len: 1024, accumulated_len: 32256, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 32768, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 11
+[info] reset context length: cur_len: 1024, accumulated_len: 33280, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 33792, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 34304, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 12
+[info] reset context length: cur_len: 1024, accumulated_len: 34816, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 13
+[info] reset context length: cur_len: 1024, accumulated_len: 35328, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 14
+[info] reset context length: cur_len: 1024, accumulated_len: 35840, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 36352, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 15
+[info] reset context length: cur_len: 1024, accumulated_len: 36864, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 16
+[info] reset context length: cur_len: 1024, accumulated_len: 37376, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 37888, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 38400, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 38912, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 17
+[info] reset context length: cur_len: 1024, accumulated_len: 39424, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 39936, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] reset context length: cur_len: 1024, accumulated_len: 40448, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 40960, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 41472, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 41984, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] reset context length: cur_len: 1024, accumulated_len: 42496, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 22
+[info] reset context length: cur_len: 1024, accumulated_len: 43008, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 23
+[info] reset context length: cur_len: 1024, accumulated_len: 43520, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 44032, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 44544, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 24
+[info] reset context length: cur_len: 1024, accumulated_len: 45056, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 25
+[info] reset context length: cur_len: 1024, accumulated_len: 45568, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 46080, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 46592, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 47104, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 26
+[info] reset context length: cur_len: 1024, accumulated_len: 47616, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 48128, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 27
+[info] reset context length: cur_len: 1024, accumulated_len: 48640, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 28
+[info] reset context length: cur_len: 1024, accumulated_len: 49152, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 49664, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] reset context length: cur_len: 1024, accumulated_len: 50176, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 31
+[info] reset context length: cur_len: 1024, accumulated_len: 50688, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 51200, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] reset context length: cur_len: 1024, accumulated_len: 51712, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] reset context length: cur_len: 1024, accumulated_len: 52224, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 52736, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 53248, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 53760, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 54272, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 54784, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 55296, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 55808, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 56320, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] reset context length: cur_len: 1024, accumulated_len: 56832, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 38
+[info] reset context length: cur_len: 1024, accumulated_len: 57344, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 57856, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 58368, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 58880, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 39
+[info] reset context length: cur_len: 1024, accumulated_len: 59392, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 40
+[info] reset context length: cur_len: 1024, accumulated_len: 59904, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 60416, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 60928, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 61440, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 61952, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 62464, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 41
+[info] reset context length: cur_len: 1024, accumulated_len: 62976, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 63488, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 64000, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 64512, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 65024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 42
+[info] reset context length: cur_len: 1024, accumulated_len: 65536, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 43
+[info] reset context length: cur_len: 1024, accumulated_len: 66048, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 66560, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 67072, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] reset context length: cur_len: 1024, accumulated_len: 67584, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 46
+[info] reset context length: cur_len: 1024, accumulated_len: 68096, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 68608, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 69120, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] reset context length: cur_len: 1024, accumulated_len: 69632, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 70144, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 70656, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 50
+[info] reset context length: cur_len: 1024, accumulated_len: 71168, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] reset context length: cur_len: 1024, accumulated_len: 71680, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 72192, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 53
+[info] reset context length: cur_len: 1024, accumulated_len: 72704, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 73216, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 73728, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] reset context length: cur_len: 1024, accumulated_len: 74240, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 56
+[info] reset context length: cur_len: 1024, accumulated_len: 74752, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 75264, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 57
+[info] reset context length: cur_len: 1024, accumulated_len: 75776, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 58
+[info] reset context length: cur_len: 1024, accumulated_len: 76288, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] reset context length: cur_len: 1024, accumulated_len: 76800, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 77312, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 77824, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 78336, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 78848, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 62
+[info] reset context length: cur_len: 1024, accumulated_len: 79360, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 79872, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 80384, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 80896, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 81408, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 81920, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 82432, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 82944, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 83456, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 83968, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 63
+[info] reset context length: cur_len: 1024, accumulated_len: 84480, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 84992, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] reset context length: cur_len: 1024, accumulated_len: 85504, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 66
+[info] reset context length: cur_len: 1024, accumulated_len: 86016, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] reset context length: cur_len: 1024, accumulated_len: 86528, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] reset context length: cur_len: 1024, accumulated_len: 87040, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 87552, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 72
+[info] reset context length: cur_len: 1024, accumulated_len: 88064, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 73
+[info] reset context length: cur_len: 1024, accumulated_len: 88576, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 74
+[info] reset context length: cur_len: 1024, accumulated_len: 89088, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] reset context length: cur_len: 1024, accumulated_len: 89600, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 90112, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 78
+[info] reset context length: cur_len: 1024, accumulated_len: 90624, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] reset context length: cur_len: 1024, accumulated_len: 91136, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 82
+[info] reset context length: cur_len: 1024, accumulated_len: 91648, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 83
+[info] reset context length: cur_len: 1024, accumulated_len: 92160, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 84
+[info] reset context length: cur_len: 1024, accumulated_len: 92672, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 93184, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 93696, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 85
+[info] reset context length: cur_len: 1024, accumulated_len: 94208, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 94720, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 95232, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 95744, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 96256, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 86
+[info] reset context length: cur_len: 1024, accumulated_len: 96768, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 97280, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 97792, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 98304, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 98816, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] reset context length: cur_len: 1024, accumulated_len: 99328, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 99840, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 100352, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] reset context length: cur_len: 1024, accumulated_len: 100864, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 101376, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 101888, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 102400, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 102912, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] reset context length: cur_len: 1024, accumulated_len: 103424, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 103936, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 93
+[info] reset context length: cur_len: 1024, accumulated_len: 104448, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 104960, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 105472, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 105984, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] reset context length: cur_len: 1024, accumulated_len: 106496, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 107008, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 107520, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 108032, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 96
+[info] reset context length: cur_len: 1024, accumulated_len: 108544, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 97
+[info] reset context length: cur_len: 1024, accumulated_len: 109056, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 98
+[info] reset context length: cur_len: 1024, accumulated_len: 109568, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 99
+[info] reset context length: cur_len: 1024, accumulated_len: 110080, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 100
+[info] reset context length: cur_len: 1024, accumulated_len: 110592, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] reset context length: cur_len: 1024, accumulated_len: 111104, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 111616, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 112128, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 103
+[info] reset context length: cur_len: 1024, accumulated_len: 112640, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 104
+[info] reset context length: cur_len: 1024, accumulated_len: 113152, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 113664, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 114176, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 114688, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 115200, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 115712, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 116224, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 116736, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 117248, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 105
+[info] reset context length: cur_len: 1024, accumulated_len: 117760, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 106
+[info] reset context length: cur_len: 1024, accumulated_len: 118272, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 118784, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 107
+[info] reset context length: cur_len: 1024, accumulated_len: 119296, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] reset context length: cur_len: 1024, accumulated_len: 119808, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 120320, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 120832, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 121344, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 110
+[info] reset context length: cur_len: 1024, accumulated_len: 121856, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 111
+[info] reset context length: cur_len: 1024, accumulated_len: 122368, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 112
+[info] reset context length: cur_len: 1024, accumulated_len: 122880, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] reset context length: cur_len: 1024, accumulated_len: 123392, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 123904, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 124416, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 115
+[info] reset context length: cur_len: 1024, accumulated_len: 124928, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 125440, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 116
+[info] reset context length: cur_len: 1024, accumulated_len: 125952, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 126464, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 126976, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 117
+[info] reset context length: cur_len: 1024, accumulated_len: 127488, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 128000, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 128512, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 129024, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 129536, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 130048, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 130560, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 131072, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 131584, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 118
+[info] reset context length: cur_len: 1024, accumulated_len: 132096, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 119
+[info] reset context length: cur_len: 1024, accumulated_len: 132608, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 120
+[info] reset context length: cur_len: 1024, accumulated_len: 133120, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 133632, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 121
+[info] reset context length: cur_len: 1024, accumulated_len: 134144, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 134656, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 135168, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 135680, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 122
+[info] reset context length: cur_len: 1024, accumulated_len: 136192, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 123
+[info] reset context length: cur_len: 1024, accumulated_len: 136704, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 124
+[info] reset context length: cur_len: 1024, accumulated_len: 137216, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 125
+[info] reset context length: cur_len: 1024, accumulated_len: 137728, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...

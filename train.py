@@ -75,7 +75,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
   st = time.time()
   s_index = []
 
-  for batch_idx, batch_samples in enumerate(dloader):
+  for batch_idx, batch_samples in enumerate(tqdm(dloader)):
     model.zero_grad()
     batch_enc_inp = batch_samples['enc_input'].permute(2, 0, 1).to(device)
     batch_dec_inp = batch_samples['dec_input'].permute(1, 0).to(device)
@@ -120,9 +120,8 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
     kl_loss_ema = compute_loss_ema(kl_loss_ema, losses['kldiv_loss'].item())
     kl_raw_ema = compute_loss_ema(kl_raw_ema, losses['kldiv_raw'].item())
 
-    print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.4f}), step = {}, beta: {:.4f} time_elapsed = {:.2f} secs'.format(
-      epoch, batch_idx, batch_inp_lens, recons_loss_ema, kl_loss_ema, kl_raw_ema, trained_steps, kl_beta, time.time() - st
-    ))
+    print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f}, VQ: {:.4f}, step = {} time_elapsed = {:.2f} secs'.format(
+      epoch, batch_idx, batch_inp_lens, recons_loss_ema, vq_loss, trained_steps,  time.time() - st))
 
     if not trained_steps % log_interval:
       log_data = {
