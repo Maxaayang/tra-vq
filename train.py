@@ -9,7 +9,7 @@ from utils import pickle_load
 from torch import nn, optim
 import torch
 import numpy as np
-
+from tqdm import tqdm
 import yaml
 config_path = sys.argv[1]
 config = yaml.load(open(config_path, 'r'), Loader=yaml.FullLoader)
@@ -49,21 +49,23 @@ def log_epoch(log_file, log_data, is_init=False):
     ))
 
 def beta_cyclical_sched(step):
-  step_in_cycle = (step - 1) % kl_cycle_steps
-  cycle_progress = step_in_cycle / kl_cycle_steps
+  return 1
+  # step_in_cycle = (step - 1) % kl_cycle_steps
+  # cycle_progress = step_in_cycle / kl_cycle_steps
 
-  if step < no_kl_steps:
-    return 0.
-  if cycle_progress < 0.5:
-    return kl_max_beta * cycle_progress * 2.
-  else:
-    return kl_max_beta
+  # if step < no_kl_steps:
+  #   return 0.
+  # if cycle_progress < 0.5:
+  #   return kl_max_beta * cycle_progress * 2.
+  # else:
+  #   return kl_max_beta
 
 def compute_loss_ema(ema, batch_loss, decay=0.95):
-  if ema == 0.:
-    return batch_loss
-  else:
-    return batch_loss * (1 - decay) + ema * decay
+  return batch_loss
+  # if ema == 0.:
+  #   return batch_loss
+  # else:
+  #   return batch_loss * (1 - decay) + ema * decay
 
 def train_model(epoch, model, dloader, dloader_val, optim, sched):
   model.train()
@@ -269,5 +271,5 @@ if __name__ == "__main__":
   if not os.path.exists(optim_dir):
     os.makedirs(optim_dir)
 
-  for ep in range(config['training']['max_epochs']):
+  for ep in tqdm(range(config['training']['max_epochs'])):
     train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler)

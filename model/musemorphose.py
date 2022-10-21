@@ -213,7 +213,7 @@ class MuseMorphose(nn.Module):
 
     return {
       'beta': beta,
-      'total_loss': recons_loss + beta * kldiv_loss,
+      'total_loss': recons_loss + beta * kl_raw.mean(),
       'kldiv_loss': kldiv_loss,
       'kldiv_raw': kl_before_free_bits,
       'recons_loss': recons_loss

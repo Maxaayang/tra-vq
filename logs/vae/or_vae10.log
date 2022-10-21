@@ -1,0 +1,13 @@
+[preparing data] now at #0
+[preparing data] now at #200
+[preparing data] now at #400
+[preparing data] now at #600
+[preparing data] now at #800
+[preparing data] now at #1000
+[preparing data] now at #1200
+[preparing data] now at #1400
+[preparing data] now at #0
+[info] # training samples: 1572
+[info] model # params: 79414349
+[epoch 001] training ...
+[epoch 001] # batches = 131
