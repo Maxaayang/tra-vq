@@ -1,0 +1,2033 @@
+[preparing data] now at #0
+[sampled pieces] [81, 0, 61, 32, 33, 3, 29, 37, 82, 17]
+[info] writing to ... generations/juke10/id81_bar72_orig
+[info] piece: 895, bar: 72
+[info] writing to ... generations/juke10/id81_bar72_sample01_poly-2_rhym+2
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 57
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 133
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 211
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 281
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 339
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 6 bars, #events = 383
+[info] generated 7 bars, #events = 454
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 8 bars, #events = 487
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 553
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 632
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 11 bars, #events = 708
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 12 bars, #events = 755
+[info] generated 13 bars, #events = 832
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 925
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 967
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 1043
+-- generated events: 1044
+-- time elapsed: 13.29 secs
+[info] piece entropy: 3.1009 (+/- 0.9443)
+[info] piece: 895, bar: 72
+[info] writing to ... generations/juke10/id81_bar72_sample02_poly-3_rhym+0
+[info] rhythm cls: tensor([6, 6, 6, 6, 7, 6, 7, 7, 5, 6, 6, 6, 7, 6, 6, 7], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 71
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 128
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 187
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 256
+[info] generated 5 bars, #events = 325
+[info] generated 6 bars, #events = 380
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 463
+[info] generated 8 bars, #events = 510
+[info] generated 9 bars, #events = 563
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 10 bars, #events = 624
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 703
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] generated 12 bars, #events = 732
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] generated 13 bars, #events = 785
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 850
+[info] generated 15 bars, #events = 919
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 986
+-- generated events: 987
+-- time elapsed: 12.95 secs
+[info] piece entropy: 3.0090 (+/- 0.9330)
+[info] piece: 895, bar: 72
+[info] writing to ... generations/juke10/id81_bar72_sample03_poly+1_rhym+1
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 6, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([2, 1, 2, 1, 2, 3, 2, 1, 3, 3, 2, 1, 2, 1, 4, 3], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 60
+[info] generated 2 bars, #events = 132
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 189
+[info] generated 4 bars, #events = 264
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] generated 5 bars, #events = 371
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 416
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 7 bars, #events = 453
+[info] generated 8 bars, #events = 557
+[info] generated 9 bars, #events = 611
+[info] generated 10 bars, #events = 708
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 825
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 927
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 1017
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 1096
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 1177
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 1249
+-- generated events: 1250
+-- time elapsed: 16.89 secs
+[info] piece entropy: 3.0765 (+/- 0.9166)
+[info] piece: 895, bar: 72
+[info] writing to ... generations/juke10/id81_bar72_sample04_poly+3_rhym-3
+[info] rhythm cls: tensor([3, 3, 3, 3, 4, 3, 4, 4, 2, 3, 3, 3, 4, 3, 3, 4], device='cuda:0') | polyph_cls: tensor([4, 3, 4, 3, 4, 5, 4, 3, 5, 5, 4, 3, 4, 3, 6, 5], device='cuda:0')
+[info] generated 1 bars, #events = 87
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] generated 2 bars, #events = 216
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 292
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 385
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 465
+[info] generated 6 bars, #events = 524
+[info] generated 7 bars, #events = 562
+[info] generated 8 bars, #events = 626
+[info] generated 9 bars, #events = 703
+[info] generated 10 bars, #events = 775
+[info] generated 11 bars, #events = 845
+[info] generated 12 bars, #events = 917
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 13 bars, #events = 1026
+[info] generated 14 bars, #events = 1083
+[info] generated 15 bars, #events = 1139
+[info] generated 16 bars, #events = 1198
+-- generated events: 1199
+-- time elapsed: 14.89 secs
+[info] piece entropy: 3.1401 (+/- 0.8710)
+[info] piece: 895, bar: 72
+[info] writing to ... generations/juke10/id81_bar72_sample05_poly+0_rhym+2
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([1, 0, 1, 0, 1, 2, 1, 0, 2, 2, 1, 0, 1, 0, 3, 2], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 75
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] generated 2 bars, #events = 137
+[info] generated 3 bars, #events = 217
+[info] generated 4 bars, #events = 275
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 381
+[info] generated 6 bars, #events = 441
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 7 bars, #events = 502
+[info] generated 8 bars, #events = 590
+[info] generated 9 bars, #events = 652
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 763
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 844
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 12 bars, #events = 933
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 988
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 1045
+[info] generated 15 bars, #events = 1116
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 1198
+-- generated events: 1199
+-- time elapsed: 15.09 secs
+[info] piece entropy: 3.0297 (+/- 0.9100)
+[info] writing to ... generations/juke10/id0_bar10_orig
+[info] piece: 1017, bar: 10
+[info] writing to ... generations/juke10/id0_bar10_sample01_poly+0_rhym+3
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 6, 7, 7, 7, 6, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([2, 1, 2, 3, 2, 1, 2, 2, 1, 1, 1, 2, 2, 3, 2, 1], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 68
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 128
+[info] generated 3 bars, #events = 179
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] generated 4 bars, #events = 220
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] generated 5 bars, #events = 261
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 331
+[info] generated 7 bars, #events = 400
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 465
+[info] generated 9 bars, #events = 519
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] generated 10 bars, #events = 583
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 633
+[info] generated 12 bars, #events = 695
+[info] generated 13 bars, #events = 758
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 842
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 15 bars, #events = 852
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 929
+-- generated events: 930
+-- time elapsed: 10.85 secs
+[info] piece entropy: 3.0542 (+/- 0.9381)
+[info] piece: 1017, bar: 10
+[info] writing to ... generations/juke10/id0_bar10_sample02_poly+1_rhym+1
+[info] rhythm cls: tensor([5, 6, 6, 6, 6, 6, 4, 7, 6, 7, 4, 6, 6, 6, 6, 6], device='cuda:0') | polyph_cls: tensor([3, 2, 3, 4, 3, 2, 3, 3, 2, 2, 2, 3, 3, 4, 3, 2], device='cuda:0')
+[info] generated 1 bars, #events = 68
+[info] generated 2 bars, #events = 103
+[info] generated 3 bars, #events = 179
+[info] generated 4 bars, #events = 265
+[info] generated 5 bars, #events = 326
+[info] generated 6 bars, #events = 409
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 453
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] generated 8 bars, #events = 535
+[info] generated 9 bars, #events = 593
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 646
+[info] generated 11 bars, #events = 687
+[info] generated 12 bars, #events = 747
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 821
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 868
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 953
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1026
+-- generated events: 1027
+-- time elapsed: 13.47 secs
+[info] piece entropy: 2.9855 (+/- 0.8698)
+[info] piece: 1017, bar: 10
+[info] writing to ... generations/juke10/id0_bar10_sample03_poly+2_rhym+2
+[info] rhythm cls: tensor([6, 7, 7, 7, 7, 7, 5, 7, 7, 7, 5, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([4, 3, 4, 5, 4, 3, 4, 4, 3, 3, 3, 4, 4, 5, 4, 3], device='cuda:0')
+[info] generated 1 bars, #events = 81
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 148
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 224
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 330
+[info] generated 5 bars, #events = 402
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 465
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] generated 7 bars, #events = 536
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 577
+[info] generated 9 bars, #events = 616
+[info] generated 10 bars, #events = 680
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 724
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 800
+[info] generated 13 bars, #events = 856
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] generated 14 bars, #events = 908
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 968
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1038
+-- generated events: 1039
+-- time elapsed: 13.70 secs
+[info] piece entropy: 3.1281 (+/- 0.8987)
+[info] piece: 1017, bar: 10
+[info] writing to ... generations/juke10/id0_bar10_sample04_poly-2_rhym+1
+[info] rhythm cls: tensor([5, 6, 6, 6, 6, 6, 4, 7, 6, 7, 4, 6, 6, 6, 6, 6], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 77
+[info] generated 3 bars, #events = 127
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 183
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 5 bars, #events = 225
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 308
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 358
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 455
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 516
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 567
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] generated 11 bars, #events = 611
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 682
+[info] generated 13 bars, #events = 741
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] generated 14 bars, #events = 825
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 918
+[info] generated 16 bars, #events = 975
+-- generated events: 976
+-- time elapsed: 11.88 secs
+[info] piece entropy: 2.9987 (+/- 0.9207)
+[info] piece: 1017, bar: 10
+[info] writing to ... generations/juke10/id0_bar10_sample05_poly-2_rhym-2
+[info] rhythm cls: tensor([2, 3, 3, 3, 3, 3, 1, 4, 3, 4, 1, 3, 3, 3, 3, 3], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], device='cuda:0')
+[info] generated 1 bars, #events = 45
+[info] generated 2 bars, #events = 92
+[info] generated 3 bars, #events = 128
+[info] generated 4 bars, #events = 182
+[info] generated 5 bars, #events = 235
+[info] generated 6 bars, #events = 295
+[info] generated 7 bars, #events = 338
+[info] generated 8 bars, #events = 368
+[info] generated 9 bars, #events = 429
+[info] generated 10 bars, #events = 473
+[info] generated 11 bars, #events = 511
+[info] generated 12 bars, #events = 560
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 595
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 651
+[info] generated 15 bars, #events = 698
+[info] generated 16 bars, #events = 750
+-- generated events: 751
+-- time elapsed: 6.89 secs
+[info] piece entropy: 3.0801 (+/- 0.9884)
+[info] writing to ... generations/juke10/id61_bar8_orig
+[info] piece: 424, bar: 8
+[info] writing to ... generations/juke10/id61_bar8_sample01_poly+0_rhym+0
+[info] rhythm cls: tensor([4, 3, 6, 7, 5, 5, 6, 6, 3, 4, 4, 3, 5, 7, 4, 5], device='cuda:0') | polyph_cls: tensor([5, 4, 4, 6, 6, 4, 4, 7, 6, 6, 4, 4, 7, 5, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 50
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 114
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 182
+[info] generated 4 bars, #events = 253
+[info] generated 5 bars, #events = 306
+[info] generated 6 bars, #events = 394
+[info] generated 7 bars, #events = 453
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 520
+[info] generated 9 bars, #events = 607
+[info] generated 10 bars, #events = 694
+[info] generated 11 bars, #events = 743
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 808
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] generated 13 bars, #events = 941
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 1002
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1065
+[info] generated 16 bars, #events = 1139
+-- generated events: 1140
+-- time elapsed: 14.07 secs
+[info] piece entropy: 3.1172 (+/- 0.8128)
+[info] piece: 424, bar: 8
+[info] writing to ... generations/juke10/id61_bar8_sample02_poly-2_rhym-3
+[info] rhythm cls: tensor([1, 0, 3, 4, 2, 2, 3, 3, 0, 1, 1, 0, 2, 4, 1, 2], device='cuda:0') | polyph_cls: tensor([3, 2, 2, 4, 4, 2, 2, 5, 4, 4, 2, 2, 5, 3, 5, 5], device='cuda:0')
+[info] generated 1 bars, #events = 85
+[info] generated 2 bars, #events = 170
+[info] generated 3 bars, #events = 239
+[info] generated 4 bars, #events = 255
+[info] generated 5 bars, #events = 310
+[info] generated 6 bars, #events = 363
+[info] generated 7 bars, #events = 420
+[info] generated 8 bars, #events = 494
+[info] generated 9 bars, #events = 555
+[info] generated 10 bars, #events = 601
+[info] generated 11 bars, #events = 643
+[info] generated 12 bars, #events = 699
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 741
+[info] generated 14 bars, #events = 796
+[info] generated 15 bars, #events = 850
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 902
+-- generated events: 903
+-- time elapsed: 9.73 secs
+[info] piece entropy: 3.1378 (+/- 0.8577)
+[info] piece: 424, bar: 8
+[info] writing to ... generations/juke10/id61_bar8_sample03_poly+0_rhym-2
+[info] rhythm cls: tensor([2, 1, 4, 5, 3, 3, 4, 4, 1, 2, 2, 1, 3, 5, 2, 3], device='cuda:0') | polyph_cls: tensor([5, 4, 4, 6, 6, 4, 4, 7, 6, 6, 4, 4, 7, 5, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 52
+[info] generated 2 bars, #events = 89
+[info] position not increasing, failed cnt: 1
+[info] generated 3 bars, #events = 167
+[info] generated 4 bars, #events = 239
+[info] generated 5 bars, #events = 294
+[info] generated 6 bars, #events = 341
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 380
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 465
+[info] generated 9 bars, #events = 526
+[info] generated 10 bars, #events = 570
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 621
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] generated 12 bars, #events = 677
+[info] generated 13 bars, #events = 754
+[info] generated 14 bars, #events = 822
+[info] generated 15 bars, #events = 884
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] generated 16 bars, #events = 948
+-- generated events: 949
+-- time elapsed: 11.12 secs
+[info] piece entropy: 3.1769 (+/- 0.8301)
+[info] piece: 424, bar: 8
+[info] writing to ... generations/juke10/id61_bar8_sample04_poly-3_rhym+0
+[info] rhythm cls: tensor([4, 3, 6, 7, 5, 5, 6, 6, 3, 4, 4, 3, 5, 7, 4, 5], device='cuda:0') | polyph_cls: tensor([2, 1, 1, 3, 3, 1, 1, 4, 3, 3, 1, 1, 4, 2, 4, 4], device='cuda:0')
+[info] generated 1 bars, #events = 57
+[info] generated 2 bars, #events = 115
+[info] generated 3 bars, #events = 156
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 230
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 291
+[info] generated 6 bars, #events = 339
+[info] generated 7 bars, #events = 408
+[info] generated 8 bars, #events = 474
+[info] generated 9 bars, #events = 527
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 588
+[info] generated 11 bars, #events = 630
+[info] generated 12 bars, #events = 679
+[info] generated 13 bars, #events = 727
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 796
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 15 bars, #events = 838
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 902
+-- generated events: 903
+-- time elapsed: 9.89 secs
+[info] piece entropy: 3.0607 (+/- 0.9031)
+[info] piece: 424, bar: 8
+[info] writing to ... generations/juke10/id61_bar8_sample05_poly-3_rhym-3
+[info] rhythm cls: tensor([1, 0, 3, 4, 2, 2, 3, 3, 0, 1, 1, 0, 2, 4, 1, 2], device='cuda:0') | polyph_cls: tensor([2, 1, 1, 3, 3, 1, 1, 4, 3, 3, 1, 1, 4, 2, 4, 4], device='cuda:0')
+[info] generated 1 bars, #events = 55
+[info] generated 2 bars, #events = 87
+[info] generated 3 bars, #events = 125
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 167
+[info] generated 5 bars, #events = 215
+[info] generated 6 bars, #events = 257
+[info] generated 7 bars, #events = 308
+[info] generated 8 bars, #events = 369
+[info] generated 9 bars, #events = 431
+[info] generated 10 bars, #events = 478
+[info] generated 11 bars, #events = 538
+[info] generated 12 bars, #events = 589
+[info] generated 13 bars, #events = 629
+[info] generated 14 bars, #events = 700
+[info] generated 15 bars, #events = 749
+[info] generated 16 bars, #events = 807
+-- generated events: 808
+-- time elapsed: 7.84 secs
+[info] piece entropy: 3.1172 (+/- 0.8741)
+[info] writing to ... generations/juke10/id32_bar20_orig
+[info] piece: 1608, bar: 20
+[info] writing to ... generations/juke10/id32_bar20_sample01_poly+3_rhym+1
+[info] rhythm cls: tensor([1, 1, 1, 1, 1, 3, 3, 2, 4, 1, 4, 3, 4, 1, 5, 1], device='cuda:0') | polyph_cls: tensor([6, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 7, 7, 7, 7, 6], device='cuda:0')
+[info] generated 1 bars, #events = 61
+[info] generated 2 bars, #events = 128
+[info] generated 3 bars, #events = 183
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 237
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 285
+[info] generated 6 bars, #events = 363
+[info] generated 7 bars, #events = 423
+[info] generated 8 bars, #events = 482
+[info] generated 9 bars, #events = 511
+[info] generated 10 bars, #events = 596
+[info] generated 11 bars, #events = 655
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 717
+[info] generated 13 bars, #events = 765
+[info] generated 14 bars, #events = 845
+[info] generated 15 bars, #events = 908
+[info] generated 16 bars, #events = 984
+-- generated events: 985
+-- time elapsed: 11.60 secs
+[info] piece entropy: 3.2247 (+/- 0.8450)
+[info] piece: 1608, bar: 20
+[info] writing to ... generations/juke10/id32_bar20_sample02_poly-3_rhym-2
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 2, 0], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 3, 0, 0, 0, 1, 0, 1, 1, 2, 3, 1, 2, 0], device='cuda:0')
+[info] generated 1 bars, #events = 44
+[info] generated 2 bars, #events = 82
+[info] generated 3 bars, #events = 135
+[info] generated 4 bars, #events = 176
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 245
+[info] generated 6 bars, #events = 316
+[info] generated 7 bars, #events = 373
+[info] generated 8 bars, #events = 437
+[info] generated 9 bars, #events = 490
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 536
+[info] generated 11 bars, #events = 571
+[info] generated 12 bars, #events = 620
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 668
+[info] generated 14 bars, #events = 723
+[info] generated 15 bars, #events = 776
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 834
+-- generated events: 835
+-- time elapsed: 8.39 secs
+[info] piece entropy: 3.1953 (+/- 0.8593)
+[info] piece: 1608, bar: 20
+[info] writing to ... generations/juke10/id32_bar20_sample03_poly+3_rhym+3
+[info] rhythm cls: tensor([3, 3, 3, 3, 3, 5, 5, 4, 6, 3, 6, 5, 6, 3, 7, 3], device='cuda:0') | polyph_cls: tensor([6, 6, 6, 7, 5, 6, 6, 7, 6, 7, 7, 7, 7, 7, 7, 6], device='cuda:0')
+[info] generated 1 bars, #events = 54
+[info] generated 2 bars, #events = 107
+[info] generated 3 bars, #events = 177
+[info] generated 4 bars, #events = 226
+[info] generated 5 bars, #events = 298
+[info] generated 6 bars, #events = 359
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 429
+[info] generated 8 bars, #events = 462
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 515
+[info] generated 10 bars, #events = 575
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 692
+[info] generated 12 bars, #events = 765
+[info] generated 13 bars, #events = 816
+[info] generated 14 bars, #events = 896
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] generated 15 bars, #events = 975
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1036
+-- generated events: 1037
+-- time elapsed: 13.02 secs
+[info] piece entropy: 3.1636 (+/- 0.8162)
+[info] piece: 1608, bar: 20
+[info] writing to ... generations/juke10/id32_bar20_sample04_poly+0_rhym+1
+[info] rhythm cls: tensor([1, 1, 1, 1, 1, 3, 3, 2, 4, 1, 4, 3, 4, 1, 5, 1], device='cuda:0') | polyph_cls: tensor([3, 3, 3, 6, 2, 3, 3, 4, 3, 4, 4, 5, 6, 4, 5, 3], device='cuda:0')
+[info] generated 1 bars, #events = 43
+[info] generated 2 bars, #events = 87
+[info] generated 3 bars, #events = 144
+[info] generated 4 bars, #events = 189
+[info] generated 5 bars, #events = 226
+[info] generated 6 bars, #events = 296
+[info] generated 7 bars, #events = 335
+[info] generated 8 bars, #events = 386
+[info] generated 9 bars, #events = 435
+[info] generated 10 bars, #events = 493
+[info] generated 11 bars, #events = 562
+[info] generated 12 bars, #events = 615
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 13 bars, #events = 678
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 14 bars, #events = 725
+[info] generated 15 bars, #events = 760
+[info] generated 16 bars, #events = 805
+-- generated events: 806
+-- time elapsed: 7.87 secs
+[info] piece entropy: 3.1640 (+/- 0.8814)
+[info] piece: 1608, bar: 20
+[info] writing to ... generations/juke10/id32_bar20_sample05_poly-2_rhym-3
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], device='cuda:0') | polyph_cls: tensor([1, 1, 1, 4, 0, 1, 1, 2, 1, 2, 2, 3, 4, 2, 3, 1], device='cuda:0')
+[info] generated 1 bars, #events = 38
+[info] generated 2 bars, #events = 70
+[info] generated 3 bars, #events = 108
+[info] generated 4 bars, #events = 150
+[info] generated 5 bars, #events = 208
+[info] generated 6 bars, #events = 273
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 7 bars, #events = 326
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 388
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] generated 9 bars, #events = 428
+[info] generated 10 bars, #events = 502
+[info] generated 11 bars, #events = 542
+[info] generated 12 bars, #events = 611
+[info] generated 13 bars, #events = 649
+[info] generated 14 bars, #events = 708
+[info] generated 15 bars, #events = 760
+[info] generated 16 bars, #events = 818
+-- generated events: 819
+-- time elapsed: 8.13 secs
+[info] piece entropy: 3.1965 (+/- 0.8643)
+[info] writing to ... generations/juke10/id33_bar0_orig
+[info] piece: 1609, bar: 0
+[info] writing to ... generations/juke10/id33_bar0_sample01_poly-2_rhym-1
+[info] rhythm cls: tensor([0, 0, 0, 0, 6, 0, 6, 0, 6, 2, 4, 0, 6, 4, 6, 5], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 4, 3, 5, 4, 5, 3, 4, 2, 3, 3, 3, 3], device='cuda:0')
+[info] generated 1 bars, #events = 49
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 94
+[info] generated 3 bars, #events = 131
+[info] generated 4 bars, #events = 167
+[info] generated 5 bars, #events = 228
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 298
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 7 bars, #events = 363
+[info] generated 8 bars, #events = 409
+[info] generated 9 bars, #events = 505
+[info] generated 10 bars, #events = 578
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 11 bars, #events = 616
+[info] generated 12 bars, #events = 673
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] generated 13 bars, #events = 727
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 789
+[info] generated 15 bars, #events = 848
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 919
+-- generated events: 920
+-- time elapsed: 10.24 secs
+[info] piece entropy: 3.1503 (+/- 0.8566)
+[info] piece: 1609, bar: 0
+[info] writing to ... generations/juke10/id33_bar0_sample02_poly-3_rhym+1
+[info] rhythm cls: tensor([1, 1, 1, 1, 7, 1, 7, 1, 7, 4, 6, 2, 7, 6, 7, 7], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 3, 2, 4, 3, 4, 2, 3, 1, 2, 2, 2, 2], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 72
+[info] generated 3 bars, #events = 93
+[info] generated 4 bars, #events = 126
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 161
+[info] generated 6 bars, #events = 196
+[info] generated 7 bars, #events = 257
+[info] generated 8 bars, #events = 321
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 9 bars, #events = 385
+[info] generated 10 bars, #events = 436
+[info] generated 11 bars, #events = 484
+[info] generated 12 bars, #events = 540
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 608
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 665
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 706
+[info] generated 16 bars, #events = 795
+-- generated events: 796
+-- time elapsed: 7.82 secs
+[info] piece entropy: 3.1098 (+/- 0.9130)
+[info] piece: 1609, bar: 0
+[info] writing to ... generations/juke10/id33_bar0_sample03_poly-2_rhym+3
+[info] rhythm cls: tensor([3, 3, 3, 3, 7, 3, 7, 3, 7, 6, 7, 4, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 4, 3, 5, 4, 5, 3, 4, 2, 3, 3, 3, 3], device='cuda:0')
+[info] generated 1 bars, #events = 50
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 110
+[info] generated 3 bars, #events = 151
+[info] generated 4 bars, #events = 219
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 5 bars, #events = 269
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 320
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 393
+[info] generated 8 bars, #events = 461
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 546
+[info] generated 10 bars, #events = 621
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 11 bars, #events = 714
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 12 bars, #events = 775
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 13 bars, #events = 849
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 939
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 15 bars, #events = 1022
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 1111
+-- generated events: 1112
+-- time elapsed: 13.83 secs
+[info] piece entropy: 3.0862 (+/- 0.8927)
+[info] piece: 1609, bar: 0
+[info] writing to ... generations/juke10/id33_bar0_sample04_poly-3_rhym+3
+[info] rhythm cls: tensor([3, 3, 3, 3, 7, 3, 7, 3, 7, 6, 7, 4, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 3, 2, 4, 3, 4, 2, 3, 1, 2, 2, 2, 2], device='cuda:0')
+[info] generated 1 bars, #events = 37
+[info] generated 2 bars, #events = 67
+[info] generated 3 bars, #events = 124
+[info] generated 4 bars, #events = 153
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 228
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 286
+[info] generated 7 bars, #events = 376
+[info] generated 8 bars, #events = 425
+[info] generated 9 bars, #events = 465
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 506
+[info] position not increasing, failed cnt: 1
+[info] generated 11 bars, #events = 574
+[info] generated 12 bars, #events = 637
+[info] generated 13 bars, #events = 680
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 733
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 814
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] generated 16 bars, #events = 877
+-- generated events: 878
+-- time elapsed: 9.51 secs
+[info] piece entropy: 3.0618 (+/- 0.9121)
+[info] piece: 1609, bar: 0
+[info] writing to ... generations/juke10/id33_bar0_sample05_poly+0_rhym-2
+[info] rhythm cls: tensor([0, 0, 0, 0, 5, 0, 5, 0, 5, 1, 3, 0, 5, 3, 5, 4], device='cuda:0') | polyph_cls: tensor([0, 1, 1, 2, 6, 5, 7, 6, 7, 5, 6, 4, 5, 5, 5, 5], device='cuda:0')
+[info] generated 1 bars, #events = 41
+[info] generated 2 bars, #events = 84
+[info] generated 3 bars, #events = 137
+[info] generated 4 bars, #events = 188
+[info] generated 5 bars, #events = 266
+[info] generated 6 bars, #events = 336
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 416
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 485
+[info] generated 9 bars, #events = 582
+[info] generated 10 bars, #events = 644
+[info] generated 11 bars, #events = 714
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 773
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 834
+[info] generated 14 bars, #events = 898
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] generated 15 bars, #events = 951
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1027
+-- generated events: 1028
+-- time elapsed: 12.76 secs
+[info] piece entropy: 3.1574 (+/- 0.8342)
+[info] writing to ... generations/juke10/id3_bar37_orig
+[info] piece: 1070, bar: 37
+[info] writing to ... generations/juke10/id3_bar37_sample01_poly-3_rhym-3
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], device='cuda:0')
+[info] generated 1 bars, #events = 35
+[info] generated 2 bars, #events = 38
+[info] generated 3 bars, #events = 105
+[info] generated 4 bars, #events = 155
+[info] generated 5 bars, #events = 200
+[info] generated 6 bars, #events = 264
+[info] generated 7 bars, #events = 330
+[info] generated 8 bars, #events = 364
+[info] generated 9 bars, #events = 420
+[info] generated 10 bars, #events = 472
+[info] generated 11 bars, #events = 510
+[info] generated 12 bars, #events = 559
+[info] generated 13 bars, #events = 606
+[info] generated 14 bars, #events = 654
+[info] generated 15 bars, #events = 689
+[info] generated 16 bars, #events = 750
+-- generated events: 751
+-- time elapsed: 6.87 secs
+[info] piece entropy: 3.2021 (+/- 0.9187)
+[info] piece: 1070, bar: 37
+[info] writing to ... generations/juke10/id3_bar37_sample02_poly+0_rhym+0
+[info] rhythm cls: tensor([2, 0, 2, 0, 1, 2, 0, 2, 1, 2, 0, 1, 1, 1, 2, 1], device='cuda:0') | polyph_cls: tensor([2, 1, 1, 2, 0, 2, 0, 0, 0, 1, 1, 1, 0, 3, 4, 2], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 67
+[info] generated 2 bars, #events = 143
+[info] generated 3 bars, #events = 197
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 4 bars, #events = 252
+[info] generated 5 bars, #events = 311
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] generated 6 bars, #events = 344
+[info] generated 7 bars, #events = 388
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 422
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 467
+[info] generated 10 bars, #events = 518
+[info] generated 11 bars, #events = 562
+[info] generated 12 bars, #events = 610
+[info] generated 13 bars, #events = 667
+[info] generated 14 bars, #events = 716
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] generated 15 bars, #events = 753
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 826
+-- generated events: 827
+-- time elapsed: 8.48 secs
+[info] piece entropy: 3.1693 (+/- 0.8818)
+[info] piece: 1070, bar: 37
+[info] writing to ... generations/juke10/id3_bar37_sample03_poly-2_rhym+3
+[info] rhythm cls: tensor([5, 3, 5, 3, 4, 5, 3, 5, 4, 5, 3, 4, 4, 4, 5, 4], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0], device='cuda:0')
+[info] generated 1 bars, #events = 53
+[info] generated 2 bars, #events = 87
+[info] generated 3 bars, #events = 145
+[info] generated 4 bars, #events = 209
+[info] generated 5 bars, #events = 264
+[info] generated 6 bars, #events = 317
+[info] generated 7 bars, #events = 372
+[info] generated 8 bars, #events = 410
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 9 bars, #events = 460
+[info] generated 10 bars, #events = 514
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 11 bars, #events = 560
+[info] generated 12 bars, #events = 633
+[info] generated 13 bars, #events = 696
+[info] generated 14 bars, #events = 744
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 794
+[info] generated 16 bars, #events = 852
+-- generated events: 853
+-- time elapsed: 8.72 secs
+[info] piece entropy: 3.0324 (+/- 0.9178)
+[info] piece: 1070, bar: 37
+[info] writing to ... generations/juke10/id3_bar37_sample04_poly-3_rhym+1
+[info] rhythm cls: tensor([3, 1, 3, 1, 2, 3, 1, 3, 2, 3, 1, 2, 2, 2, 3, 2], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], device='cuda:0')
+[info] generated 1 bars, #events = 38
+[info] generated 2 bars, #events = 64
+[info] generated 3 bars, #events = 98
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 137
+[info] generated 5 bars, #events = 180
+[info] generated 6 bars, #events = 227
+[info] generated 7 bars, #events = 268
+[info] generated 8 bars, #events = 322
+[info] generated 9 bars, #events = 350
+[info] generated 10 bars, #events = 395
+[info] generated 11 bars, #events = 439
+[info] generated 12 bars, #events = 475
+[info] generated 13 bars, #events = 531
+[info] generated 14 bars, #events = 572
+[info] generated 15 bars, #events = 617
+[info] generated 16 bars, #events = 671
+-- generated events: 672
+-- time elapsed: 5.65 secs
+[info] piece entropy: 3.1124 (+/- 0.9842)
+[info] piece: 1070, bar: 37
+[info] writing to ... generations/juke10/id3_bar37_sample05_poly+3_rhym-2
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0') | polyph_cls: tensor([5, 4, 4, 5, 3, 5, 3, 3, 3, 4, 4, 4, 3, 6, 7, 5], device='cuda:0')
+[info] generated 1 bars, #events = 155
+[info] generated 2 bars, #events = 202
+[info] generated 3 bars, #events = 265
+[info] generated 4 bars, #events = 329
+[info] generated 5 bars, #events = 387
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 486
+[info] generated 7 bars, #events = 549
+[info] generated 8 bars, #events = 607
+[info] generated 9 bars, #events = 667
+[info] generated 10 bars, #events = 791
+[info] generated 11 bars, #events = 854
+[info] generated 12 bars, #events = 944
+[info] generated 13 bars, #events = 1009
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 1049
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 15 bars, #events = 1172
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 1271
+-- generated events: 1272
+-- time elapsed: 15.88 secs
+[info] piece entropy: 3.2341 (+/- 0.7922)
+[info] writing to ... generations/juke10/id29_bar69_orig
+[info] piece: 1532, bar: 69
+[info] writing to ... generations/juke10/id29_bar69_sample01_poly-2_rhym+1
+[info] rhythm cls: tensor([5, 4, 6, 4, 7, 7, 7, 7, 7, 5, 7, 5, 4, 5, 1, 4], device='cuda:0') | polyph_cls: tensor([3, 3, 2, 5, 2, 4, 5, 4, 4, 5, 5, 3, 4, 4, 0, 2], device='cuda:0')
+[info] generated 1 bars, #events = 44
+[info] generated 2 bars, #events = 93
+[info] generated 3 bars, #events = 151
+[info] generated 4 bars, #events = 195
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 255
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] generated 6 bars, #events = 296
+[info] position not increasing, failed cnt: 1
+[info] generated 7 bars, #events = 368
+[info] generated 8 bars, #events = 445
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] generated 9 bars, #events = 512
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 580
+[info] generated 11 bars, #events = 666
+[info] generated 12 bars, #events = 706
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 781
+[info] generated 14 bars, #events = 867
+[info] generated 15 bars, #events = 921
+[info] generated 16 bars, #events = 970
+-- generated events: 971
+-- time elapsed: 11.74 secs
+[info] piece entropy: 3.1056 (+/- 0.8895)
+[info] piece: 1532, bar: 69
+[info] writing to ... generations/juke10/id29_bar69_sample02_poly+0_rhym-1
+[info] rhythm cls: tensor([3, 2, 4, 2, 5, 5, 5, 5, 5, 3, 5, 3, 2, 3, 0, 2], device='cuda:0') | polyph_cls: tensor([5, 5, 4, 7, 4, 6, 7, 6, 6, 7, 7, 5, 6, 6, 1, 4], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 57
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 2 bars, #events = 111
+[info] generated 3 bars, #events = 175
+[info] generated 4 bars, #events = 239
+[info] generated 5 bars, #events = 308
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 346
+[info] generated 7 bars, #events = 429
+[info] generated 8 bars, #events = 524
+[info] generated 9 bars, #events = 600
+[info] generated 10 bars, #events = 658
+[info] generated 11 bars, #events = 746
+[info] generated 12 bars, #events = 823
+[info] generated 13 bars, #events = 884
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 968
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1039
+[info] generated 16 bars, #events = 1081
+-- generated events: 1082
+-- time elapsed: 13.31 secs
+[info] piece entropy: 3.1493 (+/- 0.8404)
+[info] piece: 1532, bar: 69
+[info] writing to ... generations/juke10/id29_bar69_sample03_poly-3_rhym-2
+[info] rhythm cls: tensor([2, 1, 3, 1, 4, 4, 4, 4, 4, 2, 4, 2, 1, 2, 0, 1], device='cuda:0') | polyph_cls: tensor([2, 2, 1, 4, 1, 3, 4, 3, 3, 4, 4, 2, 3, 3, 0, 1], device='cuda:0')
+[info] generated 1 bars, #events = 45
+[info] generated 2 bars, #events = 83
+[info] generated 3 bars, #events = 113
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 158
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 194
+[info] generated 6 bars, #events = 239
+[info] generated 7 bars, #events = 275
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] generated 8 bars, #events = 351
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 9 bars, #events = 411
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 510
+[info] generated 11 bars, #events = 581
+[info] generated 12 bars, #events = 637
+[info] generated 13 bars, #events = 686
+[info] generated 14 bars, #events = 736
+[info] generated 15 bars, #events = 802
+[info] generated 16 bars, #events = 842
+-- generated events: 843
+-- time elapsed: 9.26 secs
+[info] piece entropy: 3.0857 (+/- 0.8965)
+[info] piece: 1532, bar: 69
+[info] writing to ... generations/juke10/id29_bar69_sample04_poly+2_rhym+0
+[info] rhythm cls: tensor([4, 3, 5, 3, 6, 6, 6, 6, 6, 4, 6, 4, 3, 4, 0, 3], device='cuda:0') | polyph_cls: tensor([7, 7, 6, 7, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 3, 6], device='cuda:0')
+[info] generated 1 bars, #events = 60
+[info] generated 2 bars, #events = 136
+[info] generated 3 bars, #events = 202
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 291
+[info] generated 5 bars, #events = 382
+[info] generated 6 bars, #events = 462
+[info] generated 7 bars, #events = 545
+[info] generated 8 bars, #events = 619
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 710
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] generated 10 bars, #events = 778
+[info] generated 11 bars, #events = 846
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 12 bars, #events = 950
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 13 bars, #events = 1040
+[info] generated 14 bars, #events = 1094
+[info] generated 15 bars, #events = 1179
+[info] generated 16 bars, #events = 1237
+-- generated events: 1238
+-- time elapsed: 15.55 secs
+[info] piece entropy: 3.1518 (+/- 0.8001)
+[info] piece: 1532, bar: 69
+[info] writing to ... generations/juke10/id29_bar69_sample05_poly+1_rhym-3
+[info] rhythm cls: tensor([1, 0, 2, 0, 3, 3, 3, 3, 3, 1, 3, 1, 0, 1, 0, 0], device='cuda:0') | polyph_cls: tensor([6, 6, 5, 7, 5, 7, 7, 7, 7, 7, 7, 6, 7, 7, 2, 5], device='cuda:0')
+[info] generated 1 bars, #events = 55
+[info] generated 2 bars, #events = 133
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] generated 3 bars, #events = 174
+[info] generated 4 bars, #events = 242
+[info] position not increasing, failed cnt: 1
+[info] generated 5 bars, #events = 309
+[info] generated 6 bars, #events = 328
+[info] generated 7 bars, #events = 402
+[info] generated 8 bars, #events = 488
+[info] generated 9 bars, #events = 565
+[info] generated 10 bars, #events = 629
+[info] generated 11 bars, #events = 703
+[info] generated 12 bars, #events = 769
+[info] generated 13 bars, #events = 919
+[info] generated 14 bars, #events = 1017
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1070
+[info] generated 16 bars, #events = 1136
+-- generated events: 1137
+-- time elapsed: 13.90 secs
+[info] piece entropy: 3.2033 (+/- 0.8068)
+[info] writing to ... generations/juke10/id37_bar110_orig
+[info] piece: 1637, bar: 110
+[info] writing to ... generations/juke10/id37_bar110_sample01_poly+0_rhym-1
+[info] rhythm cls: tensor([2, 2, 0, 1, 2, 2, 2, 3, 2, 3, 0, 0, 0, 1, 1, 1], device='cuda:0') | polyph_cls: tensor([5, 7, 4, 6, 6, 7, 3, 5, 3, 6, 4, 5, 3, 0, 4, 5], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 1 bars, #events = 49
+[info] generated 2 bars, #events = 124
+[info] generated 3 bars, #events = 171
+[info] generated 4 bars, #events = 216
+[info] generated 5 bars, #events = 250
+[info] generated 6 bars, #events = 341
+[info] generated 7 bars, #events = 398
+[info] generated 8 bars, #events = 443
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 479
+[info] generated 10 bars, #events = 542
+[info] generated 11 bars, #events = 584
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 663
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 707
+[info] generated 14 bars, #events = 755
+[info] generated 15 bars, #events = 811
+[info] generated 16 bars, #events = 869
+-- generated events: 870
+-- time elapsed: 9.07 secs
+[info] piece entropy: 3.1658 (+/- 0.8622)
+[info] piece: 1637, bar: 110
+[info] writing to ... generations/juke10/id37_bar110_sample02_poly+2_rhym+2
+[info] rhythm cls: tensor([5, 5, 3, 4, 5, 5, 5, 6, 5, 6, 3, 2, 2, 4, 4, 4], device='cuda:0') | polyph_cls: tensor([7, 7, 6, 7, 7, 7, 5, 7, 5, 7, 6, 7, 5, 2, 6, 7], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 1 bars, #events = 99
+[info] generated 2 bars, #events = 190
+[info] generated 3 bars, #events = 258
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 333
+[info] generated 5 bars, #events = 404
+[info] generated 6 bars, #events = 470
+[info] generated 7 bars, #events = 543
+[info] generated 8 bars, #events = 637
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 9 bars, #events = 715
+[info] position not increasing, failed cnt: 1
+[info] generated 10 bars, #events = 800
+[info] generated 11 bars, #events = 867
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 918
+[info] generated 13 bars, #events = 990
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] generated 14 bars, #events = 1038
+[info] generated 15 bars, #events = 1101
+[info] generated 16 bars, #events = 1188
+-- generated events: 1189
+-- time elapsed: 14.99 secs
+[info] piece entropy: 3.1158 (+/- 0.7990)
+[info] piece: 1637, bar: 110
+[info] writing to ... generations/juke10/id37_bar110_sample03_poly+0_rhym+0
+[info] rhythm cls: tensor([3, 3, 1, 2, 3, 3, 3, 4, 3, 4, 1, 0, 0, 2, 2, 2], device='cuda:0') | polyph_cls: tensor([5, 7, 4, 6, 6, 7, 3, 5, 3, 6, 4, 5, 3, 0, 4, 5], device='cuda:0')
+[info] generated 1 bars, #events = 51
+[info] generated 2 bars, #events = 128
+[info] generated 3 bars, #events = 161
+[info] generated 4 bars, #events = 251
+[info] generated 5 bars, #events = 291
+[info] generated 6 bars, #events = 380
+[info] generated 7 bars, #events = 435
+[info] generated 8 bars, #events = 476
+[info] generated 9 bars, #events = 541
+[info] generated 10 bars, #events = 612
+[info] generated 11 bars, #events = 689
+[info] generated 12 bars, #events = 778
+[info] generated 13 bars, #events = 842
+[info] position not increasing, failed cnt: 1
+[info] generated 14 bars, #events = 885
+[info] generated 15 bars, #events = 981
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 16 bars, #events = 1037
+-- generated events: 1038
+-- time elapsed: 12.75 secs
+[info] piece entropy: 3.1309 (+/- 0.8446)
+[info] piece: 1637, bar: 110
+[info] writing to ... generations/juke10/id37_bar110_sample04_poly+3_rhym-1
+[info] rhythm cls: tensor([2, 2, 0, 1, 2, 2, 2, 3, 2, 3, 0, 0, 0, 1, 1, 1], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 6, 7, 6, 7, 7, 7, 6, 3, 7, 7], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 117
+[info] generated 2 bars, #events = 190
+[info] generated 3 bars, #events = 276
+[info] generated 4 bars, #events = 352
+[info] generated 5 bars, #events = 436
+[info] generated 6 bars, #events = 494
+[info] generated 7 bars, #events = 553
+[info] position not increasing, failed cnt: 1
+[info] generated 8 bars, #events = 628
+[info] generated 9 bars, #events = 689
+[info] generated 10 bars, #events = 776
+[info] generated 11 bars, #events = 853
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 937
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] generated 13 bars, #events = 1005
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 1058
+[info] position not increasing, failed cnt: 1
+[info] generated 15 bars, #events = 1134
+[info] generated 16 bars, #events = 1215
+-- generated events: 1216
+-- time elapsed: 15.11 secs
+[info] piece entropy: 3.1929 (+/- 0.8220)
+[info] piece: 1637, bar: 110
+[info] writing to ... generations/juke10/id37_bar110_sample05_poly-3_rhym+2
+[info] rhythm cls: tensor([5, 5, 3, 4, 5, 5, 5, 6, 5, 6, 3, 2, 2, 4, 4, 4], device='cuda:0') | polyph_cls: tensor([2, 4, 1, 3, 3, 4, 0, 2, 0, 3, 1, 2, 0, 0, 1, 2], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 48
+[info] generated 2 bars, #events = 111
+[info] generated 3 bars, #events = 175
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 1
+[info] generated 4 bars, #events = 224
+[info] generated 5 bars, #events = 269
+[info] position not increasing, failed cnt: 1
+[info] generated 6 bars, #events = 341
+[info] generated 7 bars, #events = 403
+[info] generated 8 bars, #events = 480
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] generated 9 bars, #events = 530
+[info] generated 10 bars, #events = 597
+[info] generated 11 bars, #events = 650
+[info] position not increasing, failed cnt: 1
+[info] generated 12 bars, #events = 708
+[info] position not increasing, failed cnt: 1
+[info] generated 13 bars, #events = 755
+[info] generated 14 bars, #events = 793
+[info] generated 15 bars, #events = 847
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...

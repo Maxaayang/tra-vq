@@ -132,7 +132,8 @@ class MuseMorphose(nn.Module):
 
     _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
     mu, logvar = mu.reshape(-1, mu.size(-1)), logvar.reshape(-1, mu.size(-1))
-    vae_latent = self.reparameterize(mu, logvar, use_sampling=use_sampling, sampling_var=sampling_var)
+    index, vae_latent, vq_loss, _ = self.vq_layer(mu)
+    # vae_latent = self.reparameterize(mu, logvar, use_sampling=use_sampling, sampling_var=sampling_var)
 
     return vae_latent
 
