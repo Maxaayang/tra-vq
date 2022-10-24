@@ -28,6 +28,7 @@ model:
 
 training:
     device:           cuda
+    ckpt_dir:         ./ckpt/juke50
     ckpt_dir:         ./ckpt/vqvae50
     trained_steps:    0
     max_epochs:       50
