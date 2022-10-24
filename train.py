@@ -67,12 +67,13 @@ def compute_loss_ema(ema, batch_loss, decay=0.95):
   # else:
   #   return batch_loss * (1 - decay) + ema * decay
 
-def train_model(epoch, model, dloader, dloader_val, optim, sched):
+def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
   model.train()
 
   print ('[epoch {:03d}] training ...'.format(epoch))
   print ('[epoch {:03d}] # batches = {}'.format(epoch, len(dloader)))
   st = time.time()
+  batches = len(dloader)
 
   for batch_idx, batch_samples in enumerate(dloader):
     model.zero_grad()
@@ -117,7 +118,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
     kl_loss_ema = compute_loss_ema(kl_loss_ema, losses['kldiv_loss'].item())
     kl_raw_ema = compute_loss_ema(kl_raw_ema, losses['kldiv_raw'].item())
 
-    print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.4f}), step = {}, beta: {:.4f} time_elapsed = {:.2f} secs'.format(
+    print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.8f}), step = {}, beta: {:.4f} time_elapsed = {:.2f} secs'.format(
       epoch, batch_idx, batch_inp_lens, recons_loss_ema, kl_loss_ema, kl_raw_ema, trained_steps, kl_beta, time.time() - st
     ))
 
@@ -146,7 +147,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
         ))
       model.train()
 
-    if not trained_steps % ckpt_interval:
+    if (trained_steps + 1) % batches == 0 && epoch % epochs == 0:
       torch.save(model.state_dict(),
         os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-KL_{:.3f}-model.pt'.format(
             trained_steps,
@@ -271,5 +272,6 @@ if __name__ == "__main__":
   if not os.path.exists(optim_dir):
     os.makedirs(optim_dir)
 
-  for ep in tqdm(range(config['training']['max_epochs'])):
-    train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler)
+  epochs = config['training']['max_epochs']
+  for ep in tqdm(range(epochs)):
+    train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler, epochs)

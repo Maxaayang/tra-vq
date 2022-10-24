@@ -294,6 +294,8 @@
 [epoch 001] training completed
   -- loss = (RC: 4.7448 | KL: 0.2504 | KL_raw: 0.1216)
   -- time elapsed = 195.89 secs.
+
+  
 [epoch 002] training ...
 [epoch 002] # batches = 131
  -- epoch 002 | batch 000: len: tensor([ 406,  548,  832,  494, 1225,  764, 1280,  968,  744,  863,  476,  540])
