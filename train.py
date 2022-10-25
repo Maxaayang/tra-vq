@@ -36,17 +36,16 @@ val_interval = config['training']['val_interval']
 constant_kl = config['training']['constant_kl']
 
 recons_loss_ema = 0.
-kl_loss_ema = 0.
-kl_raw_ema = 0.
+vq_loss_ema = 0.
 
 def log_epoch(log_file, log_data, is_init=False):
   if is_init:
     with open(log_file, 'w') as f:
-      f.write('{:4} {:8} {:12} {:12} {:12} {:12}\n'.format('ep', 'steps', 'recons_loss', 'kldiv_loss', 'kldiv_raw', 'ep_time'))
+      f.write('{:4} {:8} {:12} {:12} {:12}\n'.format('ep', 'steps', 'recons_loss', 'vq_loss', 'ep_time'))
 
   with open(log_file, 'a') as f:
-    f.write('{:<4} {:<8} {:<12} {:<12} {:<12} {:<12}\n'.format(
-      log_data['ep'], log_data['steps'], round(log_data['recons_loss'], 5), round(log_data['kldiv_loss'], 5), round(log_data['kldiv_raw'], 5), round(log_data['time'], 2)
+    f.write('{:<4} {:<8} {:<12} {:<12} {:<12}\n'.format(
+      log_data['ep'], log_data['steps'], round(log_data['recons_loss'], 5), round(log_data['vq_loss'], 5), round(log_data['time'], 2)
     ))
 
 def beta_cyclical_sched(step):
@@ -67,15 +66,16 @@ def compute_loss_ema(ema, batch_loss, decay=0.95):
   else:
     return batch_loss * (1 - decay) + ema * decay
 
-def train_model(epoch, model, dloader, dloader_val, optim, sched):
+def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
   model.train()
 
   print ('[epoch {:03d}] training ...'.format(epoch))
   print ('[epoch {:03d}] # batches = {}'.format(epoch, len(dloader)))
   st = time.time()
   s_index = []
+  batches = len(dloader)
 
-  for batch_idx, batch_samples in enumerate(tqdm(dloader)):
+  for batch_idx, batch_samples in enumerate(dloader):
     model.zero_grad()
     batch_enc_inp = batch_samples['enc_input'].permute(2, 0, 1).to(device)
     batch_dec_inp = batch_samples['dec_input'].permute(1, 0).to(device)
@@ -101,7 +101,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
       kl_beta = beta_cyclical_sched(trained_steps)
     else:
       kl_beta = kl_max_beta
-    losses = model.compute_loss(mu, logvar, kl_beta, free_bit_lambda, dec_logits, batch_dec_tgt)
+    losses = model.compute_loss(dec_logits, batch_dec_tgt, vq_loss)
     
     # anneal learning rate
     if trained_steps < lr_warmup_steps:
@@ -115,21 +115,19 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
     torch.nn.utils.clip_grad_norm_(model.parameters(), 0.5)
     optim.step()
 
-    global recons_loss_ema, kl_loss_ema, kl_raw_ema
+    global recons_loss_ema, vq_loss_ema
     recons_loss_ema = compute_loss_ema(recons_loss_ema, losses['recons_loss'].item())
-    kl_loss_ema = compute_loss_ema(kl_loss_ema, losses['kldiv_loss'].item())
-    kl_raw_ema = compute_loss_ema(kl_raw_ema, losses['kldiv_raw'].item())
+    vq_loss_ema = compute_loss_ema(vq_loss_ema, losses['vq_loss'].item())
 
     print (' -- epoch {:03d} | batch {:03d}: len: {}\n\t * loss = (RC: {:.4f}, VQ: {:.4f}, step = {} time_elapsed = {:.2f} secs'.format(
-      epoch, batch_idx, batch_inp_lens, recons_loss_ema, vq_loss, trained_steps,  time.time() - st))
+      epoch, batch_idx, batch_inp_lens, recons_loss_ema, vq_loss_ema, trained_steps,  time.time() - st))
 
     if not trained_steps % log_interval:
       log_data = {
         'ep': epoch,
         'steps': trained_steps,
         'recons_loss': recons_loss_ema,
-        'kldiv_loss': kl_loss_ema,
-        'kldiv_raw': kl_raw_ema,
+        'vq_loss': vq_loss_ema,
         'time': time.time() - st
       }
       log_epoch(
@@ -139,40 +137,39 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
     if not trained_steps % val_interval:
       vallosses = validate(model, dloader_val)
       with open(os.path.join(ckpt_dir, 'valloss.txt'), 'a') as f:
-        f.write('[step {}] RC: {:.4f} | KL: {:.4f} | [val] | RC: {:.4f} | KL: {:.4f}\n'.format(
+        f.write('[step {}] RC: {:.4f} | VQ: {:.4f} | [val] | RC: {:.4f} | VQ: {:.4f}\n'.format(
           trained_steps, 
           recons_loss_ema, 
-          kl_raw_ema,
+          vq_loss_ema,
           np.mean(vallosses[0]),
           np.mean(vallosses[1])
         ))
       model.train()
 
-    if not trained_steps % ckpt_interval:
+    if (((trained_steps % batches) == 0) & (epoch == epochs)):
       torch.save(model.state_dict(),
-        os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-KL_{:.3f}-model.pt'.format(
+        os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-VQ_{:.3f}-model.pt'.format(
             trained_steps,
             recons_loss_ema, 
-            kl_raw_ema
+            vq_loss_ema
           ))
       )
       torch.save(optim.state_dict(),
-        os.path.join(optim_dir, 'step_{:d}-RC_{:.3f}-KL_{:.3f}-optim.pt'.format(
+        os.path.join(optim_dir, 'step_{:d}-RC_{:.3f}-VQ_{:.3f}-optim.pt'.format(
             trained_steps,
             recons_loss_ema, 
-            kl_raw_ema
+            vq_loss_ema
           ))
       )
 
-  print ('[epoch {:03d}] training completed\n  -- loss = (RC: {:.4f} | KL: {:.4f} | KL_raw: {:.4f})\n  -- time elapsed = {:.2f} secs.'.format(
-    epoch, recons_loss_ema, kl_loss_ema, kl_raw_ema, time.time() - st
+  print ('[epoch {:03d}] training completed\n  -- loss = (RC: {:.4f} | VQ: {:.4f}\n  -- time elapsed = {:.2f} secs.'.format(
+    epoch, recons_loss_ema, vq_loss_ema, time.time() - st
   ))
   log_data = {
     'ep': epoch,
     'steps': trained_steps,
     'recons_loss': recons_loss_ema,
-    'kldiv_loss': kl_loss_ema,
-    'kldiv_raw': kl_raw_ema,
+    'vq_loss': vq_loss_ema,
     'time': time.time() - st
   }
   log_epoch(
@@ -184,7 +181,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched):
 def validate(model, dloader, n_rounds=8, use_attr_cls=True):
   model.eval()
   loss_rec = []
-  kl_loss_rec = []
+  vq_loss_rec = []
 
   print ('[info] validating ...')
   with torch.no_grad():
@@ -206,20 +203,20 @@ def validate(model, dloader, n_rounds=8, use_attr_cls=True):
           batch_rfreq_cls = None
           batch_polyph_cls = None
 
-        mu, logvar, dec_logits = model(
+        _, _, dec_logits, vq_loss, _ = model(
           batch_enc_inp, batch_dec_inp, 
           batch_inp_bar_pos, batch_rfreq_cls, batch_polyph_cls,
           padding_mask=batch_padding_mask
         )
 
-        losses = model.compute_loss(mu, logvar, 0.0, 0.0, dec_logits, batch_dec_tgt)
+        losses = model.compute_loss(dec_logits, batch_dec_tgt, vq_loss)
         if not (batch_idx + 1) % 10:
           print ('batch #{}:'.format(batch_idx + 1), round(losses['recons_loss'].item(), 3))
 
         loss_rec.append(losses['recons_loss'].item())
-        kl_loss_rec.append(losses['kldiv_raw'].item())
+        vq_loss_rec.append(losses['vq_loss'].item())
     
-  return loss_rec, kl_loss_rec
+  return loss_rec, vq_loss_rec
 
 if __name__ == "__main__":
   dset = REMIFullSongTransformerDataset(
@@ -276,8 +273,9 @@ if __name__ == "__main__":
     os.makedirs(optim_dir)
 
   map = {}
-  for ep in tqdm(range(config['training']['max_epochs'])):
-    s_index = train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler)
+  epochs = config['training']['max_epochs']
+  for ep in tqdm(range(epochs)):
+    s_index = train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler, epochs)
     for i in range(len(s_index)):
       index = s_index[i]
       index = index.cpu().numpy()
