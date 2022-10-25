@@ -134,7 +134,7 @@ class MuseMorphose(nn.Module):
 
     _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
     mu, logvar = mu.reshape(-1, mu.size(-1)), logvar.reshape(-1, mu.size(-1))
-    index, vae_latent, vq_loss, _ = self.vq_layer(mu)
+    _, vae_latent, _, _ = self.vq_layer(mu)
     # vae_latent = self.reparameterize(mu, logvar, use_sampling=use_sampling, sampling_var=sampling_var)
 
     return vae_latent
@@ -205,21 +205,14 @@ class MuseMorphose(nn.Module):
 
     return mu, logvar, dec_logits, vq_loss, index
 
-  def compute_loss(self, mu, logvar, beta, fb_lambda, dec_logits, dec_tgt):
+  def compute_loss(self, dec_logits, dec_tgt, vq_loss):
     recons_loss = F.cross_entropy(
       dec_logits.view(-1, dec_logits.size(-1)), dec_tgt.contiguous().view(-1), 
       ignore_index=self.n_token - 1, reduction='mean'
     ).float()
 
-    kl_raw = -0.5 * (1 + logvar - mu ** 2 - logvar.exp()).mean(dim=0)
-    kl_before_free_bits = kl_raw.mean()
-    kl_after_free_bits = kl_raw.clamp(min=fb_lambda)
-    kldiv_loss = kl_after_free_bits.mean()
-
     return {
-      'beta': beta,
-      'total_loss': recons_loss + beta * kldiv_loss,
-      'kldiv_loss': kldiv_loss,
-      'kldiv_raw': kl_before_free_bits,
+      'total_loss': recons_loss + vq_loss,
+      'vq_loss': vq_loss,
       'recons_loss': recons_loss
     }
