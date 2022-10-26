@@ -65,6 +65,7 @@ class MuseMorphose(nn.Module):
   ):
     super(MuseMorphose, self).__init__()
     self.vq_layer = VectorQuantizer(256, 128, 0.99)
+    self.commit = 1
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
@@ -212,7 +213,7 @@ class MuseMorphose(nn.Module):
 
 
     return {
-      'total_loss': recons_loss + vq_loss,
+      'total_loss': recons_loss + self.commit * vq_loss,
       'vq_loss': vq_loss,
       'recons_loss': recons_loss
     }

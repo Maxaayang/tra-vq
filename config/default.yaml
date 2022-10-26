@@ -28,9 +28,9 @@ model:
 
 training:
     device:           cuda
-    ckpt_dir:         ./ckpt/juke10
+    ckpt_dir:         ./ckpt/juke350
     trained_steps:    0
-    max_epochs:       10
+    max_epochs:       350
     max_lr:           1.0e-4
     min_lr:           5.0e-6
     lr_warmup_steps:  200

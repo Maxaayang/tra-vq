@@ -278,9 +278,9 @@ class VectorQuantizer(nn.Module):
 
         # Loss
         # commit_loss = t.norm(x_d.detach() - x) ** 2 / np.prod(x.shape)
-        q_latent_loss = F.mse_loss(x_d, x.detach())
-        e_latent_loss = F.mse_loss(x, x_d.detach())
-        commit_loss = q_latent_loss + self.mu * e_latent_loss
+        # q_latent_loss = F.mse_loss(x_d, x.detach())
+        # e_latent_loss = F.mse_loss(x, x_d.detach())
+        # commit_loss = q_latent_loss + self.mu * e_latent_loss
         commit_loss = t.norm(x_d.detach() - x) ** 2 / np.prod(x.shape)
         # q_latent_loss = F.mse_loss(x_d, x.detach())
         # e_latent_loss = F.mse_loss(x, x_d.detach())
