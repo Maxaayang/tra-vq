@@ -7,7 +7,7 @@ data:
     max_bars:         16                 
     enc_seqlen:       128
     dec_seqlen:       1280               
-    batch_size:       6
+    batch_size:       11
 
 model:
     enc_n_layer:      12
@@ -28,9 +28,9 @@ model:
 
 training:
     device:           cuda
-    ckpt_dir:         ./ckpt/vqvae125
+    ckpt_dir:         ./ckpt/vqvae400
     trained_steps:    0
-    max_epochs:       125
+    max_epochs:       400
     max_lr:           1.0e-4
     min_lr:           5.0e-6
     lr_warmup_steps:  200

@@ -146,7 +146,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
         ))
       model.train()
 
-    if (batch_idx + 1) == batchs & epoch == epochs:
+    if (batch_idx + 1) == batchs and epoch == epochs:
     # if not trained_steps % ckpt_interval:
       torch.save(model.state_dict(),
         os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-VQ_{:.3f}-model.pt'.format(
