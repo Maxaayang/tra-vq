@@ -1,0 +1,1138 @@
+[preparing data] now at #0
+[sampled pieces] [86, 29, 79, 13, 34, 41, 22, 43, 45, 56]
+[info] writing to ... generations/vqvae400/id86_bar7_orig
+[info] piece: 980, bar: 7
+[info] writing to ... generations/vqvae400/id86_bar7_sample01_poly+3_rhym+1
+[info] rhythm cls: tensor([3, 6, 5, 7, 6, 6, 7, 7, 4, 6, 6, 6, 6, 6, 6, 6], device='cuda:0') | polyph_cls: tensor([7, 3, 3, 6, 5, 6, 7, 6, 5, 3, 5, 5, 5, 5, 4, 5], device='cuda:0')
+[info] generated 1 bars, #events = 56
+[info] generated 2 bars, #events = 98
+[info] generated 3 bars, #events = 152
+[info] generated 4 bars, #events = 224
+[info] generated 5 bars, #events = 285
+[info] generated 6 bars, #events = 346
+[info] generated 7 bars, #events = 395
+[info] generated 8 bars, #events = 471
+[info] generated 9 bars, #events = 557
+[info] generated 10 bars, #events = 643
+[info] generated 11 bars, #events = 734
+[info] generated 12 bars, #events = 827
+[info] generated 13 bars, #events = 922
+[info] generated 14 bars, #events = 1010
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1092
+[info] generated 16 bars, #events = 1194
+-- generated events: 1195
+-- time elapsed: 18.60 secs
+[info] piece entropy: 1.6010 (+/- 0.7433)
+[info] piece: 980, bar: 7
+[info] writing to ... generations/vqvae400/id86_bar7_sample02_poly-1_rhym+3
+[info] rhythm cls: tensor([5, 7, 7, 7, 7, 7, 7, 7, 6, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([3, 0, 0, 2, 1, 2, 3, 2, 1, 0, 1, 1, 1, 1, 0, 1], device='cuda:0')
+[info] generated 1 bars, #events = 50
+[info] generated 2 bars, #events = 103
+[info] generated 3 bars, #events = 163
+[info] generated 4 bars, #events = 220
+[info] generated 5 bars, #events = 280
+[info] generated 6 bars, #events = 343
+[info] generated 7 bars, #events = 395
+[info] generated 8 bars, #events = 457
+[info] generated 9 bars, #events = 511
+[info] generated 10 bars, #events = 570
+[info] generated 11 bars, #events = 632
+[info] generated 12 bars, #events = 694
+[info] generated 13 bars, #events = 747
+[info] generated 14 bars, #events = 814
+[info] generated 15 bars, #events = 880
+[info] generated 16 bars, #events = 935
+-- generated events: 936
+-- time elapsed: 12.95 secs
+[info] piece entropy: 1.3642 (+/- 0.8228)
+[info] piece: 980, bar: 7
+[info] writing to ... generations/vqvae400/id86_bar7_sample03_poly+1_rhym+2
+[info] rhythm cls: tensor([4, 7, 6, 7, 7, 7, 7, 7, 5, 7, 7, 7, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([5, 1, 1, 4, 3, 4, 5, 4, 3, 1, 3, 3, 3, 3, 2, 3], device='cuda:0')
+[info] generated 1 bars, #events = 41
+[info] generated 2 bars, #events = 90
+[info] generated 3 bars, #events = 140
+[info] generated 4 bars, #events = 194
+[info] generated 5 bars, #events = 252
+[info] generated 6 bars, #events = 319
+[info] generated 7 bars, #events = 393
+[info] generated 8 bars, #events = 467
+[info] generated 9 bars, #events = 515
+[info] generated 10 bars, #events = 591
+[info] generated 11 bars, #events = 670
+[info] generated 12 bars, #events = 728
+[info] generated 13 bars, #events = 807
+[info] generated 14 bars, #events = 886
+[info] generated 15 bars, #events = 965
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1037
+-- generated events: 1038
+-- time elapsed: 15.95 secs
+[info] piece entropy: 1.5398 (+/- 0.7847)
+[info] piece: 980, bar: 7
+[info] writing to ... generations/vqvae400/id86_bar7_sample04_poly+2_rhym-1
+[info] rhythm cls: tensor([1, 4, 3, 5, 4, 4, 5, 5, 2, 4, 4, 4, 4, 4, 4, 4], device='cuda:0') | polyph_cls: tensor([6, 2, 2, 5, 4, 5, 6, 5, 4, 2, 4, 4, 4, 4, 3, 4], device='cuda:0')
+[info] generated 1 bars, #events = 72
+[info] generated 2 bars, #events = 109
+[info] generated 3 bars, #events = 160
+[info] generated 4 bars, #events = 226
+[info] generated 5 bars, #events = 299
+[info] generated 6 bars, #events = 376
+[info] generated 7 bars, #events = 475
+[info] generated 8 bars, #events = 550
+[info] generated 9 bars, #events = 601
+[info] generated 10 bars, #events = 647
+[info] generated 11 bars, #events = 703
+[info] generated 12 bars, #events = 764
+[info] generated 13 bars, #events = 832
+[info] generated 14 bars, #events = 884
+[info] generated 15 bars, #events = 935
+[info] generated 16 bars, #events = 995
+-- generated events: 996
+-- time elapsed: 14.81 secs
+[info] piece entropy: 1.6904 (+/- 0.6918)
+[info] piece: 980, bar: 7
+[info] writing to ... generations/vqvae400/id86_bar7_sample05_poly+2_rhym-1
+[info] rhythm cls: tensor([1, 4, 3, 5, 4, 4, 5, 5, 2, 4, 4, 4, 4, 4, 4, 4], device='cuda:0') | polyph_cls: tensor([6, 2, 2, 5, 4, 5, 6, 5, 4, 2, 4, 4, 4, 4, 3, 4], device='cuda:0')
+[info] generated 1 bars, #events = 26
+[info] generated 2 bars, #events = 57
+[info] generated 3 bars, #events = 89
+[info] generated 4 bars, #events = 138
+[info] generated 5 bars, #events = 182
+[info] generated 6 bars, #events = 237
+[info] generated 7 bars, #events = 281
+[info] generated 8 bars, #events = 324
+[info] generated 9 bars, #events = 358
+[info] generated 10 bars, #events = 397
+[info] generated 11 bars, #events = 443
+[info] generated 12 bars, #events = 484
+[info] generated 13 bars, #events = 526
+[info] generated 14 bars, #events = 566
+[info] generated 15 bars, #events = 604
+[info] generated 16 bars, #events = 644
+-- generated events: 645
+-- time elapsed: 6.32 secs
+[info] piece entropy: 1.7030 (+/- 0.8316)
+[info] writing to ... generations/vqvae400/id29_bar49_orig
+[info] piece: 1532, bar: 49
+[info] writing to ... generations/vqvae400/id29_bar49_sample01_poly+2_rhym-1
+[info] rhythm cls: tensor([1, 6, 4, 6, 3, 3, 4, 5, 2, 2, 0, 3, 5, 4, 0, 3], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 28
+[info] generated 2 bars, #events = 109
+[info] generated 3 bars, #events = 199
+[info] generated 4 bars, #events = 278
+[info] generated 5 bars, #events = 334
+[info] generated 6 bars, #events = 389
+[info] generated 7 bars, #events = 441
+[info] generated 8 bars, #events = 501
+[info] generated 9 bars, #events = 555
+[info] generated 10 bars, #events = 621
+[info] generated 11 bars, #events = 673
+[info] generated 12 bars, #events = 738
+[info] generated 13 bars, #events = 797
+[info] generated 14 bars, #events = 857
+[info] generated 15 bars, #events = 913
+[info] generated 16 bars, #events = 965
+-- generated events: 966
+-- time elapsed: 13.88 secs
+[info] piece entropy: 1.6256 (+/- 0.7205)
+[info] piece: 1532, bar: 49
+[info] writing to ... generations/vqvae400/id29_bar49_sample02_poly+3_rhym+1
+[info] rhythm cls: tensor([3, 7, 6, 7, 5, 5, 6, 7, 4, 4, 2, 5, 7, 6, 1, 5], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 54
+[info] generated 2 bars, #events = 126
+[info] generated 3 bars, #events = 184
+[info] generated 4 bars, #events = 247
+[info] generated 5 bars, #events = 305
+[info] generated 6 bars, #events = 376
+[info] generated 7 bars, #events = 436
+[info] generated 8 bars, #events = 500
+[info] generated 9 bars, #events = 559
+[info] generated 10 bars, #events = 618
+[info] generated 11 bars, #events = 676
+[info] generated 12 bars, #events = 739
+[info] generated 13 bars, #events = 814
+[info] generated 14 bars, #events = 870
+[info] generated 15 bars, #events = 913
+[info] generated 16 bars, #events = 970
+-- generated events: 971
+-- time elapsed: 14.06 secs
+[info] piece entropy: 1.5858 (+/- 0.7234)
+[info] piece: 1532, bar: 49
+[info] writing to ... generations/vqvae400/id29_bar49_sample03_poly+1_rhym+0
+[info] rhythm cls: tensor([2, 7, 5, 7, 4, 4, 5, 6, 3, 3, 1, 4, 6, 5, 0, 4], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 6, 5, 6, 7, 6, 6, 6, 6, 6, 6, 6, 7], device='cuda:0')
+[info] generated 1 bars, #events = 41
+[info] generated 2 bars, #events = 115
+[info] generated 3 bars, #events = 168
+[info] generated 4 bars, #events = 256
+[info] generated 5 bars, #events = 305
+[info] generated 6 bars, #events = 359
+[info] generated 7 bars, #events = 406
+[info] generated 8 bars, #events = 482
+[info] generated 9 bars, #events = 540
+[info] generated 10 bars, #events = 601
+[info] generated 11 bars, #events = 652
+[info] generated 12 bars, #events = 699
+[info] generated 13 bars, #events = 764
+[info] generated 14 bars, #events = 835
+[info] generated 15 bars, #events = 882
+[info] generated 16 bars, #events = 953
+-- generated events: 954
+-- time elapsed: 13.54 secs
+[info] piece entropy: 1.5112 (+/- 0.7644)
+[info] piece: 1532, bar: 49
+[info] writing to ... generations/vqvae400/id29_bar49_sample04_poly-2_rhym+3
+[info] rhythm cls: tensor([5, 7, 7, 7, 7, 7, 7, 7, 6, 6, 4, 7, 7, 7, 3, 7], device='cuda:0') | polyph_cls: tensor([4, 4, 5, 4, 3, 2, 3, 4, 3, 3, 3, 3, 3, 3, 3, 4], device='cuda:0')
+[info] generated 1 bars, #events = 61
+[info] generated 2 bars, #events = 122
+[info] generated 3 bars, #events = 196
+[info] generated 4 bars, #events = 268
+[info] generated 5 bars, #events = 345
+[info] generated 6 bars, #events = 424
+[info] generated 7 bars, #events = 509
+[info] generated 8 bars, #events = 603
+[info] generated 9 bars, #events = 681
+[info] generated 10 bars, #events = 774
+[info] generated 11 bars, #events = 862
+[info] generated 12 bars, #events = 979
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 13 bars, #events = 1104
+[info] generated 14 bars, #events = 1210
+[info] generated 15 bars, #events = 1281
+[info] generated 16 bars, #events = 1401
+-- generated events: 1402
+-- time elapsed: 23.09 secs
+[info] piece entropy: 1.2086 (+/- 0.6667)
+[info] piece: 1532, bar: 49
+[info] writing to ... generations/vqvae400/id29_bar49_sample05_poly-3_rhym-1
+[info] rhythm cls: tensor([1, 6, 4, 6, 3, 3, 4, 5, 2, 2, 0, 3, 5, 4, 0, 3], device='cuda:0') | polyph_cls: tensor([3, 3, 4, 3, 2, 1, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3], device='cuda:0')
+[info] generated 1 bars, #events = 36
+[info] generated 2 bars, #events = 94
+[info] generated 3 bars, #events = 141
+[info] generated 4 bars, #events = 191
+[info] generated 5 bars, #events = 225
+[info] generated 6 bars, #events = 258
+[info] generated 7 bars, #events = 303
+[info] generated 8 bars, #events = 343
+[info] generated 9 bars, #events = 373
+[info] generated 10 bars, #events = 401
+[info] generated 11 bars, #events = 427
+[info] generated 12 bars, #events = 461
+[info] generated 13 bars, #events = 506
+[info] generated 14 bars, #events = 546
+[info] generated 15 bars, #events = 580
+[info] generated 16 bars, #events = 616
+-- generated events: 617
+-- time elapsed: 5.84 secs
+[info] piece entropy: 1.6149 (+/- 0.8531)
+[info] writing to ... generations/vqvae400/id79_bar116_orig
+[info] piece: 867, bar: 116
+[info] writing to ... generations/vqvae400/id79_bar116_sample01_poly-1_rhym-3
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 1, 0, 1, 1, 2, 1, 0, 1, 1, 0, 0, 2, 3], device='cuda:0')
+[info] generated 1 bars, #events = 23
+[info] generated 2 bars, #events = 44
+[info] generated 3 bars, #events = 66
+[info] generated 4 bars, #events = 97
+[info] generated 5 bars, #events = 117
+[info] generated 6 bars, #events = 141
+[info] generated 7 bars, #events = 163
+[info] generated 8 bars, #events = 192
+[info] generated 9 bars, #events = 229
+[info] generated 10 bars, #events = 252
+[info] generated 11 bars, #events = 275
+[info] generated 12 bars, #events = 298
+[info] generated 13 bars, #events = 322
+[info] generated 14 bars, #events = 343
+[info] generated 15 bars, #events = 368
+[info] generated 16 bars, #events = 396
+-- generated events: 397
+-- time elapsed: 2.94 secs
+[info] piece entropy: 1.6429 (+/- 0.7696)
+[info] piece: 867, bar: 116
+[info] writing to ... generations/vqvae400/id79_bar116_sample02_poly+1_rhym+3
+[info] rhythm cls: tensor([4, 4, 5, 5, 4, 4, 4, 3, 4, 4, 3, 5, 3, 5, 5, 5], device='cuda:0') | polyph_cls: tensor([1, 1, 1, 3, 1, 3, 3, 4, 3, 1, 3, 3, 1, 2, 4, 5], device='cuda:0')
+[info] generated 1 bars, #events = 43
+[info] generated 2 bars, #events = 81
+[info] generated 3 bars, #events = 128
+[info] generated 4 bars, #events = 175
+[info] generated 5 bars, #events = 218
+[info] generated 6 bars, #events = 264
+[info] generated 7 bars, #events = 304
+[info] generated 8 bars, #events = 346
+[info] generated 9 bars, #events = 393
+[info] generated 10 bars, #events = 429
+[info] generated 11 bars, #events = 474
+[info] generated 12 bars, #events = 513
+[info] generated 13 bars, #events = 555
+[info] generated 14 bars, #events = 604
+[info] generated 15 bars, #events = 671
+[info] generated 16 bars, #events = 733
+-- generated events: 734
+-- time elapsed: 7.99 secs
+[info] piece entropy: 1.6156 (+/- 0.8029)
+[info] piece: 867, bar: 116
+[info] writing to ... generations/vqvae400/id79_bar116_sample03_poly+2_rhym+1
+[info] rhythm cls: tensor([2, 2, 3, 3, 2, 2, 2, 1, 2, 2, 1, 3, 1, 3, 3, 3], device='cuda:0') | polyph_cls: tensor([2, 2, 2, 4, 2, 4, 4, 5, 4, 2, 4, 4, 2, 3, 5, 6], device='cuda:0')
+[info] generated 1 bars, #events = 35
+[info] generated 2 bars, #events = 66
+[info] generated 3 bars, #events = 99
+[info] generated 4 bars, #events = 147
+[info] generated 5 bars, #events = 178
+[info] generated 6 bars, #events = 222
+[info] generated 7 bars, #events = 253
+[info] generated 8 bars, #events = 299
+[info] generated 9 bars, #events = 329
+[info] generated 10 bars, #events = 361
+[info] generated 11 bars, #events = 402
+[info] generated 12 bars, #events = 433
+[info] generated 13 bars, #events = 464
+[info] generated 14 bars, #events = 494
+[info] generated 15 bars, #events = 536
+[info] generated 16 bars, #events = 571
+-- generated events: 572
+-- time elapsed: 5.12 secs
+[info] piece entropy: 1.6085 (+/- 0.7707)
+[info] piece: 867, bar: 116
+[info] writing to ... generations/vqvae400/id79_bar116_sample04_poly+2_rhym-2
+[info] rhythm cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0') | polyph_cls: tensor([2, 2, 2, 4, 2, 4, 4, 5, 4, 2, 4, 4, 2, 3, 5, 6], device='cuda:0')
+[info] generated 1 bars, #events = 25
+[info] generated 2 bars, #events = 50
+[info] generated 3 bars, #events = 70
+[info] generated 4 bars, #events = 102
+[info] generated 5 bars, #events = 126
+[info] generated 6 bars, #events = 156
+[info] generated 7 bars, #events = 182
+[info] generated 8 bars, #events = 220
+[info] generated 9 bars, #events = 253
+[info] generated 10 bars, #events = 281
+[info] generated 11 bars, #events = 312
+[info] generated 12 bars, #events = 336
+[info] generated 13 bars, #events = 359
+[info] generated 14 bars, #events = 384
+[info] generated 15 bars, #events = 408
+[info] generated 16 bars, #events = 442
+-- generated events: 443
+-- time elapsed: 3.44 secs
+[info] piece entropy: 1.7308 (+/- 0.7476)
+[info] piece: 867, bar: 116
+[info] writing to ... generations/vqvae400/id79_bar116_sample05_poly+2_rhym+0
+[info] rhythm cls: tensor([1, 1, 2, 2, 1, 1, 1, 0, 1, 1, 0, 2, 0, 2, 2, 2], device='cuda:0') | polyph_cls: tensor([2, 2, 2, 4, 2, 4, 4, 5, 4, 2, 4, 4, 2, 3, 5, 6], device='cuda:0')
+[info] generated 1 bars, #events = 23
+[info] generated 2 bars, #events = 54
+[info] generated 3 bars, #events = 82
+[info] generated 4 bars, #events = 121
+[info] generated 5 bars, #events = 151
+[info] generated 6 bars, #events = 184
+[info] generated 7 bars, #events = 215
+[info] generated 8 bars, #events = 245
+[info] generated 9 bars, #events = 277
+[info] generated 10 bars, #events = 299
+[info] generated 11 bars, #events = 328
+[info] generated 12 bars, #events = 367
+[info] generated 13 bars, #events = 384
+[info] generated 14 bars, #events = 415
+[info] generated 15 bars, #events = 443
+[info] generated 16 bars, #events = 479
+-- generated events: 480
+-- time elapsed: 3.88 secs
+[info] piece entropy: 1.9404 (+/- 0.8151)
+[info] writing to ... generations/vqvae400/id13_bar54_orig
+[info] piece: 1234, bar: 54
+[info] writing to ... generations/vqvae400/id13_bar54_sample01_poly-2_rhym-1
+[info] rhythm cls: tensor([0, 0, 2, 2, 2, 3, 2, 2, 1, 4, 2, 2, 2, 3, 2, 2], device='cuda:0') | polyph_cls: tensor([2, 0, 1, 0, 3, 0, 0, 1, 0, 1, 0, 0, 2, 1, 0, 3], device='cuda:0')
+[info] generated 1 bars, #events = 29
+[info] generated 2 bars, #events = 50
+[info] generated 3 bars, #events = 81
+[info] generated 4 bars, #events = 107
+[info] generated 5 bars, #events = 141
+[info] generated 6 bars, #events = 173
+[info] generated 7 bars, #events = 199
+[info] generated 8 bars, #events = 225
+[info] generated 9 bars, #events = 251
+[info] generated 10 bars, #events = 284
+[info] generated 11 bars, #events = 306
+[info] generated 12 bars, #events = 331
+[info] generated 13 bars, #events = 360
+[info] generated 14 bars, #events = 396
+[info] generated 15 bars, #events = 425
+[info] generated 16 bars, #events = 458
+-- generated events: 459
+-- time elapsed: 3.61 secs
+[info] piece entropy: 1.3324 (+/- 0.8915)
+[info] piece: 1234, bar: 54
+[info] writing to ... generations/vqvae400/id13_bar54_sample02_poly-2_rhym+2
+[info] rhythm cls: tensor([2, 2, 5, 5, 5, 6, 5, 5, 4, 7, 5, 5, 5, 6, 5, 5], device='cuda:0') | polyph_cls: tensor([2, 0, 1, 0, 3, 0, 0, 1, 0, 1, 0, 0, 2, 1, 0, 3], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 67
+[info] generated 3 bars, #events = 111
+[info] generated 4 bars, #events = 156
+[info] generated 5 bars, #events = 198
+[info] generated 6 bars, #events = 241
+[info] generated 7 bars, #events = 282
+[info] generated 8 bars, #events = 319
+[info] generated 9 bars, #events = 360
+[info] generated 10 bars, #events = 418
+[info] generated 11 bars, #events = 461
+[info] generated 12 bars, #events = 502
+[info] generated 13 bars, #events = 565
+[info] generated 14 bars, #events = 616
+[info] generated 15 bars, #events = 657
+[info] generated 16 bars, #events = 716
+-- generated events: 717
+-- time elapsed: 7.63 secs
+[info] piece entropy: 1.2596 (+/- 0.7604)
+[info] piece: 1234, bar: 54
+[info] writing to ... generations/vqvae400/id13_bar54_sample03_poly+0_rhym-1
+[info] rhythm cls: tensor([0, 0, 2, 2, 2, 3, 2, 2, 1, 4, 2, 2, 2, 3, 2, 2], device='cuda:0') | polyph_cls: tensor([4, 0, 3, 2, 5, 2, 2, 3, 2, 3, 1, 2, 4, 3, 2, 5], device='cuda:0')
+[info] generated 1 bars, #events = 24
+[info] generated 2 bars, #events = 50
+[info] generated 3 bars, #events = 76
+[info] generated 4 bars, #events = 102
+[info] generated 5 bars, #events = 139
+[info] generated 6 bars, #events = 168
+[info] generated 7 bars, #events = 203
+[info] generated 8 bars, #events = 243
+[info] generated 9 bars, #events = 270
+[info] generated 10 bars, #events = 306
+[info] generated 11 bars, #events = 331
+[info] generated 12 bars, #events = 364
+[info] generated 13 bars, #events = 396
+[info] generated 14 bars, #events = 428
+[info] generated 15 bars, #events = 456
+[info] generated 16 bars, #events = 487
+-- generated events: 488
+-- time elapsed: 3.97 secs
+[info] piece entropy: 1.7787 (+/- 0.8425)
+[info] piece: 1234, bar: 54
+[info] writing to ... generations/vqvae400/id13_bar54_sample04_poly+1_rhym+1
+[info] rhythm cls: tensor([1, 1, 4, 4, 4, 5, 4, 4, 3, 6, 4, 4, 4, 5, 4, 4], device='cuda:0') | polyph_cls: tensor([5, 1, 4, 3, 6, 3, 3, 4, 3, 4, 2, 3, 5, 4, 3, 6], device='cuda:0')
+[info] generated 1 bars, #events = 36
+[info] generated 2 bars, #events = 58
+[info] generated 3 bars, #events = 91
+[info] generated 4 bars, #events = 130
+[info] generated 5 bars, #events = 184
+[info] generated 6 bars, #events = 227
+[info] generated 7 bars, #events = 268
+[info] generated 8 bars, #events = 314
+[info] generated 9 bars, #events = 354
+[info] generated 10 bars, #events = 414
+[info] generated 11 bars, #events = 452
+[info] generated 12 bars, #events = 490
+[info] generated 13 bars, #events = 527
+[info] generated 14 bars, #events = 580
+[info] generated 15 bars, #events = 625
+[info] generated 16 bars, #events = 681
+-- generated events: 682
+-- time elapsed: 6.96 secs
+[info] piece entropy: 1.6479 (+/- 0.7992)
+[info] piece: 1234, bar: 54
+[info] writing to ... generations/vqvae400/id13_bar54_sample05_poly-1_rhym+2
+[info] rhythm cls: tensor([2, 2, 5, 5, 5, 6, 5, 5, 4, 7, 5, 5, 5, 6, 5, 5], device='cuda:0') | polyph_cls: tensor([3, 0, 2, 1, 4, 1, 1, 2, 1, 2, 0, 1, 3, 2, 1, 4], device='cuda:0')
+[info] generated 1 bars, #events = 47
+[info] generated 2 bars, #events = 73
+[info] generated 3 bars, #events = 111
+[info] generated 4 bars, #events = 151
+[info] generated 5 bars, #events = 200
+[info] generated 6 bars, #events = 251
+[info] generated 7 bars, #events = 302
+[info] generated 8 bars, #events = 351
+[info] generated 9 bars, #events = 391
+[info] generated 10 bars, #events = 446
+[info] generated 11 bars, #events = 504
+[info] generated 12 bars, #events = 550
+[info] generated 13 bars, #events = 598
+[info] generated 14 bars, #events = 654
+[info] generated 15 bars, #events = 696
+[info] generated 16 bars, #events = 756
+-- generated events: 757
+-- time elapsed: 8.45 secs
+[info] piece entropy: 1.4332 (+/- 0.7528)
+[info] writing to ... generations/vqvae400/id34_bar19_orig
+[info] piece: 1612, bar: 19
+[info] writing to ... generations/vqvae400/id34_bar19_sample01_poly-3_rhym+2
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 7, 4, 5], device='cuda:0') | polyph_cls: tensor([3, 2, 2, 2, 3, 4, 4, 4, 3, 3, 2, 3, 2, 1, 2, 0], device='cuda:0')
+[info] generated 1 bars, #events = 85
+[info] generated 2 bars, #events = 151
+[info] generated 3 bars, #events = 229
+[info] generated 4 bars, #events = 297
+[info] generated 5 bars, #events = 365
+[info] generated 6 bars, #events = 453
+[info] generated 7 bars, #events = 520
+[info] generated 8 bars, #events = 607
+[info] generated 9 bars, #events = 691
+[info] generated 10 bars, #events = 764
+[info] generated 11 bars, #events = 833
+[info] generated 12 bars, #events = 905
+[info] generated 13 bars, #events = 966
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 1028
+[info] generated 15 bars, #events = 1074
+[info] generated 16 bars, #events = 1129
+-- generated events: 1130
+-- time elapsed: 17.36 secs
+[info] piece entropy: 1.4314 (+/- 0.7555)
+[info] piece: 1612, bar: 19
+[info] writing to ... generations/vqvae400/id34_bar19_sample02_poly-1_rhym+1
+[info] rhythm cls: tensor([6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 3, 7, 3, 4], device='cuda:0') | polyph_cls: tensor([5, 4, 4, 4, 5, 6, 6, 6, 5, 5, 4, 5, 4, 3, 4, 1], device='cuda:0')
+[info] generated 1 bars, #events = 78
+[info] generated 2 bars, #events = 176
+[info] generated 3 bars, #events = 270
+[info] generated 4 bars, #events = 375
+[info] generated 5 bars, #events = 473
+[info] generated 6 bars, #events = 583
+[info] generated 7 bars, #events = 713
+[info] generated 8 bars, #events = 845
+[info] generated 9 bars, #events = 984
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 10 bars, #events = 1109
+[info] generated 11 bars, #events = 1236
+[info] generated 12 bars, #events = 1377
+[info] generated 13 bars, #events = 1447
+[info] generated 14 bars, #events = 1496
+[info] generated 15 bars, #events = 1528
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1565
+-- generated events: 1566
+-- time elapsed: 27.79 secs
+[info] piece entropy: 1.0851 (+/- 0.6962)
+[info] piece: 1612, bar: 19
+[info] writing to ... generations/vqvae400/id34_bar19_sample03_poly+0_rhym-1
+[info] rhythm cls: tensor([4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 1, 5, 1, 2], device='cuda:0') | polyph_cls: tensor([6, 5, 5, 5, 6, 7, 7, 7, 6, 6, 5, 6, 5, 4, 5, 2], device='cuda:0')
+[info] generated 1 bars, #events = 76
+[info] generated 2 bars, #events = 146
+[info] generated 3 bars, #events = 193
+[info] generated 4 bars, #events = 271
+[info] generated 5 bars, #events = 336
+[info] generated 6 bars, #events = 414
+[info] generated 7 bars, #events = 483
+[info] generated 8 bars, #events = 545
+[info] generated 9 bars, #events = 583
+[info] generated 10 bars, #events = 646
+[info] generated 11 bars, #events = 694
+[info] generated 12 bars, #events = 753
+[info] generated 13 bars, #events = 802
+[info] generated 14 bars, #events = 862
+[info] generated 15 bars, #events = 906
+[info] generated 16 bars, #events = 963
+-- generated events: 964
+-- time elapsed: 13.87 secs
+[info] piece entropy: 1.4196 (+/- 0.7299)
+[info] piece: 1612, bar: 19
+[info] writing to ... generations/vqvae400/id34_bar19_sample04_poly-2_rhym+0
+[info] rhythm cls: tensor([5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 2, 6, 2, 3], device='cuda:0') | polyph_cls: tensor([4, 3, 3, 3, 4, 5, 5, 5, 4, 4, 3, 4, 3, 2, 3, 0], device='cuda:0')
+[info] generated 1 bars, #events = 77
+[info] generated 2 bars, #events = 177
+[info] generated 3 bars, #events = 266
+[info] generated 4 bars, #events = 373
+[info] generated 5 bars, #events = 451
+[info] generated 6 bars, #events = 555
+[info] generated 7 bars, #events = 633
+[info] generated 8 bars, #events = 737
+[info] generated 9 bars, #events = 825
+[info] generated 10 bars, #events = 903
+[info] generated 11 bars, #events = 991
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 12 bars, #events = 1076
+[info] generated 13 bars, #events = 1151
+[info] generated 14 bars, #events = 1246
+[info] generated 15 bars, #events = 1301
+[info] generated 16 bars, #events = 1353
+-- generated events: 1354
+-- time elapsed: 21.98 secs
+[info] piece entropy: 1.6990 (+/- 0.6946)
+[info] piece: 1612, bar: 19
+[info] writing to ... generations/vqvae400/id34_bar19_sample05_poly-1_rhym+1
+[info] rhythm cls: tensor([6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 3, 7, 3, 4], device='cuda:0') | polyph_cls: tensor([5, 4, 4, 4, 5, 6, 6, 6, 5, 5, 4, 5, 4, 3, 4, 1], device='cuda:0')
+[info] generated 1 bars, #events = 85
+[info] generated 2 bars, #events = 153
+[info] generated 3 bars, #events = 222
+[info] generated 4 bars, #events = 300
+[info] generated 5 bars, #events = 385
+[info] generated 6 bars, #events = 459
+[info] generated 7 bars, #events = 544
+[info] generated 8 bars, #events = 621
+[info] generated 9 bars, #events = 698
+[info] generated 10 bars, #events = 764
+[info] generated 11 bars, #events = 852
+[info] generated 12 bars, #events = 944
+[info] generated 13 bars, #events = 987
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 14 bars, #events = 1056
+[info] generated 15 bars, #events = 1109
+[info] generated 16 bars, #events = 1175
+-- generated events: 1176
+-- time elapsed: 18.25 secs
+[info] piece entropy: 1.2738 (+/- 0.6847)
+[info] writing to ... generations/vqvae400/id41_bar12_orig
+[info] piece: 1676, bar: 12
+[info] writing to ... generations/vqvae400/id41_bar12_sample01_poly-2_rhym+2
+[info] rhythm cls: tensor([7, 5, 6, 5, 3, 6, 5, 5, 7, 5, 5, 5, 6, 6, 6, 7], device='cuda:0') | polyph_cls: tensor([3, 0, 3, 0, 0, 2, 3, 3, 3, 2, 3, 2, 3, 1, 3, 2], device='cuda:0')
+[info] generated 1 bars, #events = 120
+[info] generated 2 bars, #events = 209
+[info] generated 3 bars, #events = 303
+[info] generated 4 bars, #events = 371
+[info] generated 5 bars, #events = 409
+[info] generated 6 bars, #events = 484
+[info] generated 7 bars, #events = 562
+[info] generated 8 bars, #events = 649
+[info] generated 9 bars, #events = 763
+[info] generated 10 bars, #events = 843
+[info] generated 11 bars, #events = 930
+[info] generated 12 bars, #events = 1016
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 13 bars, #events = 1116
+[info] generated 14 bars, #events = 1198
+[info] generated 15 bars, #events = 1291
+[info] generated 16 bars, #events = 1372
+-- generated events: 1373
+-- time elapsed: 22.42 secs
+[info] piece entropy: 1.3434 (+/- 0.7503)
+[info] piece: 1676, bar: 12
+[info] writing to ... generations/vqvae400/id41_bar12_sample02_poly+1_rhym-3
+[info] rhythm cls: tensor([2, 0, 1, 0, 0, 1, 0, 0, 2, 0, 0, 0, 1, 1, 1, 2], device='cuda:0') | polyph_cls: tensor([6, 3, 6, 3, 3, 5, 6, 6, 6, 5, 6, 5, 6, 4, 6, 5], device='cuda:0')
+[info] generated 1 bars, #events = 65
+[info] generated 2 bars, #events = 103
+[info] generated 3 bars, #events = 158
+[info] generated 4 bars, #events = 188
+[info] generated 5 bars, #events = 223
+[info] generated 6 bars, #events = 272
+[info] generated 7 bars, #events = 309
+[info] generated 8 bars, #events = 371
+[info] generated 9 bars, #events = 425
+[info] generated 10 bars, #events = 455
+[info] generated 11 bars, #events = 489
+[info] generated 12 bars, #events = 528
+[info] generated 13 bars, #events = 559
+[info] generated 14 bars, #events = 594
+[info] generated 15 bars, #events = 628
+[info] generated 16 bars, #events = 670
+-- generated events: 671
+-- time elapsed: 6.76 secs
+[info] piece entropy: 1.7506 (+/- 0.6873)
+[info] piece: 1676, bar: 12
+[info] writing to ... generations/vqvae400/id41_bar12_sample03_poly+2_rhym+0
+[info] rhythm cls: tensor([5, 3, 4, 3, 1, 4, 3, 3, 5, 3, 3, 3, 4, 4, 4, 5], device='cuda:0') | polyph_cls: tensor([7, 4, 7, 4, 4, 6, 7, 7, 7, 6, 7, 6, 7, 5, 7, 6], device='cuda:0')
+[info] generated 1 bars, #events = 114
+[info] generated 2 bars, #events = 165
+[info] generated 3 bars, #events = 247
+[info] generated 4 bars, #events = 309
+[info] generated 5 bars, #events = 339
+[info] generated 6 bars, #events = 380
+[info] generated 7 bars, #events = 421
+[info] generated 8 bars, #events = 469
+[info] generated 9 bars, #events = 522
+[info] generated 10 bars, #events = 572
+[info] generated 11 bars, #events = 621
+[info] generated 12 bars, #events = 665
+[info] generated 13 bars, #events = 716
+[info] generated 14 bars, #events = 751
+[info] generated 15 bars, #events = 805
+[info] generated 16 bars, #events = 861
+-- generated events: 862
+-- time elapsed: 10.90 secs
+[info] piece entropy: 1.5149 (+/- 0.7762)
+[info] piece: 1676, bar: 12
+[info] writing to ... generations/vqvae400/id41_bar12_sample04_poly-1_rhym-1
+[info] rhythm cls: tensor([4, 2, 3, 2, 0, 3, 2, 2, 4, 2, 2, 2, 3, 3, 3, 4], device='cuda:0') | polyph_cls: tensor([4, 1, 4, 1, 1, 3, 4, 4, 4, 3, 4, 3, 4, 2, 4, 3], device='cuda:0')
+[info] generated 1 bars, #events = 36
+[info] generated 2 bars, #events = 67
+[info] generated 3 bars, #events = 120
+[info] generated 4 bars, #events = 160
+[info] generated 5 bars, #events = 184
+[info] generated 6 bars, #events = 229
+[info] generated 7 bars, #events = 262
+[info] generated 8 bars, #events = 305
+[info] generated 9 bars, #events = 360
+[info] generated 10 bars, #events = 400
+[info] generated 11 bars, #events = 451
+[info] generated 12 bars, #events = 487
+[info] generated 13 bars, #events = 527
+[info] generated 14 bars, #events = 569
+[info] generated 15 bars, #events = 626
+[info] generated 16 bars, #events = 680
+-- generated events: 681
+-- time elapsed: 6.99 secs
+[info] piece entropy: 1.6466 (+/- 0.7357)
+[info] piece: 1676, bar: 12
+[info] writing to ... generations/vqvae400/id41_bar12_sample05_poly+3_rhym-2
+[info] rhythm cls: tensor([3, 1, 2, 1, 0, 2, 1, 1, 3, 1, 1, 1, 2, 2, 2, 3], device='cuda:0') | polyph_cls: tensor([7, 5, 7, 5, 5, 7, 7, 7, 7, 7, 7, 7, 7, 6, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 69
+[info] generated 2 bars, #events = 124
+[info] generated 3 bars, #events = 193
+[info] generated 4 bars, #events = 243
+[info] generated 5 bars, #events = 275
+[info] generated 6 bars, #events = 336
+[info] generated 7 bars, #events = 384
+[info] generated 8 bars, #events = 444
+[info] generated 9 bars, #events = 513
+[info] generated 10 bars, #events = 574
+[info] generated 11 bars, #events = 623
+[info] generated 12 bars, #events = 680
+[info] generated 13 bars, #events = 753
+[info] generated 14 bars, #events = 829
+[info] generated 15 bars, #events = 896
+[info] generated 16 bars, #events = 974
+-- generated events: 975
+-- time elapsed: 14.35 secs
+[info] piece entropy: 1.4557 (+/- 0.7338)
+[info] writing to ... generations/vqvae400/id22_bar53_orig
+[info] piece: 1419, bar: 53
+[info] writing to ... generations/vqvae400/id22_bar53_sample01_poly+3_rhym+0
+[info] rhythm cls: tensor([6, 5, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 1, 1], device='cuda:0') | polyph_cls: tensor([6, 5, 3, 6, 6, 6, 6, 6, 6, 4, 5, 4, 6, 6, 6, 3], device='cuda:0')
+[info] generated 1 bars, #events = 97
+[info] generated 2 bars, #events = 206
+[info] generated 3 bars, #events = 256
+[info] generated 4 bars, #events = 331
+[info] generated 5 bars, #events = 385
+[info] generated 6 bars, #events = 447
+[info] generated 7 bars, #events = 517
+[info] generated 8 bars, #events = 586
+[info] generated 9 bars, #events = 657
+[info] generated 10 bars, #events = 709
+[info] generated 11 bars, #events = 761
+[info] generated 12 bars, #events = 826
+[info] generated 13 bars, #events = 898
+[info] generated 14 bars, #events = 969
+[info] generated 15 bars, #events = 1012
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1045
+-- generated events: 1046
+-- time elapsed: 16.26 secs
+[info] piece entropy: 1.5645 (+/- 0.6723)
+[info] piece: 1419, bar: 53
+[info] writing to ... generations/vqvae400/id22_bar53_sample02_poly-3_rhym+3
+[info] rhythm cls: tensor([7, 7, 3, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4, 4], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+[info] generated 1 bars, #events = 60
+[info] generated 2 bars, #events = 122
+[info] generated 3 bars, #events = 169
+[info] generated 4 bars, #events = 236
+[info] generated 5 bars, #events = 299
+[info] generated 6 bars, #events = 361
+[info] generated 7 bars, #events = 417
+[info] generated 8 bars, #events = 481
+[info] generated 9 bars, #events = 540
+[info] generated 10 bars, #events = 596
+[info] generated 11 bars, #events = 688
+[info] generated 12 bars, #events = 748
+[info] generated 13 bars, #events = 818
+[info] generated 14 bars, #events = 884
+[info] generated 15 bars, #events = 924
+[info] generated 16 bars, #events = 972
+-- generated events: 973
+-- time elapsed: 14.17 secs
+[info] piece entropy: 1.0131 (+/- 0.6476)
+[info] piece: 1419, bar: 53
+[info] writing to ... generations/vqvae400/id22_bar53_sample03_poly-2_rhym-3
+[info] rhythm cls: tensor([3, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0], device='cuda:0') | polyph_cls: tensor([1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 69
+[info] generated 3 bars, #events = 101
+[info] generated 4 bars, #events = 135
+[info] generated 5 bars, #events = 168
+[info] generated 6 bars, #events = 207
+[info] generated 7 bars, #events = 248
+[info] generated 8 bars, #events = 279
+[info] generated 9 bars, #events = 317
+[info] generated 10 bars, #events = 347
+[info] generated 11 bars, #events = 384
+[info] generated 12 bars, #events = 421
+[info] generated 13 bars, #events = 458
+[info] generated 14 bars, #events = 497
+[info] generated 15 bars, #events = 529
+[info] generated 16 bars, #events = 549
+-- generated events: 550
+-- time elapsed: 4.81 secs
+[info] piece entropy: 1.5357 (+/- 0.8589)
+[info] piece: 1419, bar: 53
+[info] writing to ... generations/vqvae400/id22_bar53_sample04_poly+3_rhym-3
+[info] rhythm cls: tensor([3, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0], device='cuda:0') | polyph_cls: tensor([6, 5, 3, 6, 6, 6, 6, 6, 6, 4, 5, 4, 6, 6, 6, 3], device='cuda:0')
+[info] generated 1 bars, #events = 74
+[info] generated 2 bars, #events = 113
+[info] generated 3 bars, #events = 141
+[info] generated 4 bars, #events = 178
+[info] generated 5 bars, #events = 224
+[info] generated 6 bars, #events = 275
+[info] generated 7 bars, #events = 338
+[info] generated 8 bars, #events = 413
+[info] generated 9 bars, #events = 464
+[info] generated 10 bars, #events = 528
+[info] generated 11 bars, #events = 573
+[info] generated 12 bars, #events = 610
+[info] generated 13 bars, #events = 664
+[info] generated 14 bars, #events = 711
+[info] generated 15 bars, #events = 747
+[info] generated 16 bars, #events = 799
+-- generated events: 800
+-- time elapsed: 9.45 secs
+[info] piece entropy: 1.6384 (+/- 0.6960)
+[info] piece: 1419, bar: 53
+[info] writing to ... generations/vqvae400/id22_bar53_sample05_poly+0_rhym-1
+[info] rhythm cls: tensor([5, 4, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0], device='cuda:0') | polyph_cls: tensor([3, 2, 0, 3, 3, 3, 3, 3, 3, 1, 2, 1, 3, 3, 3, 0], device='cuda:0')
+[info] generated 1 bars, #events = 56
+[info] generated 2 bars, #events = 110
+[info] generated 3 bars, #events = 137
+[info] generated 4 bars, #events = 173
+[info] generated 5 bars, #events = 209
+[info] generated 6 bars, #events = 250
+[info] generated 7 bars, #events = 296
+[info] generated 8 bars, #events = 343
+[info] generated 9 bars, #events = 389
+[info] generated 10 bars, #events = 428
+[info] generated 11 bars, #events = 476
+[info] generated 12 bars, #events = 516
+[info] generated 13 bars, #events = 553
+[info] generated 14 bars, #events = 598
+[info] generated 15 bars, #events = 617
+[info] generated 16 bars, #events = 695
+-- generated events: 696
+-- time elapsed: 7.26 secs
+[info] piece entropy: 1.6455 (+/- 0.7843)
+[info] writing to ... generations/vqvae400/id43_bar66_orig
+[info] piece: 1719, bar: 66
+[info] writing to ... generations/vqvae400/id43_bar66_sample01_poly-3_rhym-1
+[info] rhythm cls: tensor([4, 3, 4, 4, 0, 3, 1, 4, 1, 4, 1, 2, 1, 3, 1, 4], device='cuda:0') | polyph_cls: tensor([3, 3, 2, 4, 3, 0, 4, 4, 4, 3, 4, 3, 4, 0, 4, 4], device='cuda:0')
+[info] generated 1 bars, #events = 43
+[info] generated 2 bars, #events = 82
+[info] generated 3 bars, #events = 119
+[info] generated 4 bars, #events = 155
+[info] generated 5 bars, #events = 181
+[info] generated 6 bars, #events = 216
+[info] generated 7 bars, #events = 259
+[info] generated 8 bars, #events = 315
+[info] generated 9 bars, #events = 353
+[info] generated 10 bars, #events = 410
+[info] generated 11 bars, #events = 448
+[info] generated 12 bars, #events = 489
+[info] generated 13 bars, #events = 526
+[info] generated 14 bars, #events = 567
+[info] generated 15 bars, #events = 610
+[info] generated 16 bars, #events = 663
+-- generated events: 664
+-- time elapsed: 6.67 secs
+[info] piece entropy: 1.3660 (+/- 0.7080)
+[info] piece: 1719, bar: 66
+[info] writing to ... generations/vqvae400/id43_bar66_sample02_poly+2_rhym+3
+[info] rhythm cls: tensor([7, 7, 7, 7, 4, 7, 5, 7, 5, 7, 5, 6, 5, 7, 5, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 4, 7, 7, 7, 7, 7, 7, 7, 5, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 151
+[info] generated 2 bars, #events = 263
+[info] generated 3 bars, #events = 424
+[info] generated 4 bars, #events = 573
+[info] generated 5 bars, #events = 666
+[info] generated 6 bars, #events = 845
+[info] generated 7 bars, #events = 992
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 8 bars, #events = 1200
+[info] generated 9 bars, #events = 1331
+[info] generated 10 bars, #events = 1480
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 11 bars, #events = 1610
+[info] generated 12 bars, #events = 1745
+[info] generated 13 bars, #events = 1863
+[info] generated 14 bars, #events = 1991
+[info] reset context length: cur_len: 1024, accumulated_len: 2048, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 2140
+[info] generated 16 bars, #events = 2306
+-- generated events: 2307
+-- time elapsed: 43.87 secs
+[info] piece entropy: 1.2503 (+/- 0.7377)
+[info] piece: 1719, bar: 66
+[info] writing to ... generations/vqvae400/id43_bar66_sample03_poly+2_rhym+2
+[info] rhythm cls: tensor([7, 6, 7, 7, 3, 6, 4, 7, 4, 7, 4, 5, 4, 6, 4, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 4, 7, 7, 7, 7, 7, 7, 7, 5, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 81
+[info] generated 2 bars, #events = 158
+[info] generated 3 bars, #events = 273
+[info] generated 4 bars, #events = 389
+[info] generated 5 bars, #events = 448
+[info] generated 6 bars, #events = 515
+[info] generated 7 bars, #events = 579
+[info] generated 8 bars, #events = 688
+[info] generated 9 bars, #events = 772
+[info] generated 10 bars, #events = 889
+[info] generated 11 bars, #events = 1007
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 12 bars, #events = 1111
+[info] generated 13 bars, #events = 1173
+[info] generated 14 bars, #events = 1230
+[info] generated 15 bars, #events = 1280
+[info] generated 16 bars, #events = 1355
+-- generated events: 1356
+-- time elapsed: 22.17 secs
+[info] piece entropy: 1.3842 (+/- 0.7649)
+[info] piece: 1719, bar: 66
+[info] writing to ... generations/vqvae400/id43_bar66_sample04_poly+1_rhym+2
+[info] rhythm cls: tensor([7, 6, 7, 7, 3, 6, 4, 7, 4, 7, 4, 5, 4, 6, 4, 7], device='cuda:0') | polyph_cls: tensor([7, 7, 6, 7, 7, 3, 7, 7, 7, 7, 7, 7, 7, 4, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 131
+[info] generated 2 bars, #events = 236
+[info] generated 3 bars, #events = 319
+[info] generated 4 bars, #events = 441
+[info] generated 5 bars, #events = 538
+[info] generated 6 bars, #events = 668
+[info] generated 7 bars, #events = 755
+[info] generated 8 bars, #events = 859
+[info] generated 9 bars, #events = 936
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 10 bars, #events = 1035
+[info] generated 11 bars, #events = 1114
+[info] generated 12 bars, #events = 1198
+[info] generated 13 bars, #events = 1265
+[info] generated 14 bars, #events = 1352
+[info] generated 15 bars, #events = 1405
+[info] generated 16 bars, #events = 1497
+-- generated events: 1498
+-- time elapsed: 26.50 secs
+[info] piece entropy: 1.3565 (+/- 0.7519)
+[info] piece: 1719, bar: 66
+[info] writing to ... generations/vqvae400/id43_bar66_sample05_poly-3_rhym-3
+[info] rhythm cls: tensor([2, 1, 2, 2, 0, 1, 0, 2, 0, 2, 0, 0, 0, 1, 0, 2], device='cuda:0') | polyph_cls: tensor([3, 3, 2, 4, 3, 0, 4, 4, 4, 3, 4, 3, 4, 0, 4, 4], device='cuda:0')
+[info] generated 1 bars, #events = 32
+[info] generated 2 bars, #events = 64
+[info] generated 3 bars, #events = 89
+[info] generated 4 bars, #events = 125
+[info] generated 5 bars, #events = 158
+[info] generated 6 bars, #events = 182
+[info] generated 7 bars, #events = 214
+[info] generated 8 bars, #events = 250
+[info] generated 9 bars, #events = 289
+[info] generated 10 bars, #events = 331
+[info] generated 11 bars, #events = 359
+[info] generated 12 bars, #events = 386
+[info] generated 13 bars, #events = 412
+[info] generated 14 bars, #events = 435
+[info] generated 15 bars, #events = 461
+[info] generated 16 bars, #events = 499
+-- generated events: 500
+-- time elapsed: 4.14 secs
+[info] piece entropy: 1.7616 (+/- 0.8014)
+[info] writing to ... generations/vqvae400/id45_bar16_orig
+[info] piece: 1732, bar: 16
+[info] writing to ... generations/vqvae400/id45_bar16_sample01_poly-2_rhym-1
+[info] rhythm cls: tensor([0, 2, 3, 2, 3, 3, 1, 4, 2, 3, 1, 4, 3, 3, 1, 4], device='cuda:0') | polyph_cls: tensor([4, 1, 3, 3, 4, 2, 2, 3, 5, 3, 1, 4, 5, 3, 4, 3], device='cuda:0')
+[info] generated 1 bars, #events = 27
+[info] generated 2 bars, #events = 56
+[info] generated 3 bars, #events = 107
+[info] generated 4 bars, #events = 148
+[info] generated 5 bars, #events = 219
+[info] generated 6 bars, #events = 267
+[info] generated 7 bars, #events = 293
+[info] generated 8 bars, #events = 335
+[info] generated 9 bars, #events = 373
+[info] generated 10 bars, #events = 418
+[info] generated 11 bars, #events = 447
+[info] generated 12 bars, #events = 499
+[info] generated 13 bars, #events = 542
+[info] generated 14 bars, #events = 596
+[info] generated 15 bars, #events = 631
+[info] generated 16 bars, #events = 681
+-- generated events: 682
+-- time elapsed: 7.00 secs
+[info] piece entropy: 1.6522 (+/- 0.7129)
+[info] piece: 1732, bar: 16
+[info] writing to ... generations/vqvae400/id45_bar16_sample02_poly+2_rhym+1
+[info] rhythm cls: tensor([2, 4, 5, 4, 5, 5, 3, 6, 4, 5, 3, 6, 5, 5, 3, 6], device='cuda:0') | polyph_cls: tensor([7, 5, 7, 7, 7, 6, 6, 7, 7, 7, 5, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 40
+[info] generated 2 bars, #events = 81
+[info] generated 3 bars, #events = 148
+[info] generated 4 bars, #events = 231
+[info] generated 5 bars, #events = 295
+[info] generated 6 bars, #events = 361
+[info] generated 7 bars, #events = 416
+[info] generated 8 bars, #events = 500
+[info] generated 9 bars, #events = 572
+[info] generated 10 bars, #events = 636
+[info] generated 11 bars, #events = 683
+[info] generated 12 bars, #events = 756
+[info] generated 13 bars, #events = 819
+[info] generated 14 bars, #events = 896
+[info] generated 15 bars, #events = 948
+[info] generated 16 bars, #events = 1017
+-- generated events: 1018
+-- time elapsed: 15.64 secs
+[info] piece entropy: 1.4532 (+/- 0.7212)
+[info] piece: 1732, bar: 16
+[info] writing to ... generations/vqvae400/id45_bar16_sample03_poly-2_rhym+1
+[info] rhythm cls: tensor([2, 4, 5, 4, 5, 5, 3, 6, 4, 5, 3, 6, 5, 5, 3, 6], device='cuda:0') | polyph_cls: tensor([4, 1, 3, 3, 4, 2, 2, 3, 5, 3, 1, 4, 5, 3, 4, 3], device='cuda:0')
+[info] generated 1 bars, #events = 42
+[info] generated 2 bars, #events = 90
+[info] generated 3 bars, #events = 137
+[info] generated 4 bars, #events = 188
+[info] generated 5 bars, #events = 238
+[info] generated 6 bars, #events = 286
+[info] generated 7 bars, #events = 320
+[info] generated 8 bars, #events = 380
+[info] generated 9 bars, #events = 441
+[info] generated 10 bars, #events = 490
+[info] generated 11 bars, #events = 532
+[info] generated 12 bars, #events = 592
+[info] generated 13 bars, #events = 645
+[info] generated 14 bars, #events = 696
+[info] generated 15 bars, #events = 769
+[info] generated 16 bars, #events = 867
+-- generated events: 868
+-- time elapsed: 11.10 secs
+[info] piece entropy: 1.6111 (+/- 0.7436)
+[info] piece: 1732, bar: 16
+[info] writing to ... generations/vqvae400/id45_bar16_sample04_poly+2_rhym+2
+[info] rhythm cls: tensor([3, 5, 6, 5, 6, 6, 4, 7, 5, 6, 4, 7, 6, 6, 4, 7], device='cuda:0') | polyph_cls: tensor([7, 5, 7, 7, 7, 6, 6, 7, 7, 7, 5, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 48
+[info] generated 2 bars, #events = 84
+[info] generated 3 bars, #events = 159
+[info] generated 4 bars, #events = 222
+[info] generated 5 bars, #events = 302
+[info] generated 6 bars, #events = 367
+[info] generated 7 bars, #events = 423
+[info] generated 8 bars, #events = 513
+[info] generated 9 bars, #events = 614
+[info] generated 10 bars, #events = 711
+[info] generated 11 bars, #events = 767
+[info] generated 12 bars, #events = 860
+[info] generated 13 bars, #events = 924
+[info] generated 14 bars, #events = 998
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1054
+[info] generated 16 bars, #events = 1131
+-- generated events: 1132
+-- time elapsed: 17.45 secs
+[info] piece entropy: 1.5373 (+/- 0.7523)
+[info] piece: 1732, bar: 16
+[info] writing to ... generations/vqvae400/id45_bar16_sample05_poly-3_rhym+0
+[info] rhythm cls: tensor([1, 3, 4, 3, 4, 4, 2, 5, 3, 4, 2, 5, 4, 4, 2, 5], device='cuda:0') | polyph_cls: tensor([3, 0, 2, 2, 3, 1, 1, 2, 4, 2, 0, 3, 4, 2, 3, 2], device='cuda:0')
+[info] generated 1 bars, #events = 25
+[info] generated 2 bars, #events = 60
+[info] generated 3 bars, #events = 96
+[info] generated 4 bars, #events = 135
+[info] generated 5 bars, #events = 173
+[info] generated 6 bars, #events = 212
+[info] generated 7 bars, #events = 238
+[info] generated 8 bars, #events = 285
+[info] generated 9 bars, #events = 321
+[info] generated 10 bars, #events = 366
+[info] generated 11 bars, #events = 395
+[info] generated 12 bars, #events = 446
+[info] generated 13 bars, #events = 490
+[info] generated 14 bars, #events = 523
+[info] generated 15 bars, #events = 550
+[info] generated 16 bars, #events = 607
+-- generated events: 608
+-- time elapsed: 5.70 secs
+[info] piece entropy: 1.4661 (+/- 0.8629)
+[info] writing to ... generations/vqvae400/id56_bar5_orig
+[info] piece: 365, bar: 5
+[info] writing to ... generations/vqvae400/id56_bar5_sample01_poly-3_rhym+3
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 5, 7, 7, 7, 7, 5, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 0, 1, 0, 2, 2, 2, 2, 1, 3, 2, 1, 2, 1], device='cuda:0')
+[info] generated 1 bars, #events = 55
+[info] generated 2 bars, #events = 112
+[info] generated 3 bars, #events = 171
+[info] generated 4 bars, #events = 228
+[info] generated 5 bars, #events = 294
+[info] generated 6 bars, #events = 358
+[info] generated 7 bars, #events = 410
+[info] generated 8 bars, #events = 478
+[info] generated 9 bars, #events = 543
+[info] generated 10 bars, #events = 609
+[info] generated 11 bars, #events = 679
+[info] generated 12 bars, #events = 769
+[info] generated 13 bars, #events = 855
+[info] generated 14 bars, #events = 929
+[info] generated 15 bars, #events = 1018
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1116
+-- generated events: 1117
+-- time elapsed: 17.28 secs
+[info] piece entropy: 1.3098 (+/- 0.7695)
+[info] piece: 365, bar: 5
+[info] writing to ... generations/vqvae400/id56_bar5_sample02_poly+0_rhym-2
+[info] rhythm cls: tensor([3, 4, 4, 4, 4, 3, 0, 4, 3, 5, 5, 0, 4, 3, 4, 2], device='cuda:0') | polyph_cls: tensor([1, 2, 1, 3, 4, 2, 5, 5, 5, 5, 4, 6, 5, 4, 5, 4], device='cuda:0')
+[info] generated 1 bars, #events = 46
+[info] generated 2 bars, #events = 81
+[info] generated 3 bars, #events = 116
+[info] generated 4 bars, #events = 162
+[info] generated 5 bars, #events = 203
+[info] generated 6 bars, #events = 238
+[info] generated 7 bars, #events = 271
+[info] generated 8 bars, #events = 320
+[info] generated 9 bars, #events = 358
+[info] generated 10 bars, #events = 409
+[info] generated 11 bars, #events = 451
+[info] generated 12 bars, #events = 485
+[info] generated 13 bars, #events = 529
+[info] generated 14 bars, #events = 566
+[info] generated 15 bars, #events = 603
+[info] generated 16 bars, #events = 638
+-- generated events: 639
+-- time elapsed: 6.19 secs
+[info] piece entropy: 1.6015 (+/- 0.7896)
+[info] piece: 365, bar: 5
+[info] writing to ... generations/vqvae400/id56_bar5_sample03_poly-1_rhym+3
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 5, 7, 7, 7, 7, 5, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([0, 1, 0, 2, 3, 1, 4, 4, 4, 4, 3, 5, 4, 3, 4, 3], device='cuda:0')
+[info] generated 1 bars, #events = 110
+[info] generated 2 bars, #events = 271
+[info] generated 3 bars, #events = 419
+[info] generated 4 bars, #events = 549
+[info] generated 5 bars, #events = 784
+[info] generated 6 bars, #events = 1011
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 7 bars, #events = 1096
+[info] generated 8 bars, #events = 1328
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 9 bars, #events = 1577
+[info] generated 10 bars, #events = 1832
+[info] generated 11 bars, #events = 2036
+[info] reset context length: cur_len: 1024, accumulated_len: 2048, truncate_range: 512 ~ 1023
+[info] generated 12 bars, #events = 2125
+[info] generated 13 bars, #events = 2317
+[info] generated 14 bars, #events = 2532
+[info] reset context length: cur_len: 1024, accumulated_len: 2560, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 2734
+[info] generated 16 bars, #events = 2910
+-- generated events: 2911
+-- time elapsed: 57.33 secs
+[info] piece entropy: 1.1051 (+/- 0.7729)
+[info] piece: 365, bar: 5
+[info] writing to ... generations/vqvae400/id56_bar5_sample04_poly+3_rhym+3
+[info] rhythm cls: tensor([7, 7, 7, 7, 7, 7, 5, 7, 7, 7, 7, 5, 7, 7, 7, 7], device='cuda:0') | polyph_cls: tensor([4, 5, 4, 6, 7, 5, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7], device='cuda:0')
+[info] generated 1 bars, #events = 74
+[info] generated 2 bars, #events = 136
+[info] generated 3 bars, #events = 199
+[info] generated 4 bars, #events = 278
+[info] generated 5 bars, #events = 397
+[info] generated 6 bars, #events = 492
+[info] generated 7 bars, #events = 592
+[info] generated 8 bars, #events = 714
+[info] generated 9 bars, #events = 803
+[info] generated 10 bars, #events = 928
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 11 bars, #events = 1043
+[info] generated 12 bars, #events = 1125
+[info] generated 13 bars, #events = 1224
+[info] generated 14 bars, #events = 1340
+[info] generated 15 bars, #events = 1447
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] generated 16 bars, #events = 1558
+-- generated events: 1559
+-- time elapsed: 27.64 secs
+[info] piece entropy: 1.4289 (+/- 0.6960)
+[info] piece: 365, bar: 5
+[info] writing to ... generations/vqvae400/id56_bar5_sample05_poly+1_rhym+0
+[info] rhythm cls: tensor([5, 6, 6, 6, 6, 5, 2, 6, 5, 7, 7, 2, 6, 5, 6, 4], device='cuda:0') | polyph_cls: tensor([2, 3, 2, 4, 5, 3, 6, 6, 6, 6, 5, 7, 6, 5, 6, 5], device='cuda:0')
+[info] generated 1 bars, #events = 48
+[info] generated 2 bars, #events = 103
+[info] generated 3 bars, #events = 163
+[info] generated 4 bars, #events = 227
+[info] generated 5 bars, #events = 295
+[info] generated 6 bars, #events = 358
+[info] generated 7 bars, #events = 415
+[info] generated 8 bars, #events = 497
+[info] generated 9 bars, #events = 579
+[info] generated 10 bars, #events = 654
+[info] generated 11 bars, #events = 716
+[info] generated 12 bars, #events = 770
+[info] generated 13 bars, #events = 872
+[info] generated 14 bars, #events = 949
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] generated 15 bars, #events = 1033
+[info] generated 16 bars, #events = 1106
+-- generated events: 1107
+-- time elapsed: 16.99 secs
+[info] piece entropy: 1.3761 (+/- 0.7212)
+[time stats] 50 songs, generation time: 13.83 secs (+/- 10.19)
+[entropy] 1.3643 (+/- 0.1617)
