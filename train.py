@@ -49,16 +49,15 @@ def log_epoch(log_file, log_data, is_init=False):
     ))
 
 def beta_cyclical_sched(step):
-  return 1
-  # step_in_cycle = (step - 1) % kl_cycle_steps
-  # cycle_progress = step_in_cycle / kl_cycle_steps
+  step_in_cycle = (step - 1) % kl_cycle_steps
+  cycle_progress = step_in_cycle / kl_cycle_steps
 
-  # if step < no_kl_steps:
-  #   return 0.
-  # if cycle_progress < 0.5:
-  #   return kl_max_beta * cycle_progress * 2.
-  # else:
-  #   return kl_max_beta
+  if step < no_kl_steps:
+    return 0.
+  if cycle_progress < 0.5:
+    return kl_max_beta * cycle_progress * 2.
+  else:
+    return kl_max_beta
 
 def compute_loss_ema(ema, batch_loss, decay=0.95):
   return batch_loss
@@ -147,7 +146,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
         ))
       model.train()
 
-    if (trained_steps + 1) % batches == 0 && epoch % epochs == 0:
+    if (trained_steps + 1) == batches and epoch == epochs:
       torch.save(model.state_dict(),
         os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-KL_{:.3f}-model.pt'.format(
             trained_steps,
