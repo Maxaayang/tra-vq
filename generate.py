@@ -19,7 +19,7 @@ config = yaml.load(open(config_path, 'r'), Loader=yaml.FullLoader)
 device = config['training']['device']
 data_dir = config['data']['data_dir']
 vocab_path = config['data']['vocab_path']
-data_split = 'pickles/test_pieces.pkl'
+data_split = 'new_pickles/train_pieces.pkl'
 
 ckpt_path = sys.argv[2]
 out_dir = sys.argv[3]
@@ -202,7 +202,8 @@ if __name__ == "__main__":
     pieces=pickle_load(data_split),
     pad_to_same=False
   )
-  pieces = random.sample(range(len(dset)), n_pieces)
+  # pieces = random.sample(range(len(dset)), n_pieces)
+  pieces = [1]
   print ('[sampled pieces]', pieces)
   
   mconf = config['model']
@@ -257,9 +258,13 @@ if __name__ == "__main__":
                   use_sampling=config['generate']['use_latent_sampling'],
                   sampling_var=config['generate']['latent_sampling_var']
                 )
+
+    # 生成 -3 ~ 4 的 5 个随机数
     p_cls_diff = random_shift_attr_cls(n_samples_per_piece)
     r_cls_diff = random_shift_attr_cls(n_samples_per_piece)
 
+    # 生成指定数量的音乐
+    # clamp 将数据限制在一个范围之内
     piece_entropies = []
     for samp in range(n_samples_per_piece):
       p_polyph_cls = (p_data['polyph_cls_bar'] + p_cls_diff[samp]).clamp(0, 7).long()
