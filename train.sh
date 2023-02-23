@@ -15,3 +15,5 @@
 rm -rf ./generations/123vqvae10/*
 python3 generate.py config/default.yaml ./ckpt/vqvae10/params/step_1170-RC_2.458-VQ_0.073-model.pt \
 generations/123vqvae10/ 10 5 > ./logs/gen/123gen_vq10.log
+
+python3 generate.py config/default.yaml ./ckpt/vqvae10/params/step_1170-RC_2.458-VQ_0.073-model.pt generations/123vqvae10/ 10 5 
