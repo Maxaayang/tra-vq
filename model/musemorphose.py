@@ -46,7 +46,8 @@ class VAETransformerDecoder(nn.Module):
     for i in range(self.n_layer):
       if self.cond_mode == 'in-attn':
         out += seg_emb
-      out = self.decoder_layers[i](out, src_mask=attn_mask)
+      # out = self.decoder_layers[i](out, src_mask=attn_mask)
+      out = self.decoder_layers[i](out, src_mask=None)
 
     return out
 
