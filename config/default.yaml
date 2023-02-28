@@ -22,6 +22,9 @@ model:
     d_latent:         128
     d_polyph_emb:     64
     d_rfreq_emb:      64
+    embedding_dim:    256
+    num_embeddings:   32
+    commitment_cost:   7.5
     cond_mode:        in-attn
     pretrained_params_path:      null
     pretrained_optim_path:       null
@@ -30,7 +33,7 @@ training:
     device:           cuda
     ckpt_dir:         ./ckpt/vqvae10
     trained_steps:    0
-    max_epochs:       10
+    max_epochs:       1
     max_lr:           1.0e-4
     min_lr:           5.0e-6
     lr_warmup_steps:  200

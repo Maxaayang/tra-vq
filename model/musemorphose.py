@@ -6,9 +6,9 @@ from transformer_helpers import (
   weights_init, PositionalEncoding, TokenEmbedding, generate_causal_mask
 )
 # from VectorQuantizer import *
-from juke import *
+from soft import *
 
-device = t.device("cuda:0" if t.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class VAETransformerDecoder(nn.Module):
   def __init__(self, n_layer, n_head, d_model, d_ff, d_seg_emb, dropout=0.1, activation='relu', cond_mode='in-attn'):
     super(VAETransformerDecoder, self).__init__()
@@ -55,7 +55,8 @@ class VAETransformerDecoder(nn.Module):
 class MuseMorphose(nn.Module):
   def __init__(self, enc_n_layer, enc_n_head, enc_d_model, enc_d_ff, 
     dec_n_layer, dec_n_head, dec_d_model, dec_d_ff,
-    d_vae_latent, d_embed, n_token,
+    d_vae_latent, embedding_dim, num_embeddings, commitment_cost,
+    d_embed, n_token,
     enc_dropout=0.1, enc_activation='relu',
     dec_dropout=0.1, dec_activation='relu',
     d_rfreq_emb=32, d_polyph_emb=32,
@@ -64,7 +65,8 @@ class MuseMorphose(nn.Module):
     cond_mode='in-attn'
   ):
     super(MuseMorphose, self).__init__()
-    self.vq_layer = VectorQuantizer(256, 128, 1.0)
+    # self.vq_layer = VectorQuantizer(256, 128, 1.0)
+    self.vq_vae = OhVectorQuantizer(embedding_dim, num_embeddings, commitment_cost)
     self.enc_n_layer = enc_n_layer
     self.enc_n_head = enc_n_head
     self.enc_d_model = enc_d_model
@@ -89,7 +91,7 @@ class MuseMorphose(nn.Module):
     self.pe = PositionalEncoding(d_embed)
     self.dec_out_proj = nn.Linear(dec_d_model, n_token)
     self.encoder = VAETransformerEncoder(
-      enc_n_layer, enc_n_head, enc_d_model, enc_d_ff, d_vae_latent, enc_dropout, enc_activation
+      enc_n_layer, enc_n_head, enc_d_model, enc_d_ff, d_vae_latent, embedding_dim, num_embeddings, enc_dropout, enc_activation
     )
 
     self.use_attr_cls = use_attr_cls
@@ -138,6 +140,15 @@ class MuseMorphose(nn.Module):
     # vae_latent = self.reparameterize(mu, logvar, use_sampling=use_sampling, sampling_var=sampling_var)
 
     return vae_latent
+  
+  def bottleneck_deflatten(self, input_signal, shape):
+    x = nn.Sequential(
+        nn.Linear(input_signal.shape[-1], 128, device=device),
+        nn.ReLU()
+    )(input_signal)
+    # deflated = x.view(-1, shape[1], shape[2], shape[3])
+    # deflated = x(input_signal)
+    return x
 
   def generate(self, inp, dec_seg_emb, rfreq_cls=None, polyph_cls=None, keep_last_only=True):
     token_emb = self.token_emb(inp)
@@ -180,13 +191,16 @@ class MuseMorphose(nn.Module):
     if padding_mask is not None:
       padding_mask = padding_mask.reshape(-1, padding_mask.size(-1))
 
-    _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
-    vae_latent = self.reparameterize(mu, logvar)
+    shape, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
     # vae_latent = self.reparameterize(mu, logvar)
-    index, vae_latent, vq_loss, _ = self.vq_layer(mu)
-    vae_latent_reshaped = vae_latent.reshape(enc_bt_size, enc_n_bars, -1)
+    z = {'z_mean':mu, 'z_log_var':logvar, 'shape':shape}
+    # index, vae_latent, vq_loss, _ = self.vq_layer(mu)
+    vq_output_train = self.vq_vae(z, is_training=True)
+    # quantize = nn.Linear(vq_output_train["quantize"], 128)
+    quantize = self.bottleneck_deflatten(vq_output_train["quantize"], z["shape"])
+    vae_latent_reshaped = quantize.reshape(enc_bt_size, enc_n_bars, -1)  # torch.Size([6, 16, 256])
 
-    dec_seg_emb = torch.zeros(dec_inp.size(0), dec_inp.size(1), self.d_vae_latent).to(vae_latent.device)
+    dec_seg_emb = torch.zeros(dec_inp.size(0), dec_inp.size(1), self.d_vae_latent).to(vae_latent_reshaped.device) # torch.Size([1280, 6, 128])
     for n in range(dec_inp.size(1)):
       # [shape of dec_inp_bar_pos] (bsize, n_bars_per_sample + 1)
       # -- stores [[start idx of bar #1, sample #1, ..., start idx of bar #K, sample #1, seqlen of sample #1], [same for another sample], ...]
@@ -203,7 +217,7 @@ class MuseMorphose(nn.Module):
     dec_out = self.decoder(dec_inp, dec_seg_emb_cat)
     dec_logits = self.dec_out_proj(dec_out)
 
-    return mu, logvar, dec_logits, vq_loss, index
+    return mu, logvar, dec_logits, vq_output_train["loss"]
 
   def compute_loss(self, dec_logits, dec_tgt, vq_loss):
     recons_loss = F.cross_entropy(

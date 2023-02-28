@@ -89,13 +89,13 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
     global trained_steps
     trained_steps += 1
 
-    mu, logvar, dec_logits, vq_loss, index = model(
+    mu, logvar, dec_logits, vq_loss = model(
       batch_enc_inp, batch_dec_inp, 
       batch_inp_bar_pos, batch_rfreq_cls, batch_polyph_cls,
       padding_mask=batch_padding_mask
     )
 
-    s_index.append(index)
+    # s_index.append(index)
 
     if not constant_kl:
       kl_beta = beta_cyclical_sched(trained_steps)
@@ -177,7 +177,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
     os.path.join(ckpt_dir, 'log.txt'), log_data, is_init=not os.path.exists(os.path.join(ckpt_dir, 'log.txt'))
   )
 
-  return s_index
+  # return s_index
 
 def validate(model, dloader, n_rounds=8, use_attr_cls=True):
   model.eval()
@@ -204,7 +204,7 @@ def validate(model, dloader, n_rounds=8, use_attr_cls=True):
           batch_rfreq_cls = None
           batch_polyph_cls = None
 
-        _, _, dec_logits, vq_loss, _ = model(
+        _, _, dec_logits, vq_loss = model(
           batch_enc_inp, batch_dec_inp, 
           batch_inp_bar_pos, batch_rfreq_cls, batch_polyph_cls,
           padding_mask=batch_padding_mask
@@ -247,7 +247,8 @@ if __name__ == "__main__":
   model = MuseMorphose(
     mconf['enc_n_layer'], mconf['enc_n_head'], mconf['enc_d_model'], mconf['enc_d_ff'],
     mconf['dec_n_layer'], mconf['dec_n_head'], mconf['dec_d_model'], mconf['dec_d_ff'],
-    mconf['d_latent'], mconf['d_embed'], dset.vocab_size,
+    mconf['d_latent'], mconf['embedding_dim'], mconf['num_embeddings'], mconf['commitment_cost'],
+    mconf['d_embed'], dset.vocab_size,
     d_polyph_emb=mconf['d_polyph_emb'], d_rfreq_emb=mconf['d_rfreq_emb'],
     cond_mode=mconf['cond_mode']
   ).to(device)
@@ -273,17 +274,18 @@ if __name__ == "__main__":
   if not os.path.exists(optim_dir):
     os.makedirs(optim_dir)
 
-  map = {}
+  # map = {}
   epochs = config['training']['max_epochs']
   for ep in tqdm(range(config['training']['max_epochs'])):
-    s_index = train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler, epochs)
-    for i in range(len(s_index)):
-      index = s_index[i]
-      index = index.cpu().numpy()
-      for j in range(len(index)):
-        if (map.__contains__(index[j])):
-          map[index[j]] += 1
-        else:
-          map[index[j]] = 1
+    # s_index = train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler, epochs)
+    train_model(ep+1, model, dloader, dloader_val, optimizer, scheduler, epochs)
+  #   for i in range(len(s_index)):
+  #     index = s_index[i]
+  #     index = index.cpu().numpy()
+  #     for j in range(len(index)):
+  #       if (map.__contains__(index[j])):
+  #         map[index[j]] += 1
+  #       else:
+  #         map[index[j]] = 1
 
-  print(sorted(map.items(),key=lambda s:s[1]))
+  # print(sorted(map.items(),key=lambda s:s[1]))
