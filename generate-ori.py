@@ -210,7 +210,8 @@ if __name__ == "__main__":
   model = MuseMorphose(
     mconf['enc_n_layer'], mconf['enc_n_head'], mconf['enc_d_model'], mconf['enc_d_ff'],
     mconf['dec_n_layer'], mconf['dec_n_head'], mconf['dec_d_model'], mconf['dec_d_ff'],
-    mconf['d_latent'], mconf['d_embed'], dset.vocab_size,
+    mconf['d_latent'], mconf['embedding_dim'], mconf['num_embeddings'], mconf['commitment_cost'],
+    mconf['d_embed'], dset.vocab_size,
     d_polyph_emb=mconf['d_polyph_emb'], d_rfreq_emb=mconf['d_rfreq_emb'],
     cond_mode=mconf['cond_mode']
   ).to(device)

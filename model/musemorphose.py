@@ -130,16 +130,20 @@ class MuseMorphose(nn.Module):
 
     return eps * std + mu
 
+  # 生成的时候进行编码的
   def get_sampled_latent(self, inp, padding_mask=None, use_sampling=False, sampling_var=0.):
     token_emb = self.token_emb(inp)
     enc_inp = self.emb_dropout(token_emb) + self.pe(inp.size(0))
 
-    _, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
-    mu, logvar = mu.reshape(-1, mu.size(-1)), logvar.reshape(-1, mu.size(-1))
-    _, vae_latent, _, _ = self.vq_layer(mu)
+    shape, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
+    z = {'z_mean':mu, 'z_log_var':logvar, 'shape':shape}
+    vq_output_train = self.vq_vae(z, is_training=True)
+    quantize = self.bottleneck_deflatten(vq_output_train["quantize"], z["shape"])
+    # mu, logvar = mu.reshape(-1, mu.size(-1)), logvar.reshape(-1, mu.size(-1))
+    # _, vae_latent, _, _ = self.vq_layer(mu)
     # vae_latent = self.reparameterize(mu, logvar, use_sampling=use_sampling, sampling_var=sampling_var)
 
-    return vae_latent
+    return quantize
   
   def bottleneck_deflatten(self, input_signal, shape):
     x = nn.Sequential(
