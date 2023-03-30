@@ -296,12 +296,12 @@ if __name__ == "__main__":
       times.append(t_sec)
 
       song = word2event(song, dset.idx2event)
-      print (*song, sep='\n', file=open(out_file + '.txt', 'a'))
+      # print (*song, sep='\n', file=open(out_file + '.txt', 'a'))
       remi2midi(song, out_file + '.mid', enforce_tempo=True, enforce_tempo_val=orig_tempo)
 
       # save metadata of the generation
-      np.save(out_file + '-POLYCLS.npy', tensor_to_numpy(p_polyph_cls))
-      np.save(out_file + '-RHYMCLS.npy', tensor_to_numpy(p_rfreq_cls))
+      # np.save(out_file + '-POLYCLS.npy', tensor_to_numpy(p_polyph_cls))
+      # np.save(out_file + '-RHYMCLS.npy', tensor_to_numpy(p_rfreq_cls))
       print ('[info] piece entropy: {:.4f} (+/- {:.4f})'.format(
         entropies.mean(), entropies.std()
       ))
