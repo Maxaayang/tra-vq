@@ -60,11 +60,11 @@ def beta_cyclical_sched(step):
     return kl_max_beta
 
 def compute_loss_ema(ema, batch_loss, decay=0.95):
-  return batch_loss
-  # if ema == 0.:
-  #   return batch_loss
-  # else:
-  #   return batch_loss * (1 - decay) + ema * decay
+  #return batch_loss
+  if ema == 0.:
+     return batch_loss
+  else:
+     return batch_loss * (1 - decay) + ema * decay
 
 def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
   model.train()
@@ -73,6 +73,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
   print ('[epoch {:03d}] # batches = {}'.format(epoch, len(dloader)))
   st = time.time()
   batches = len(dloader)
+  step = 0
 
   for batch_idx, batch_samples in enumerate(dloader):
     model.zero_grad()
@@ -87,6 +88,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
 
     global trained_steps
     trained_steps += 1
+    step += 1
 
     mu, logvar, dec_logits = model(
       batch_enc_inp, batch_dec_inp, 
@@ -146,7 +148,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
         ))
       model.train()
 
-    if (trained_steps + 1) == batches and epoch == epochs:
+    if step == batches and epoch == epochs:
       torch.save(model.state_dict(),
         os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-KL_{:.3f}-model.pt'.format(
             trained_steps,

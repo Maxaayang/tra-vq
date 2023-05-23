@@ -1,0 +1,186 @@
+[preparing data] now at #0
+[sampled pieces] [48, 43, 30, 49, 0, 11, 26, 87, 13, 47]
+[info] writing to ... generations/new_vae30_kl573__klcycle3000/id48_bar41_orig
+[info] piece: 201, bar: 41
+[info] writing to ... generations/new_vae30_kl573__klcycle3000/id48_bar41_sample01_poly+0_rhym-2
+[info] rhythm cls: tensor([5, 5, 5, 5, 5, 5, 5, 0, 5, 3, 4, 4, 4, 4, 3, 5], device='cuda:0') | polyph_cls: tensor([7, 6, 7, 6, 6, 6, 5, 4, 7, 3, 5, 5, 6, 5, 5, 7], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] generated 1 bars, #events = 44
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 1024, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 1536, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 2048, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 2560, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 3072, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] generated 2 bars, #events = 3534
+[info] reset context length: cur_len: 1024, accumulated_len: 3584, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 4096, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 4608, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 5120, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 5632, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 6144, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 6656, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 7168, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 7680, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 8192, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 8704, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 9216, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 9728, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 10240, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 10752, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 11264, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 11776, truncate_range: 512 ~ 1023
+[info] position not increasing, failed cnt: 1
+[info] reset context length: cur_len: 1024, accumulated_len: 12288, truncate_range: 512 ~ 1023
+[info] reset context length: cur_len: 1024, accumulated_len: 12800, truncate_range: 512 ~ 1023
+[info] generated 3 bars, #events = 12957
+[info] generated 4 bars, #events = 12979
+[info] generated 5 bars, #events = 13010
+[info] generated 6 bars, #events = 13053
+[info] generated 7 bars, #events = 13055
+[info] generated 8 bars, #events = 13057
+[info] generated 9 bars, #events = 13059
+[info] generated 10 bars, #events = 13061
+[info] generated 11 bars, #events = 13109
+[info] generated 12 bars, #events = 13118
+[info] generated 13 bars, #events = 13129
+[info] generated 14 bars, #events = 13137
+[info] generated 15 bars, #events = 13139
+[info] generated 16 bars, #events = 13157
+-- generated events: 13158
+-- time elapsed: 233.85 secs
+[info] piece entropy: 1.0578 (+/- 0.7985)
+[info] piece: 201, bar: 41
+[info] writing to ... generations/new_vae30_kl573__klcycle3000/id48_bar41_sample02_poly+1_rhym-2
+[info] rhythm cls: tensor([5, 5, 5, 5, 5, 5, 5, 0, 5, 3, 4, 4, 4, 4, 3, 5], device='cuda:0') | polyph_cls: tensor([7, 7, 7, 7, 7, 7, 6, 5, 7, 4, 6, 6, 7, 6, 6, 7], device='cuda:0')
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 1
+[info] position not increasing, failed cnt: 2
+[info] position not increasing, failed cnt: 3
+[info] position not increasing, failed cnt: 4
+[info] position not increasing, failed cnt: 5
+[info] position not increasing, failed cnt: 6
+[info] position not increasing, failed cnt: 7
+[info] position not increasing, failed cnt: 8
+[info] position not increasing, failed cnt: 9
+[info] position not increasing, failed cnt: 10
+[info] position not increasing, failed cnt: 11
+[info] position not increasing, failed cnt: 12
+[info] position not increasing, failed cnt: 13
+[info] position not increasing, failed cnt: 14
+[info] position not increasing, failed cnt: 15
+[info] position not increasing, failed cnt: 16
+[info] position not increasing, failed cnt: 17
+[info] position not increasing, failed cnt: 18
+[info] position not increasing, failed cnt: 19
+[info] position not increasing, failed cnt: 20
+[info] position not increasing, failed cnt: 21
+[info] position not increasing, failed cnt: 22
+[info] position not increasing, failed cnt: 23
+[info] position not increasing, failed cnt: 24
+[info] position not increasing, failed cnt: 25
+[info] position not increasing, failed cnt: 26
+[info] position not increasing, failed cnt: 27
+[info] position not increasing, failed cnt: 28
+[info] position not increasing, failed cnt: 29
+[info] position not increasing, failed cnt: 30
+[info] position not increasing, failed cnt: 31
+[info] position not increasing, failed cnt: 32
+[info] position not increasing, failed cnt: 33
+[info] position not increasing, failed cnt: 34
+[info] position not increasing, failed cnt: 35
+[info] position not increasing, failed cnt: 36
+[info] position not increasing, failed cnt: 37
+[info] position not increasing, failed cnt: 38
+[info] position not increasing, failed cnt: 39
+[info] position not increasing, failed cnt: 40
+[info] position not increasing, failed cnt: 41
+[info] position not increasing, failed cnt: 42
+[info] position not increasing, failed cnt: 43
+[info] position not increasing, failed cnt: 44
+[info] position not increasing, failed cnt: 45
+[info] position not increasing, failed cnt: 46
+[info] position not increasing, failed cnt: 47
+[info] position not increasing, failed cnt: 48
+[info] position not increasing, failed cnt: 49
+[info] position not increasing, failed cnt: 50
+[info] position not increasing, failed cnt: 51
+[info] position not increasing, failed cnt: 52
+[info] position not increasing, failed cnt: 53
+[info] position not increasing, failed cnt: 54
+[info] position not increasing, failed cnt: 55
+[info] position not increasing, failed cnt: 56
+[info] position not increasing, failed cnt: 57
+[info] position not increasing, failed cnt: 58
+[info] position not increasing, failed cnt: 59
+[info] position not increasing, failed cnt: 60
+[info] position not increasing, failed cnt: 61
+[info] position not increasing, failed cnt: 62
+[info] position not increasing, failed cnt: 63
+[info] position not increasing, failed cnt: 64
+[info] position not increasing, failed cnt: 65
+[info] position not increasing, failed cnt: 66
+[info] position not increasing, failed cnt: 67
+[info] position not increasing, failed cnt: 68
+[info] position not increasing, failed cnt: 69
+[info] position not increasing, failed cnt: 70
+[info] position not increasing, failed cnt: 71
+[info] position not increasing, failed cnt: 72
+[info] position not increasing, failed cnt: 73
+[info] position not increasing, failed cnt: 74
+[info] position not increasing, failed cnt: 75
+[info] position not increasing, failed cnt: 76
+[info] position not increasing, failed cnt: 77
+[info] position not increasing, failed cnt: 78
+[info] position not increasing, failed cnt: 79
+[info] position not increasing, failed cnt: 80
+[info] position not increasing, failed cnt: 81
+[info] position not increasing, failed cnt: 82
+[info] position not increasing, failed cnt: 83
+[info] position not increasing, failed cnt: 84
+[info] position not increasing, failed cnt: 85
+[info] position not increasing, failed cnt: 86
+[info] position not increasing, failed cnt: 87
+[info] position not increasing, failed cnt: 88
+[info] position not increasing, failed cnt: 89
+[info] position not increasing, failed cnt: 90
+[info] position not increasing, failed cnt: 91
+[info] position not increasing, failed cnt: 92
+[info] position not increasing, failed cnt: 93
+[info] position not increasing, failed cnt: 94
+[info] position not increasing, failed cnt: 95
+[info] position not increasing, failed cnt: 96
+[info] position not increasing, failed cnt: 97
+[info] position not increasing, failed cnt: 98
+[info] position not increasing, failed cnt: 99
+[info] position not increasing, failed cnt: 100
+[info] position not increasing, failed cnt: 101
+[info] position not increasing, failed cnt: 102
+[info] position not increasing, failed cnt: 103
+[info] position not increasing, failed cnt: 104
+[info] position not increasing, failed cnt: 105
+[info] position not increasing, failed cnt: 106
+[info] position not increasing, failed cnt: 107
+[info] position not increasing, failed cnt: 108
+[info] position not increasing, failed cnt: 109
+[info] position not increasing, failed cnt: 110
+[info] position not increasing, failed cnt: 111
+[info] position not increasing, failed cnt: 112
+[info] position not increasing, failed cnt: 113
+[info] position not increasing, failed cnt: 114
+[info] position not increasing, failed cnt: 115
+[info] position not increasing, failed cnt: 116
+[info] position not increasing, failed cnt: 117
+[info] position not increasing, failed cnt: 118
+[info] position not increasing, failed cnt: 119
+[info] position not increasing, failed cnt: 120
+[info] position not increasing, failed cnt: 121
+[info] position not increasing, failed cnt: 122
+[info] position not increasing, failed cnt: 123
+[info] position not increasing, failed cnt: 124
+[info] position not increasing, failed cnt: 125
+[info] position not increasing, failed cnt: 126
+[info] position not increasing, failed cnt: 127
+[info] position not increasing, failed cnt: 128
+[FATAL] model stuck, exiting ...
