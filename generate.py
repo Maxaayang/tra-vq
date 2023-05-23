@@ -202,8 +202,8 @@ if __name__ == "__main__":
     pieces=pickle_load(data_split),
     pad_to_same=False
   )
-  pieces = random.sample(range(len(dset)), n_pieces)
-  # pieces = [1]
+  # pieces = random.sample(range(len(dset)), n_pieces)
+  pieces = [1]
   print ('[sampled pieces]', pieces)
   
   mconf = config['model']
