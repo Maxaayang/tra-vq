@@ -125,6 +125,8 @@ def generate_on_latent_ctrl_vanilla_truncate(
     dec_seg_emb = latent_placeholder[:len(generated), :]
     dec_rfreq_cls = rfreq_placeholder[:len(generated), :]
     dec_polyph_cls = polyph_placeholder[:len(generated), :]
+    # dec_rfreq_cls = None
+    # dec_polyph_cls = None
 
     # sampling
     with torch.no_grad():
@@ -189,7 +191,11 @@ def generate_on_latent_ctrl_vanilla_truncate(
 # change attribute classes
 ########################################
 def random_shift_attr_cls(n_samples, upper=4, lower=-3):
-  return np.random.randint(lower, upper, (n_samples,))
+  res = []
+  for _ in range(n_samples):
+    res.append(0)
+  # return np.random.randint(0, 0, (n_samples,))
+  return np.array(res)
 
 
 if __name__ == "__main__":
