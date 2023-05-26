@@ -19,7 +19,7 @@ config = yaml.load(open(config_path, 'r'), Loader=yaml.FullLoader)
 device = config['training']['device']
 data_dir = config['data']['data_dir']
 vocab_path = config['data']['vocab_path']
-data_split = 'pickles/test_pieces.pkl'
+data_split = 'new_pickles/train_pieces.pkl'
 
 ckpt_path = sys.argv[2]
 out_dir = sys.argv[3]
@@ -114,7 +114,7 @@ def generate_on_latent_ctrl_vanilla_truncate(
 
   while generated_bars < target_bars:
     if len(generated) == 1:
-      dec_input = numpy_to_tensor([generated], device=device).long()
+      dec_input = numpy_to_tensor([generated], device=device).long() # tensor([[0]], device='cuda:0')
     else:
       dec_input = numpy_to_tensor([generated], device=device).permute(1, 0).long()
 
@@ -125,6 +125,8 @@ def generate_on_latent_ctrl_vanilla_truncate(
     dec_seg_emb = latent_placeholder[:len(generated), :]
     dec_rfreq_cls = rfreq_placeholder[:len(generated), :]
     dec_polyph_cls = polyph_placeholder[:len(generated), :]
+    # dec_rfreq_cls = None
+    # dec_polyph_cls = None
 
     # sampling
     with torch.no_grad():
@@ -189,7 +191,11 @@ def generate_on_latent_ctrl_vanilla_truncate(
 # change attribute classes
 ########################################
 def random_shift_attr_cls(n_samples, upper=4, lower=-3):
-  return np.random.randint(lower, upper, (n_samples,))
+  res = []
+  for _ in range(n_samples):
+    res.append(0)
+  # return np.random.randint(0, 0, (n_samples,))
+  return np.array(res)
 
 
 if __name__ == "__main__":
@@ -202,7 +208,8 @@ if __name__ == "__main__":
     pieces=pickle_load(data_split),
     pad_to_same=False
   )
-  pieces = random.sample(range(len(dset)), n_pieces)
+  # pieces = random.sample(range(len(dset)), n_pieces)
+  pieces = [1]
   print ('[sampled pieces]', pieces)
   
   mconf = config['model']
@@ -257,9 +264,13 @@ if __name__ == "__main__":
                   use_sampling=config['generate']['use_latent_sampling'],
                   sampling_var=config['generate']['latent_sampling_var']
                 )
+
+    # 生成 -3 ~ 4 的 5 个随机数
     p_cls_diff = random_shift_attr_cls(n_samples_per_piece)
     r_cls_diff = random_shift_attr_cls(n_samples_per_piece)
 
+    # 生成指定数量的音乐
+    # clamp 将数据限制在一个范围之内
     piece_entropies = []
     for samp in range(n_samples_per_piece):
       p_polyph_cls = (p_data['polyph_cls_bar'] + p_cls_diff[samp]).clamp(0, 7).long()
