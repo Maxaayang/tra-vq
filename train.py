@@ -51,14 +51,14 @@ def log_epoch(log_file, log_data, is_init=False):
 def beta_cyclical_sched(step):
   step_in_cycle = (step - 1) % kl_cycle_steps
   cycle_progress = step_in_cycle / kl_cycle_steps
-  return kl_max_beta
+  #return kl_max_beta
 
-  # if step < no_kl_steps:
-  #   return 0.
-  # if cycle_progress < 0.5:
-  #   return kl_max_beta * cycle_progress * 2.
-  # else:
-  #   return kl_max_beta
+  if step < no_kl_steps:
+    return 0.
+  if cycle_progress < 0.5:
+    return kl_max_beta * cycle_progress * 2.
+  else:
+    return kl_max_beta
 
 def compute_loss_ema(ema, batch_loss, decay=0.95):
   if ema == 0.:
