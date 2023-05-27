@@ -1,6 +1,7 @@
 import torch
 from torch import nn
 import torch.nn.functional as F
+from vae import VAE
 from transformer_encoder import VAETransformerEncoder
 from transformer_helpers import (
   weights_init, PositionalEncoding, TokenEmbedding, generate_causal_mask
@@ -87,23 +88,28 @@ class MuseMorphose(nn.Module):
     self.d_embed = d_embed
     self.pe = PositionalEncoding(d_embed)
     self.dec_out_proj = nn.Linear(dec_d_model, n_token)
-    self.encoder = VAETransformerEncoder(
-      enc_n_layer, enc_n_head, enc_d_model, enc_d_ff, d_vae_latent, enc_dropout, enc_activation
-    )
+    # self.encoder = VAETransformerEncoder(
+    #   enc_n_layer, enc_n_head, enc_d_model, enc_d_ff, d_vae_latent, enc_dropout, enc_activation
+    # )
+
+    self.bars = 4
+    # self.vae = VAE(self.bars, enc_d_model, d_vae_latent)
 
     self.use_attr_cls = use_attr_cls
     if use_attr_cls:
-      self.decoder = VAETransformerDecoder(
-        dec_n_layer, dec_n_head, dec_d_model, dec_d_ff, d_vae_latent + d_polyph_emb + d_rfreq_emb,
-        dropout=dec_dropout, activation=dec_activation,
-        cond_mode=cond_mode
-      )
+      # self.decoder = VAETransformerDecoder(
+      #   dec_n_layer, dec_n_head, dec_d_model, dec_d_ff, d_vae_latent + d_polyph_emb + d_rfreq_emb,
+      #   dropout=dec_dropout, activation=dec_activation,
+      #   cond_mode=cond_mode
+      # )
+      self.vae = VAE(self.bars, enc_d_model, d_vae_latent, dec_d_model, d_vae_latent + d_polyph_emb + d_rfreq_emb, dec_d_model)
     else:
-      self.decoder = VAETransformerDecoder(
-        dec_n_layer, dec_n_head, dec_d_model, dec_d_ff, d_vae_latent,
-        dropout=dec_dropout, activation=dec_activation,
-        cond_mode=cond_mode
-      )
+      # self.decoder = VAETransformerDecoder(
+      #   dec_n_layer, dec_n_head, dec_d_model, dec_d_ff, d_vae_latent,
+      #   dropout=dec_dropout, activation=dec_activation,
+      #   cond_mode=cond_mode
+      # )
+      self.vae = VAE(self.bars, enc_d_model, d_vae_latent, dec_d_model, d_vae_latent)
 
     if use_attr_cls:
       self.d_rfreq_emb = d_rfreq_emb
@@ -178,7 +184,8 @@ class MuseMorphose(nn.Module):
     if padding_mask is not None:
       padding_mask = padding_mask.reshape(-1, padding_mask.size(-1))
 
-    hidden_out, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
+    # hidden_out, mu, logvar = self.encoder(enc_inp, padding_mask=padding_mask)
+    mu, logvar = self.vae.encode(enc_inp)
     vae_latent = self.reparameterize(mu, logvar)
     vae_latent_reshaped = vae_latent.reshape(enc_bt_size, enc_n_bars, -1)
 
@@ -196,7 +203,8 @@ class MuseMorphose(nn.Module):
     else:
       dec_seg_emb_cat = dec_seg_emb
 
-    dec_out = self.decoder(dec_inp, dec_seg_emb_cat)
+    # dec_out = self.decoder(dec_inp, dec_seg_emb_cat)
+    dec_out = self.vae.decode(dec_inp, dec_seg_emb_cat)
     dec_logits = self.dec_out_proj(dec_out)
 
     return mu, logvar, dec_logits
