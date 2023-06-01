@@ -146,7 +146,7 @@ def train_model(epoch, model, dloader, dloader_val, optim, sched, epochs):
         ))
       model.train()
 
-    if (trained_steps + 1) == batches and epoch == epochs:
+    if (trained_steps) == batches and epoch == epochs:
       torch.save(model.state_dict(),
         os.path.join(params_dir, 'step_{:d}-RC_{:.3f}-KL_{:.3f}-model.pt'.format(
             trained_steps,

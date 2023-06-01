@@ -128,7 +128,8 @@ def generate_on_latent_ctrl_vanilla_truncate(
 
     # sampling
     with torch.no_grad():
-      logits = model.generate(dec_input, dec_seg_emb, dec_rfreq_cls, dec_polyph_cls)
+      # logits = model.generate(dec_input, dec_seg_emb, dec_rfreq_cls, dec_polyph_cls)
+      logits = model.generate(dec_input, dec_seg_emb)
     logits = tensor_to_numpy(logits[0])
     probs = temperatured_softmax(logits, temperature)
     word = nucleus(probs, nucleus_p)

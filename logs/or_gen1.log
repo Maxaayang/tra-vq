@@ -1,0 +1,6 @@
+[preparing data] now at #0
+[sampled pieces] [8, 15, 5, 1, 69, 23, 49, 34, 10, 42]
+[info] writing to ... generations/or_vae1/id8_bar24_orig
+[info] piece: 1192, bar: 24
+[info] writing to ... generations/or_vae1/id8_bar24_sample01_poly+0_rhym-2
+[info] rhythm cls: tensor([4, 3, 4, 4, 4, 2, 1, 0, 2, 0, 3, 2, 4, 3, 5, 3], device='cuda:0') | polyph_cls: tensor([0, 0, 0, 2, 3, 2, 0, 1, 3, 1, 1, 1, 0, 2, 4, 2], device='cuda:0')
